@@ -1,0 +1,589 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAddItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 684</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAddItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="btnAddItem.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="lblItemNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 20</value>
+  </data>
+  <data name="lblItemNumber.Text" xml:space="preserve">
+    <value>Артикул :</value>
+  </data>
+  <data name="tbItemCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 61</value>
+  </data>
+  <data name="tbItemCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="tbItemCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbItemCode.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblItemCodeWithColor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblItemCodeWithColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="lblItemCodeWithColor.Text" xml:space="preserve">
+    <value>Артикул цвета :</value>
+  </data>
+  <data name="tbItemCodeWithColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="tbItemCodeWithColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="lblBarcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 133</value>
+  </data>
+  <data name="lblBarcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="lblBarcode.Text" xml:space="preserve">
+    <value>Баркод :</value>
+  </data>
+  <data name="tbBarcode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblItemNumberOnWB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="lblItemNumberOnWB.Text" xml:space="preserve">
+    <value>Артикул WB :</value>
+  </data>
+  <data name="tbItemNumberOnWB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblInternalCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="lblInternalCode.Text" xml:space="preserve">
+    <value>Внутренний код :</value>
+  </data>
+  <data name="tbInternalCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 203</value>
+  </data>
+  <data name="tbInternalCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblProductName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 239</value>
+  </data>
+  <data name="lblProductName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 20</value>
+  </data>
+  <data name="lblProductName.Text" xml:space="preserve">
+    <value>Наименование изделия:</value>
+  </data>
+  <data name="tbProductName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 275</value>
+  </data>
+  <data name="lblColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="lblColor.Text" xml:space="preserve">
+    <value>Цвет :</value>
+  </data>
+  <data name="tbColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblHardboardBoxNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 20</value>
+  </data>
+  <data name="lblHardboardBoxNumber.Text" xml:space="preserve">
+    <value>Оргалит № коробки :</value>
+  </data>
+  <data name="tbHardboardBoxNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 20</value>
+  </data>
+  <data name="lblUnit.Text" xml:space="preserve">
+    <value>Единица измерения :</value>
+  </data>
+  <data name="tbUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 341</value>
+  </data>
+  <data name="tbUnit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblGofferNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="lblGofferNumber.Text" xml:space="preserve">
+    <value>Гофра № :</value>
+  </data>
+  <data name="tbGofferNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 413</value>
+  </data>
+  <data name="lblNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 20</value>
+  </data>
+  <data name="lblNote.Text" xml:space="preserve">
+    <value>Дополнительно :</value>
+  </data>
+  <data name="tbNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="lblID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 35</value>
+  </data>
+  <data name="lblID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="lblID.Text" xml:space="preserve">
+    <value>ID :</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnClearControlsValues.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnClearControlsValues.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 619</value>
+  </data>
+  <data name="btnClearControlsValues.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnClearControlsValues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 43</value>
+  </data>
+  <data name="btnClearControlsValues.Text" xml:space="preserve">
+    <value>Очистите поля</value>
+  </data>
+  <data name="btnClearControlsValues.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="btnAddImageFromWB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 537</value>
+  </data>
+  <data name="btnAddImageFromWB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="btnAddImageFromWB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 75</value>
+  </data>
+  <data name="btnAddImageFromWB.Text" xml:space="preserve">
+    <value>Добавить изображение из WB</value>
+  </data>
+  <data name="btnAddImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 473</value>
+  </data>
+  <data name="btnAddImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="btnAddImage.Text" xml:space="preserve">
+    <value>Добавить изображение</value>
+  </data>
+  <data name="lblImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 445</value>
+  </data>
+  <data name="lblImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="lblImage.Text" xml:space="preserve">
+    <value>Изображение :</value>
+  </data>
+  <data name="tbItemID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="gbItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 9</value>
+  </data>
+  <data name="gbItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>419, 668</value>
+  </data>
+  <data name="gbItem.Text" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="btnUpdateItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 684</value>
+  </data>
+  <data name="btnUpdateItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="btnUpdateItem.Text" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="btnDeleteItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 684</value>
+  </data>
+  <data name="btnDeleteItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="btnDeleteItem.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>939, 13</value>
+  </data>
+  <data name="btnClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="ItemID.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ItemID.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ItemID.Width" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="ItemCode.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ItemCodeWithColor.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ItemCodeWithColor.Width" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="Barcode.HeaderText" xml:space="preserve">
+    <value>Баркод</value>
+  </data>
+  <data name="Barcode.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Barcode.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="ItemImage.HeaderText" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="ItemImage.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ItemImage.Width" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="ItemNumberOnWB.HeaderText" xml:space="preserve">
+    <value>Артикул WB</value>
+  </data>
+  <data name="ItemNumberOnWB.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ItemNumberOnWB.Width" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="InternalCode.HeaderText" xml:space="preserve">
+    <value>Внутренний код </value>
+  </data>
+  <data name="InternalCode.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="InternalCode.Width" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="ProductNameCol.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Color.HeaderText" xml:space="preserve">
+    <value>Цвет </value>
+  </data>
+  <data name="Color.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Color.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="HardboardBoxNumber.HeaderText" xml:space="preserve">
+    <value>Оргалит № коробки</value>
+  </data>
+  <data name="HardboardBoxNumber.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="HardboardBoxNumber.Width" type="System.Int32, mscorlib">
+    <value>164</value>
+  </data>
+  <data name="Unit.HeaderText" xml:space="preserve">
+    <value>Единица измерения</value>
+  </data>
+  <data name="Unit.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Unit.Width" type="System.Int32, mscorlib">
+    <value>164</value>
+  </data>
+  <data name="GofferNumber.HeaderText" xml:space="preserve">
+    <value>Гофра №</value>
+  </data>
+  <data name="GofferNumber.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="GofferNumber.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="Category.HeaderText" xml:space="preserve">
+    <value>Раздел</value>
+  </data>
+  <data name="Category.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Category.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Category.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="Note.HeaderText" xml:space="preserve">
+    <value>Дополнительно</value>
+  </data>
+  <data name="Note.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Note.Width" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="tsmiEdit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="tsmiEdit.Text" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="tsmiUseValue.Text" xml:space="preserve">
+    <value>Использовать это значение</value>
+  </data>
+  <data name="cmsItemsDataGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 56</value>
+  </data>
+  <data name="cmsItemsDataGrid.Text" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="dgvItemsTable.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvItemsTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dgvItemsTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1097, 637</value>
+  </data>
+  <data name="cbCategory.Items1" xml:space="preserve">
+    <value>НГ23</value>
+  </data>
+  <data name="cbCategory.Items2" xml:space="preserve">
+    <value>Свадебная</value>
+  </data>
+  <data name="cbCategory.Items3" xml:space="preserve">
+    <value>Буквы </value>
+  </data>
+  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 5</value>
+  </data>
+  <data name="cbCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 28</value>
+  </data>
+  <data name="lblCategory.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCategory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 9</value>
+  </data>
+  <data name="lblCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="lblCategory.Text" xml:space="preserve">
+    <value>Раздел :</value>
+  </data>
+  <data name="lblWarehouseCategoryQuantity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblWarehouseCategoryQuantity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWarehouseCategoryQuantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 9</value>
+  </data>
+  <data name="lblWarehouseCategoryQuantity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 20</value>
+  </data>
+  <data name="lblWarehouseCategoryQuantity.Text" xml:space="preserve">
+    <value>Количество товаров в разделе :</value>
+  </data>
+  <data name="tbWarehouseCategoryQuantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 7</value>
+  </data>
+  <data name="tbWarehouseCategoryQuantity.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="tbWarehouseCategoryQuantity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 27</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 773</value>
+  </data>
+  <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="panel4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 5, 0</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1102, 637</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 20</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Количество всех товаров :</value>
+  </data>
+  <data name="tbWarehouseAllQuantity.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="tbWarehouseAllQuantity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 27</value>
+  </data>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1102, 40</value>
+  </data>
+  <data name="btnUpdateAllImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUpdateAllImages.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="btnUpdateAllImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 69</value>
+  </data>
+  <data name="btnUpdateAllImages.Text" xml:space="preserve">
+    <value>Обновить изображения</value>
+  </data>
+  <data name="btnUpdateAllImages.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="btnUpdateAllImages.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 677</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1102, 96</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1102, 773</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1541, 773</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>973, 810</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>товары </value>
+  </data>
+</root>
