@@ -7,7 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <Title>Workshop Manager</Title>
-    <ApplicationIcon>icons8_Networking_Manager.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\icons8_Networking_Manager.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
