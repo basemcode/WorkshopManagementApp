@@ -51,7 +51,7 @@ public partial class frmStockIns : Form
                 if (messageBoxResult == DialogResult.Yes)
                 {
                     int result = StockInData.DeleteStockIn(Convert.ToInt32(dgvStockIns.SelectedRows[0].Cells["StockInID"].Value));
-                    MessageBox.Show("Успешно, " + result.ToString());
+                    MessageBox.Show("Успешно!, " + result.ToString());
                     LoadDataToDGV();
                     if (dgvStockIns.Rows.Count == 0)
                         dgvStockInDetails.DataSource = null;

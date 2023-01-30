@@ -23,9 +23,9 @@ fetch next from StockOuts_cursor into @ItemID, @Quantity,@BoxesQuantity
 while @@FETCH_STATUS=0
 begin
 update Items
-set QuantityInStock=QuantityInStock-@Quantity,
+set QuantityInStock=QuantityInStock+@Quantity,
 	BoxesQuantity=BoxesQuantity+@BoxesQuantity
-where ItemId=@ItemID
+where ItemID=@ItemID
 fetch next from StockOuts_cursor into @ItemID, @Quantity,@BoxesQuantity
 end
 

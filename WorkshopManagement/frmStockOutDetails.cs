@@ -108,7 +108,7 @@ public partial class frmStockOutDetails : Form
                 //if the textbox of item quantity have value we use it and if not we add 1 more to quantity
                 if (int.TryParse(txtQuantity.Text, out int quantity))
                 {
-                    amountOfTheItemToAdd = Convert.ToInt32(dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Value) + quantity;
+                    amountOfTheItemToAdd =  quantity;
                     dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Value = amountOfTheItemToAdd;
                     txtQuantity.Text = String.Empty;
                 }
@@ -277,12 +277,12 @@ public partial class frmStockOutDetails : Form
                 }
             }
             
-            MessageBox.Show("успешно!");
+            MessageBox.Show("Успешно!");
             this.Close();
         }
         catch (Exception addingStockOutDetailsError)
         {
-            MessageBox.Show($"ошибка {addingStockOutDetailsError.Message}");
+            MessageBox.Show($"Ошибка: {addingStockOutDetailsError.Message}");
         }
 
 

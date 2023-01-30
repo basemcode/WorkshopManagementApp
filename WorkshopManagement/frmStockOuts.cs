@@ -59,7 +59,7 @@ public partial class frmStockOuts : Form
                 if (messageBoxResult == DialogResult.Yes)
                 {
                     int result = StockOutData.DeleteStockOut(Convert.ToInt32(dgvStockOuts.SelectedRows[0].Cells["StockOutID"].Value));
-                    MessageBox.Show("Успешно, " + result.ToString());
+                    MessageBox.Show("Успешно!, " + result.ToString());
                     LoadDataToDGV();
                     if (dgvStockOuts.Rows.Count == 0)
                         dgvStockOutDetails.DataSource = null;

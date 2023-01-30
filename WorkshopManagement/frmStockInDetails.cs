@@ -52,11 +52,12 @@ public partial class frmStockInDetails : Form
         dgvStockInDetails.DataSource = ToAddStockInDetailsTable;
         //lock columns so the barcode reader doesn't edit them suddenly
         dgvStockInDetails.Columns["StockInID"].Visible=false;
-        
         dgvStockInDetails.Columns["ItemID"].ReadOnly = true;
         dgvStockInDetails.Columns["ItemCodeWithColor"].ReadOnly = true;
         dgvStockInDetails.Columns["ProductName"].ReadOnly = true;
         dgvStockInDetails.Columns["Category"].ReadOnly = true;
+        //dgvStockInDetails.Columns["Quantity"].ReadOnly = true;
+        dgvStockInDetails.Columns["BoxesQuantity"].ReadOnly = true;
 
         //changing the header text of the columns
         dgvStockInDetails.Columns["ProductName"].HeaderText = "Наименование изделия";
@@ -67,6 +68,7 @@ public partial class frmStockInDetails : Form
         dgvStockInDetails.Columns["Quantity"].HeaderText = "Количество";
         dgvStockInDetails.Columns["BoxesQuantity"].HeaderText = "Количество коробок";
         dgvStockInDetails.Columns["Category"].HeaderText = "Раздел";
+        
         //show user name
         txtLoggedUser.Text = $"{SessionHelper.loggedUser?.FirstName} {SessionHelper.loggedUser?.MiddleName}";
     }
@@ -106,7 +108,7 @@ public partial class frmStockInDetails : Form
             { 
                 if (int.TryParse(txtQuantity.Text,out int quantity))
                 {
-                    dgvStockInDetails.Rows[rowIndex].Cells["Quantity"].Value = Convert.ToInt32(dgvStockInDetails.Rows[rowIndex].Cells["Quantity"].Value) + quantity;
+                    dgvStockInDetails.Rows[rowIndex].Cells["Quantity"].Value =  quantity;
                     txtQuantity.Text = String.Empty;
                 }
                 else
@@ -203,6 +205,7 @@ public partial class frmStockInDetails : Form
         }
     }
 
+   
     private void btnShowItem_Click(object sender, EventArgs e)
     {
         AddItem(cboBarcode.Text);
@@ -231,13 +234,13 @@ public partial class frmStockInDetails : Form
             {
                 StockInDetailData.InsertStockInDetail(new() { ItemID = (int)row.Cells["ItemID"].Value, StockInID = newStockInID, Quantity = (int)row.Cells["Quantity"].Value, BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value });
             }
-            MessageBox.Show("успешно!");
+            MessageBox.Show("Успешно!");
             this.Close();
             
         }
         catch (Exception addingStockinDetailsError)
         {
-            MessageBox.Show($"ошибка {addingStockinDetailsError.Message}");
+            MessageBox.Show($"Ошибка {addingStockinDetailsError.Message}");
         }
         
 
@@ -268,5 +271,11 @@ public partial class frmStockInDetails : Form
     {
         dgvStockInDetails.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = global::WorkshopManagement.Properties.Resources.download;
 
+    }
+
+    private void btnAddItemToDGV_Click(object sender, EventArgs e)
+    {
+        AddItem(cboBarcode.Text);
+        txtBarcode.Focus();
     }
 }

@@ -24,7 +24,7 @@ begin
 update Items
 set QuantityInStock=QuantityInStock-@Quantity,
 	BoxesQuantity=BoxesQuantity-@BoxesQuantity
-where ItemId=@ItemID
+where ItemID=@ItemID
 fetch next from StockIns_cursor into @ItemID, @Quantity,@BoxesQuantity
 end
 
