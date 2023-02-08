@@ -1,5 +1,4 @@
-﻿
-CREATE     PROCEDURE [dbo].[spStockIn_Delete]
+﻿CREATE     PROCEDURE [dbo].[spStockIn_Delete]
            @StockInID int
 AS
 BEGIN

@@ -4,6 +4,7 @@ using DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,25 +13,34 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace WorkshopManagement;
 
 public partial class frmLogin : Form
 {
+    Dictionary<int,string> connections= new Dictionary<int,string>();
     BackgroundWorker _populateWorker = new BackgroundWorker();
+    string con;
     public frmLogin()
     {
         InitializeComponent();
+        int index = 0;
+        foreach (ConnectionStringSettings item in ConfigurationManager.ConnectionStrings)
+        {
+            if (item.ProviderName == "System.Data.SqlClient")
+            {
+                connections.Add(index++, item.Name);
+            }
+        }
+        cboServer.Items.AddRange(connections.Values.ToArray());
         
-        _populateWorker.DoWork += new DoWorkEventHandler(_populateWorker_DoWork);
-        _populateWorker.RunWorkerAsync();
-
     }
     
     
     private void _populateWorker_DoWork(object? sender, DoWorkEventArgs e)
     {
-        if (SqlDataAccess.IsServerConnected("Default"))
+        if (SqlDataAccess.IsServerConnected(con))
         {
             lblConnecting.Invoke((MethodInvoker)delegate {
                 // Running on the UI thread
@@ -42,8 +52,6 @@ public partial class frmLogin : Form
             btnLogin.Invoke((MethodInvoker)delegate {
                 btnLogin.Enabled = true;
             });
-
-
         }
         else
         {
@@ -133,6 +141,16 @@ public partial class frmLogin : Form
 
     private void lblConnectionError_Click(object sender, EventArgs e)
     {
+        con = cboServer.Text;
+        _populateWorker.RunWorkerAsync();
+    }
+
+    private void frmLogin_Shown(object sender, EventArgs e)
+    {
+        con = cboServer.Text;
+        //cboServer.SelectedText = "Default";
+        //con = "Default";
+        _populateWorker.DoWork += new DoWorkEventHandler(_populateWorker_DoWork);
         _populateWorker.RunWorkerAsync();
     }
 }

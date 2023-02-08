@@ -100,6 +100,8 @@
     <Build Include="dbo\Stored Procedures\initial items quantity\spItem_SetInitialQuantity.sql" />
     <Build Include="dbo\Constraints\UniqueKeyConstraint1.sql" />
     <Build Include="dbo\Tables\ReportingPeriods.sql" />
+    <Build Include="dbo\Stored Procedures\initial items quantity\spItem_DeployInitialQuantity.sql" />
+    <Build Include="dbo\Stored Procedures\initial items quantity\spItem_DeployAllInitialQuantity.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Workshop.refactorlog" />

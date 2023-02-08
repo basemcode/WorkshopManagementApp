@@ -24,6 +24,7 @@ public partial class frmStockInDetails : Form
     public frmStockInDetails()
     {
         InitializeComponent();
+        dgvStockInDetails.AutoGenerateColumns = false;
     }
 
     private void frmStockIn_Load(object sender, EventArgs e)
@@ -51,26 +52,28 @@ public partial class frmStockInDetails : Form
         });
         dgvStockInDetails.DataSource = ToAddStockInDetailsTable;
         //lock columns so the barcode reader doesn't edit them suddenly
-        dgvStockInDetails.Columns["StockInID"].Visible=false;
+        /*dgvStockInDetails.Columns["StockInID"].Visible=false;
         dgvStockInDetails.Columns["ItemID"].ReadOnly = true;
         dgvStockInDetails.Columns["ItemCodeWithColor"].ReadOnly = true;
         dgvStockInDetails.Columns["ProductName"].ReadOnly = true;
-        dgvStockInDetails.Columns["Category"].ReadOnly = true;
+        dgvStockInDetails.Columns["Category"].ReadOnly = true;*/
         //dgvStockInDetails.Columns["Quantity"].ReadOnly = true;
-        dgvStockInDetails.Columns["BoxesQuantity"].ReadOnly = true;
+        /*dgvStockInDetails.Columns["BoxesQuantity"].ReadOnly = true;*/
 
         //changing the header text of the columns
-        dgvStockInDetails.Columns["ProductName"].HeaderText = "Наименование изделия";
+        /*dgvStockInDetails.Columns["ProductName"].HeaderText = "Наименование изделия";
         dgvStockInDetails.Columns["StockInID"].HeaderText = "ID прихода";
         dgvStockInDetails.Columns["ItemID"].HeaderText = "ID товара";
         dgvStockInDetails.Columns["ItemCodeWithColor"].HeaderText = "Артикул цвета";
         dgvStockInDetails.Columns["Barcode"].HeaderText = "Баркод";
         dgvStockInDetails.Columns["Quantity"].HeaderText = "Количество";
         dgvStockInDetails.Columns["BoxesQuantity"].HeaderText = "Количество коробок";
-        dgvStockInDetails.Columns["Category"].HeaderText = "Раздел";
+        dgvStockInDetails.Columns["Category"].HeaderText = "Раздел";*/
         
         //show user name
         txtLoggedUser.Text = $"{SessionHelper.loggedUser?.FirstName} {SessionHelper.loggedUser?.MiddleName}";
+        txtSearchItemName.Text = string.Empty;
+        picSearchItemPhoto.Image= null;
     }
 
     private void txtBarcode_KeyDown(object sender, KeyEventArgs e)
@@ -108,7 +111,11 @@ public partial class frmStockInDetails : Form
             { 
                 if (int.TryParse(txtQuantity.Text,out int quantity))
                 {
-                    dgvStockInDetails.Rows[rowIndex].Cells["Quantity"].Value =  quantity;
+                    if (quantity>=0)
+                    {
+                        dgvStockInDetails.Rows[rowIndex].Cells["Quantity"].Value = quantity;
+                       
+                    }
                     txtQuantity.Text = String.Empty;
                 }
                 else
@@ -118,7 +125,11 @@ public partial class frmStockInDetails : Form
 
                 if (int.TryParse(txtBoxesQuantity.Text, out int result))
                 {
-                    dgvStockInDetails.Rows[rowIndex].Cells["BoxesQuantity"].Value = result;
+                    if (result>=0)
+                    {
+                        dgvStockInDetails.Rows[rowIndex].Cells["BoxesQuantity"].Value = result;
+                    }
+                   
                 }
                 
             }
@@ -133,24 +144,32 @@ public partial class frmStockInDetails : Form
                 newRow["Barcode"] = itemToAdd.Barcode;
                 newRow["Category"] = itemToAdd.Category;
                 newRow["Quantity"] = 1;
+                
                 if (int.TryParse(txtQuantity.Text, out int quantity))
                 {
-                    newRow["Quantity"] = quantity;
+                    if (quantity >= 0)
+                    {
+                        newRow["Quantity"] = quantity;
+                    }
                     txtQuantity.Text = String.Empty;
                 }
                 else
                 {
-                    
+                    txtQuantity.Text = String.Empty;
                 }
                 if (int.TryParse(txtBoxesQuantity.Text, out int result))
                 {
-                    newRow["BoxesQuantity"] = result;
+                    if (result>=0)
+                    {
+                        newRow["BoxesQuantity"] = result;
+                    }
+                    
                 }
                 else
                 {
                     newRow["BoxesQuantity"] = 0;
                 }  
-                ToAddStockInDetailsTable.Rows.Add(newRow);
+                ToAddStockInDetailsTable.Rows.InsertAt(newRow,0);
                 
             }
             CheckBoxesQuantityInDGV();
@@ -275,7 +294,28 @@ public partial class frmStockInDetails : Form
 
     private void btnAddItemToDGV_Click(object sender, EventArgs e)
     {
-        AddItem(cboBarcode.Text);
+        AddItem(txtBarcode.Text);
         txtBarcode.Focus();
+    }
+
+    private void dgvStockInDetails_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+        if (e.ColumnIndex == dgvStockInDetails.Columns["plusBtnCol"].Index & e.RowIndex >= 0)
+        {
+            int newValue = Convert.ToInt32(dgvStockInDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
+            dgvStockInDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue + 1;
+        }
+        if (e.ColumnIndex == dgvStockInDetails.Columns["minusBtnCol"].Index & e.RowIndex >= 0)
+        {
+            int newValue = Convert.ToInt32(dgvStockInDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
+            dgvStockInDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue - 1;
+        }
+    }
+
+    private void cboBarcode_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ItemModel itemToAdd = ItemData.GetItemByBarcode(cboBarcode.Text);
+        txtSearchItemName.Text = itemToAdd.ItemCodeWithColor;
+        picSearchItemPhoto.Image = displayImage((byte[])itemToAdd.Image);
     }
 }

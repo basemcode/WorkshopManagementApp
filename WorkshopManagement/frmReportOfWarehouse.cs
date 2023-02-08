@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkshopManagement.Helpers;
 
 namespace WorkshopManagement
 {
@@ -23,6 +24,14 @@ namespace WorkshopManagement
         {
             dgvItemsTable.AutoGenerateColumns = false;
             itemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
+            for (int i = 0; i < itemsTable.Rows.Count; i++)
+            {
+                byte[] a = (byte[])itemsTable.Rows[i]["Image"];
+                if (a.Length==0 )
+                {
+                    itemsTable.Rows[i]["Image"] = Utilities.newBytes;
+                }
+            }
             dgvItemsTable.DataSource = itemsTable;                  
             ColorTheRows();
         }
@@ -33,13 +42,17 @@ namespace WorkshopManagement
             {
                 int QuantityInStock = Convert.ToInt32(item.Cells["QuantityInStock"].Value);
                 int MinimumQuantity = Convert.ToInt32(item.Cells["MinimumQuantity"].Value);
-                if (QuantityInStock < MinimumQuantity + 5)
+                if (QuantityInStock <= MinimumQuantity + 5)
                 {
                     item.Cells["QuantityInStock"].Style.BackColor = Color.Yellow;
                 }
                 if (QuantityInStock < MinimumQuantity)
                 {
                     item.Cells["QuantityInStock"].Style.BackColor = Color.Red;
+                }
+                if (QuantityInStock > MinimumQuantity+5)
+                {
+                    item.Cells["QuantityInStock"].Style.BackColor = Color.LightGreen;
                 }
             }
             dgvItemsTable.ClearSelection();

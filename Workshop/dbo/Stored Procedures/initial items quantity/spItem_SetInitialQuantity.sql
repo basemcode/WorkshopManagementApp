@@ -2,6 +2,7 @@
 CREATE PROC [dbo].[spItem_SetInitialQuantity] 
 	@Barcode NVARCHAR (50),
     @InitialQuantity INT,
+    @BoxesInitialQuantity INT,
     @PeriodID            INT          
     
 AS 
@@ -14,14 +15,15 @@ AS
     AND t.[PeriodID] = @PeriodID
   )
   BEGIN
-    INSERT INTO dbo.InitialQuantityOfItems(Barcode,InitialQuantity ,[PeriodID])
-      SELECT @Barcode, @InitialQuantity, @PeriodID ;
+    INSERT INTO dbo.InitialQuantityOfItems(Barcode,InitialQuantity,BoxesInitialQuantity ,[PeriodID])
+      SELECT @Barcode, @InitialQuantity,@BoxesInitialQuantity, @PeriodID ;
   END
   ELSE
   BEGIN
-    UPDATE [dbo].[InitialQuantityOfItems]
+   UPDATE [dbo].[InitialQuantityOfItems]
    SET [InitialQuantity] = @InitialQuantity
- WHERE [Barcode]=@Barcode AND [PeriodID]=@PeriodID
+   ,BoxesInitialQuantity=@BoxesInitialQuantity
+   WHERE [Barcode]=@Barcode AND [PeriodID]=@PeriodID
   END
 
                

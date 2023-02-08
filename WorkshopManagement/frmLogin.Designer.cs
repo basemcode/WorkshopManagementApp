@@ -41,6 +41,8 @@
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.lblConnectionError = new System.Windows.Forms.Label();
             this.lblConnecting = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboServer = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -53,7 +55,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.Image = global::WorkshopManagement.Properties.Resources.icons8_login_32;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogin.Location = new System.Drawing.Point(53, 382);
+            this.btnLogin.Location = new System.Drawing.Point(53, 428);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(310, 58);
             this.btnLogin.TabIndex = 3;
@@ -66,7 +68,7 @@
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsername.Location = new System.Drawing.Point(95, 246);
+            this.txtUsername.Location = new System.Drawing.Point(95, 292);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(268, 31);
             this.txtUsername.TabIndex = 1;
@@ -76,7 +78,7 @@
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPassword.Location = new System.Drawing.Point(95, 314);
+            this.txtPassword.Location = new System.Drawing.Point(95, 360);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(268, 31);
             this.txtPassword.TabIndex = 2;
@@ -89,7 +91,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(53, 218);
+            this.label1.Location = new System.Drawing.Point(53, 264);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 3;
@@ -101,7 +103,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(53, 286);
+            this.label2.Location = new System.Drawing.Point(53, 332);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 25);
             this.label2.TabIndex = 3;
@@ -113,7 +115,7 @@
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClose.Image = global::WorkshopManagement.Properties.Resources.icons8_Exit_Sign_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.Location = new System.Drawing.Point(53, 446);
+            this.btnClose.Location = new System.Drawing.Point(53, 492);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(310, 58);
             this.btnClose.TabIndex = 4;
@@ -126,7 +128,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::WorkshopManagement.Properties.Resources.background;
-            this.pictureBox1.Location = new System.Drawing.Point(53, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(53, 88);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(310, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -139,7 +141,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(57, 348);
+            this.lblError.Location = new System.Drawing.Point(57, 394);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 25);
             this.lblError.TabIndex = 3;
@@ -149,7 +151,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::WorkshopManagement.Properties.Resources.icons8_male_user_321;
-            this.pictureBox2.Location = new System.Drawing.Point(53, 246);
+            this.pictureBox2.Location = new System.Drawing.Point(53, 292);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -160,7 +162,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::WorkshopManagement.Properties.Resources.icons8_password_32;
-            this.pictureBox3.Location = new System.Drawing.Point(53, 314);
+            this.pictureBox3.Location = new System.Drawing.Point(53, 360);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -171,7 +173,7 @@
             // 
             this.chkShowPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.Location = new System.Drawing.Point(271, 289);
+            this.chkShowPassword.Location = new System.Drawing.Point(271, 335);
             this.chkShowPassword.Name = "chkShowPassword";
             this.chkShowPassword.Size = new System.Drawing.Size(95, 24);
             this.chkShowPassword.TabIndex = 6;
@@ -181,10 +183,11 @@
             // 
             // lblConnectionError
             // 
+            this.lblConnectionError.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblConnectionError.AutoSize = true;
             this.lblConnectionError.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblConnectionError.ForeColor = System.Drawing.Color.Red;
-            this.lblConnectionError.Location = new System.Drawing.Point(80, 515);
+            this.lblConnectionError.Location = new System.Drawing.Point(80, 618);
             this.lblConnectionError.Name = "lblConnectionError";
             this.lblConnectionError.Size = new System.Drawing.Size(259, 40);
             this.lblConnectionError.TabIndex = 7;
@@ -195,20 +198,45 @@
             // 
             // lblConnecting
             // 
+            this.lblConnecting.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblConnecting.AutoSize = true;
             this.lblConnecting.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblConnecting.Location = new System.Drawing.Point(119, 504);
+            this.lblConnecting.Location = new System.Drawing.Point(119, 597);
             this.lblConnecting.Name = "lblConnecting";
             this.lblConnecting.Size = new System.Drawing.Size(184, 20);
             this.lblConnecting.TabIndex = 8;
             this.lblConnecting.Text = "подключение к серверу...";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(79, 562);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Сервер:";
+            // 
+            // cboServer
+            // 
+            this.cboServer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboServer.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cboServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboServer.FormattingEnabled = true;
+            this.cboServer.Location = new System.Drawing.Point(147, 559);
+            this.cboServer.Name = "cboServer";
+            this.cboServer.Size = new System.Drawing.Size(182, 28);
+            this.cboServer.TabIndex = 10;
+            this.cboServer.Text = "Default";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(425, 570);
+            this.ClientSize = new System.Drawing.Size(425, 663);
+            this.Controls.Add(this.cboServer);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblConnecting);
             this.Controls.Add(this.lblConnectionError);
             this.Controls.Add(this.chkShowPassword);
@@ -229,6 +257,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            this.Shown += new System.EventHandler(this.frmLogin_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -252,5 +281,7 @@
         private CheckBox chkShowPassword;
         private Label lblConnectionError;
         private Label lblConnecting;
+        private Label label3;
+        private ComboBox cboServer;
     }
 }

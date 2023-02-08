@@ -80,7 +80,7 @@ namespace DataAccess.DbAccess
                             string url = "";
                             while (!done && basketNumber <= 13)
                             {
-                                url = "https://basket-" + basketNumber.ToString("D2") + @".wb.ru/vol" + ItemNumberOnWB.Substring(0, 3) + "/part" + ItemNumberOnWB.Substring(0, 5) + @"/" + ItemNumberOnWB.ToString() + @"/images/big/1.jpg";
+                                url = "https://basket-" + basketNumber.ToString("D2") + @".wb.ru/vol" + ItemNumberOnWB.Remove(ItemNumberOnWB.Length-5,5) + "/part" + ItemNumberOnWB.ToString().Remove(ItemNumberOnWB.ToString().Length - 3, 3) +@"/"+ ItemNumberOnWB.ToString() + @"/images/big/1.jpg";
                                 //https://basket-04.wb.ru/vol621/part62121/62121114/images/big/1.jpg
                                 HttpWebResponse response = null;
                                 var request = (HttpWebRequest)WebRequest.Create(url);
@@ -157,7 +157,7 @@ namespace DataAccess.DbAccess
                             string url = "";
                             while (!done && basketNumber <= 13)
                             {
-                                url = "https://basket-" + basketNumber.ToString("D2") + @".wb.ru/vol" + ItemNumberOnWB.Substring(0, 3) + "/part" + ItemNumberOnWB.Substring(0, 5) + @"/" + ItemNumberOnWB.ToString() + @"/images/tm/1.jpg";
+                                url = "https://basket-" + basketNumber.ToString("D2") + @".wb.ru/vol" + ItemNumberOnWB.ToString().Remove(ItemNumberOnWB.Length - 5, 5) + "/part" + ItemNumberOnWB.ToString().Remove(ItemNumberOnWB.Length - 3, 3) + @"/" + ItemNumberOnWB.ToString() + @"/images/tm/1.jpg";
                                 //https://basket-04.wb.ru/vol621/part62121/62121114/images/big/1.jpg
                                 HttpWebResponse response = null;
                                 var request = (HttpWebRequest)WebRequest.Create(url);

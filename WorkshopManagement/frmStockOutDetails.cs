@@ -67,6 +67,8 @@ public partial class frmStockOutDetails : Form
         dgvStockOutDetails.Columns["Category"].HeaderText = "Раздел";
         //show user name
         txtLoggedUser.Text = $"{SessionHelper.loggedUser?.FirstName} {SessionHelper.loggedUser?.MiddleName}";
+        txtSearchItemName.Text = string.Empty;
+        picSearchItemPhoto.Image = null;
     }
     private void txtBarcode_KeyDown(object sender, KeyEventArgs e)
     {
@@ -158,7 +160,7 @@ public partial class frmStockOutDetails : Form
                     newRow["BoxesQuantity"] =0;
                 }
                 //add the item to the list to add to database
-                ToAddStockOutDetailsTable.Rows.Add(newRow);
+                ToAddStockOutDetailsTable.Rows.InsertAt(newRow,0);
                 amountOfTheItemToAdd = Convert.ToInt32(newRow["Quantity"]);
                 //get the index of the added row
                 rowIndex = ToAddStockOutDetailsTable.Rows.IndexOf(newRow);
@@ -170,7 +172,11 @@ public partial class frmStockOutDetails : Form
             {
                 MessageBox.Show("Недостаточное количество товара на складе!");
                 dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Style.BackColor = Color.Red;
-                    dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Value = itemToAdd.QuantityInStock;
+                dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Value = itemToAdd.QuantityInStock;
+            }
+            else
+            {
+                dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Style.BackColor = Color.LightGreen;
             }
 
             //check the zero boxes amount
@@ -181,6 +187,10 @@ public partial class frmStockOutDetails : Form
             {
                 dgvStockOutDetails.Rows[rowIndex].Cells["BoxesQuantity"].Style.BackColor = Color.Red;
                 dgvStockOutDetails.Rows[rowIndex].Cells["BoxesQuantity"].Value = itemToAdd.BoxesQuantity;
+            }
+            else
+            {
+                dgvStockOutDetails.Rows[rowIndex].Cells["BoxesQuantity"].Style.BackColor = Color.LightGreen;
             }
             txtSumOfAllProducts.Text= GetSumOfQuantity().ToString();
         }
@@ -309,4 +319,10 @@ public partial class frmStockOutDetails : Form
         return null;
     }
 
+    private void cboBarcode_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ItemModel itemToAdd = ItemData.GetItemByBarcode(cboBarcode.Text);
+        txtSearchItemName.Text = itemToAdd.ItemCodeWithColor;
+        picSearchItemPhoto.Image = displayImage((byte[])itemToAdd.Image);
+    }
 }

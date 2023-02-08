@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvStockOutDetails = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -57,12 +57,18 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cboBarcode = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtSearchItemName = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.picSearchItemPhoto = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockOutDetails)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picItemPhoto)).BeginInit();
             this.grpUser.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchItemPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -84,8 +90,8 @@
             // dgvStockOutDetails
             // 
             this.dgvStockOutDetails.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvStockOutDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvStockOutDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStockOutDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStockOutDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvStockOutDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -276,11 +282,12 @@
             // 
             // grpUser
             // 
+            this.grpUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.grpUser.Controls.Add(this.txtLoggedUser);
             this.grpUser.Controls.Add(this.label7);
-            this.grpUser.Location = new System.Drawing.Point(6, 291);
+            this.grpUser.Location = new System.Drawing.Point(6, 405);
             this.grpUser.Name = "grpUser";
-            this.grpUser.Size = new System.Drawing.Size(242, 133);
+            this.grpUser.Size = new System.Drawing.Size(242, 117);
             this.grpUser.TabIndex = 22;
             this.grpUser.TabStop = false;
             this.grpUser.Text = "Пользователь";
@@ -297,14 +304,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.txtSumOfAllProducts);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.grpUser);
-            this.panel1.Controls.Add(this.btnShowItem);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.cboBarcode);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1126, 0);
             this.panel1.Name = "panel1";
@@ -313,16 +318,18 @@
             // 
             // txtSumOfAllProducts
             // 
-            this.txtSumOfAllProducts.Location = new System.Drawing.Point(18, 464);
+            this.txtSumOfAllProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtSumOfAllProducts.Location = new System.Drawing.Point(18, 562);
             this.txtSumOfAllProducts.Name = "txtSumOfAllProducts";
             this.txtSumOfAllProducts.Size = new System.Drawing.Size(219, 27);
             this.txtSumOfAllProducts.TabIndex = 23;
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(16, 436);
+            this.label10.Location = new System.Drawing.Point(16, 534);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(191, 23);
             this.label10.TabIndex = 0;
@@ -330,7 +337,7 @@
             // 
             // btnShowItem
             // 
-            this.btnShowItem.Location = new System.Drawing.Point(39, 91);
+            this.btnShowItem.Location = new System.Drawing.Point(33, 94);
             this.btnShowItem.Name = "btnShowItem";
             this.btnShowItem.Size = new System.Drawing.Size(185, 40);
             this.btnShowItem.TabIndex = 4;
@@ -340,8 +347,9 @@
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSave.Image = global::WorkshopManagement.Properties.Resources.icons8_save_32;
-            this.btnSave.Location = new System.Drawing.Point(39, 586);
+            this.btnSave.Location = new System.Drawing.Point(39, 604);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(184, 55);
@@ -354,8 +362,9 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCancel.Image = global::WorkshopManagement.Properties.Resources.icons8_unavailable_32;
-            this.btnCancel.Location = new System.Drawing.Point(39, 649);
+            this.btnCancel.Location = new System.Drawing.Point(39, 667);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(184, 55);
@@ -369,7 +378,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 35);
+            this.label5.Location = new System.Drawing.Point(33, 38);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 20);
             this.label5.TabIndex = 20;
@@ -380,11 +389,56 @@
             this.cboBarcode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboBarcode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboBarcode.FormattingEnabled = true;
-            this.cboBarcode.Location = new System.Drawing.Point(39, 57);
+            this.cboBarcode.Location = new System.Drawing.Point(33, 60);
             this.cboBarcode.Name = "cboBarcode";
             this.cboBarcode.Size = new System.Drawing.Size(185, 28);
             this.cboBarcode.TabIndex = 3;
+            this.cboBarcode.SelectedIndexChanged += new System.EventHandler(this.cboBarcode_SelectedIndexChanged);
             this.cboBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboBarcode_KeyDown);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtSearchItemName);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.picSearchItemPhoto);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.cboBarcode);
+            this.groupBox2.Controls.Add(this.btnShowItem);
+            this.groupBox2.Location = new System.Drawing.Point(6, 13);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(242, 386);
+            this.groupBox2.TabIndex = 24;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Поиск";
+            // 
+            // txtSearchItemName
+            // 
+            this.txtSearchItemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchItemName.Location = new System.Drawing.Point(33, 344);
+            this.txtSearchItemName.Name = "txtSearchItemName";
+            this.txtSearchItemName.Size = new System.Drawing.Size(185, 27);
+            this.txtSearchItemName.TabIndex = 21;
+            this.txtSearchItemName.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(33, 317);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(184, 20);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Наименование изделия :";
+            // 
+            // picSearchItemPhoto
+            // 
+            this.picSearchItemPhoto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picSearchItemPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSearchItemPhoto.Location = new System.Drawing.Point(33, 145);
+            this.picSearchItemPhoto.Name = "picSearchItemPhoto";
+            this.picSearchItemPhoto.Size = new System.Drawing.Size(185, 166);
+            this.picSearchItemPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearchItemPhoto.TabIndex = 23;
+            this.picSearchItemPhoto.TabStop = false;
             // 
             // frmStockOutDetails
             // 
@@ -408,6 +462,9 @@
             this.grpUser.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchItemPhoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -442,5 +499,9 @@
         private Label label9;
         private TextBox txtSumOfAllProducts;
         private Label label10;
+        private GroupBox groupBox2;
+        private TextBox txtSearchItemName;
+        private Label label11;
+        private PictureBox picSearchItemPhoto;
     }
 }

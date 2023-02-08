@@ -28,10 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtItemID = new System.Windows.Forms.TextBox();
             this.dgvStockInDetails = new System.Windows.Forms.DataGridView();
+            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plusBtnCol = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.minusBtnCol = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.BoxesQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +63,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtSearchItemName = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.picSearchItemPhoto = new System.Windows.Forms.PictureBox();
             this.grpUser = new System.Windows.Forms.GroupBox();
             this.txtLoggedUser = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,6 +75,8 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picItemPhoto)).BeginInit();
             this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchItemPhoto)).BeginInit();
             this.grpUser.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -86,11 +103,21 @@
             // dgvStockInDetails
             // 
             this.dgvStockInDetails.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvStockInDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvStockInDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvStockInDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStockInDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvStockInDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStockInDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemID,
+            this.Barcode,
+            this.ItemCodeWithColor,
+            this.ProductName,
+            this.Quantity,
+            this.plusBtnCol,
+            this.minusBtnCol,
+            this.BoxesQuantity,
+            this.Category});
             this.dgvStockInDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStockInDetails.Location = new System.Drawing.Point(13, 233);
             this.dgvStockInDetails.MultiSelect = false;
@@ -101,7 +128,92 @@
             this.dgvStockInDetails.Size = new System.Drawing.Size(1104, 498);
             this.dgvStockInDetails.TabIndex = 17;
             this.dgvStockInDetails.TabStop = false;
+            this.dgvStockInDetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockInDetails_CellClick);
             this.dgvStockInDetails.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvStockInDetails_DataError);
+            // 
+            // ItemID
+            // 
+            this.ItemID.DataPropertyName = "ItemID";
+            this.ItemID.HeaderText = "ID товара";
+            this.ItemID.MinimumWidth = 6;
+            this.ItemID.Name = "ItemID";
+            this.ItemID.ReadOnly = true;
+            // 
+            // Barcode
+            // 
+            this.Barcode.DataPropertyName = "Barcode";
+            this.Barcode.HeaderText = "Баркод";
+            this.Barcode.MinimumWidth = 6;
+            this.Barcode.Name = "Barcode";
+            this.Barcode.ReadOnly = true;
+            // 
+            // ItemCodeWithColor
+            // 
+            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
+            this.ItemCodeWithColor.HeaderText = "Артикул цвета";
+            this.ItemCodeWithColor.MinimumWidth = 6;
+            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
+            this.ItemCodeWithColor.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "Наименование изделия";
+            this.ProductName.MinimumWidth = 6;
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "Quantity";
+            this.Quantity.HeaderText = "Количество";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // plusBtnCol
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.plusBtnCol.DefaultCellStyle = dataGridViewCellStyle8;
+            this.plusBtnCol.HeaderText = "+";
+            this.plusBtnCol.MinimumWidth = 6;
+            this.plusBtnCol.Name = "plusBtnCol";
+            this.plusBtnCol.ReadOnly = true;
+            this.plusBtnCol.Text = "+";
+            this.plusBtnCol.UseColumnTextForButtonValue = true;
+            // 
+            // minusBtnCol
+            // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.minusBtnCol.DefaultCellStyle = dataGridViewCellStyle9;
+            this.minusBtnCol.HeaderText = "-";
+            this.minusBtnCol.MinimumWidth = 6;
+            this.minusBtnCol.Name = "minusBtnCol";
+            this.minusBtnCol.ReadOnly = true;
+            this.minusBtnCol.Text = "-";
+            this.minusBtnCol.UseColumnTextForButtonValue = true;
+            // 
+            // BoxesQuantity
+            // 
+            this.BoxesQuantity.DataPropertyName = "BoxesQuantity";
+            this.BoxesQuantity.HeaderText = "Количество коробок";
+            this.BoxesQuantity.MinimumWidth = 6;
+            this.BoxesQuantity.Name = "BoxesQuantity";
+            this.BoxesQuantity.ReadOnly = true;
+            // 
+            // Category
+            // 
+            this.Category.DataPropertyName = "Category";
+            this.Category.HeaderText = "Раздел";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
             // 
             // label2
             // 
@@ -170,14 +282,16 @@
             this.cboBarcode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboBarcode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboBarcode.FormattingEnabled = true;
-            this.cboBarcode.Location = new System.Drawing.Point(39, 57);
+            this.cboBarcode.Location = new System.Drawing.Point(33, 62);
             this.cboBarcode.Name = "cboBarcode";
             this.cboBarcode.Size = new System.Drawing.Size(185, 28);
             this.cboBarcode.TabIndex = 3;
+            this.cboBarcode.SelectedIndexChanged += new System.EventHandler(this.cboBarcode_SelectedIndexChanged);
             this.cboBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboBarcode_KeyDown);
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSave.Image = global::WorkshopManagement.Properties.Resources.icons8_save_32;
             this.btnSave.Location = new System.Drawing.Point(39, 586);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -192,6 +306,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCancel.Image = global::WorkshopManagement.Properties.Resources.icons8_unavailable_32;
             this.btnCancel.Location = new System.Drawing.Point(39, 649);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -207,7 +322,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 35);
+            this.label5.Location = new System.Drawing.Point(33, 40);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 20);
             this.label5.TabIndex = 20;
@@ -215,7 +330,7 @@
             // 
             // btnShowItem
             // 
-            this.btnShowItem.Location = new System.Drawing.Point(39, 91);
+            this.btnShowItem.Location = new System.Drawing.Point(33, 96);
             this.btnShowItem.Name = "btnShowItem";
             this.btnShowItem.Size = new System.Drawing.Size(185, 40);
             this.btnShowItem.TabIndex = 4;
@@ -322,25 +437,68 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.grpUser);
-            this.panel1.Controls.Add(this.btnShowItem);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.cboBarcode);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1130, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(260, 744);
             this.panel1.TabIndex = 23;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtSearchItemName);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.picSearchItemPhoto);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.cboBarcode);
+            this.groupBox2.Controls.Add(this.btnShowItem);
+            this.groupBox2.Location = new System.Drawing.Point(6, 13);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(242, 420);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Поиск";
+            // 
+            // txtSearchItemName
+            // 
+            this.txtSearchItemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchItemName.Location = new System.Drawing.Point(33, 352);
+            this.txtSearchItemName.Name = "txtSearchItemName";
+            this.txtSearchItemName.Size = new System.Drawing.Size(185, 27);
+            this.txtSearchItemName.TabIndex = 5;
+            this.txtSearchItemName.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(33, 325);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(184, 20);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Наименование изделия :";
+            // 
+            // picSearchItemPhoto
+            // 
+            this.picSearchItemPhoto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picSearchItemPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSearchItemPhoto.Location = new System.Drawing.Point(33, 153);
+            this.picSearchItemPhoto.Name = "picSearchItemPhoto";
+            this.picSearchItemPhoto.Size = new System.Drawing.Size(185, 166);
+            this.picSearchItemPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearchItemPhoto.TabIndex = 5;
+            this.picSearchItemPhoto.TabStop = false;
+            // 
             // grpUser
             // 
+            this.grpUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.grpUser.Controls.Add(this.txtLoggedUser);
             this.grpUser.Controls.Add(this.label7);
-            this.grpUser.Location = new System.Drawing.Point(6, 291);
+            this.grpUser.Location = new System.Drawing.Point(6, 439);
             this.grpUser.Name = "grpUser";
-            this.grpUser.Size = new System.Drawing.Size(242, 214);
+            this.grpUser.Size = new System.Drawing.Size(242, 132);
             this.grpUser.TabIndex = 22;
             this.grpUser.TabStop = false;
             this.grpUser.Text = "Пользователь";
@@ -401,7 +559,9 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picItemPhoto)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchItemPhoto)).EndInit();
             this.grpUser.ResumeLayout(false);
             this.grpUser.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -438,5 +598,18 @@
         private Label label9;
         private TextBox txtNote;
         private Button btnAddItemToDGV;
+        private DataGridViewTextBoxColumn ItemID;
+        private DataGridViewTextBoxColumn Barcode;
+        private DataGridViewTextBoxColumn ItemCodeWithColor;
+        private DataGridViewTextBoxColumn ProductName;
+        private DataGridViewTextBoxColumn Quantity;
+        private DataGridViewButtonColumn plusBtnCol;
+        private DataGridViewButtonColumn minusBtnCol;
+        private DataGridViewTextBoxColumn BoxesQuantity;
+        private DataGridViewTextBoxColumn Category;
+        private GroupBox groupBox2;
+        private TextBox txtSearchItemName;
+        private Label label10;
+        private PictureBox picSearchItemPhoto;
     }
 }

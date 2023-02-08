@@ -41,6 +41,10 @@ namespace WorkshopManagement.Forms
                             {
                                 item["Quantity"] = 0;
                             }
+                            if (item["BoxesQuantity"] == "" || item["BoxesQuantity"] == null || item["BoxesQuantity"] == DBNull.Value)
+                            {
+                                item["BoxesQuantity"] = 0;
+                            }
                             finalExcelData.ImportRow(item);
                         }
                     }
@@ -51,13 +55,16 @@ namespace WorkshopManagement.Forms
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSaveValuesToDatabase_Click(object sender, EventArgs e)
         {
             if (finalExcelData!=null)
             {
                 foreach (DataRow item in finalExcelData.Rows)
                 {
-                    ItemData.SetInitialQuantity(item["Barcode"].ToString(), Convert.ToInt32(item["Quantity"]), Convert.ToInt32(cboPeriodID.SelectedItem));
+                    ItemData.SetInitialQuantity(item["Barcode"].ToString()
+                        , Convert.ToInt32(item["Quantity"])
+                        , Convert.ToInt32(item["BoxesQuantity"])
+                        , Convert.ToInt32(cboPeriodID.SelectedItem));
                 }
             }
            
@@ -67,6 +74,11 @@ namespace WorkshopManagement.Forms
         private void frmDatabaseOperations_Load(object sender, EventArgs e)
         {
             dgvExcelDataToAdd.AutoGenerateColumns = false;
+        }
+
+        private void btnDeployInitialQuantity_Click(object sender, EventArgs e)
+        {
+            ItemData.DeployAllInitialQuantity(Convert.ToInt32(cboPeriodID.Text));
         }
     }
 }

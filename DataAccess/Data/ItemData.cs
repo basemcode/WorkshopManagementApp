@@ -45,6 +45,9 @@ public class ItemData
 
     public static void DeleteItem(int ItemID) =>
         SqlDataAccess.SaveData("dbo.spItem_Delete", new { ItemID = ItemID });
-    public static void SetInitialQuantity(string barcode,int InitialQuantity, int PeriodID) =>
-        SqlDataAccess.SaveData("dbo.spItem_SetInitialQuantity",new { barcode, InitialQuantity, PeriodID });
+    public static void SetInitialQuantity(string barcode,int InitialQuantity,int BoxesInitialQuantity, int PeriodID) =>
+        SqlDataAccess.SaveData("dbo.spItem_SetInitialQuantity",new { barcode, InitialQuantity, BoxesInitialQuantity, PeriodID });
+    public static void DeployAllInitialQuantity( int PeriodID) =>
+        SqlDataAccess.SaveData("dbo.spItem_DeployAllInitialQuantity", new {  PeriodID });
+    
 }
