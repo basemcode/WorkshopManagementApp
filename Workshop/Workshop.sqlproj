@@ -63,6 +63,7 @@
     <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="dbo\Stored Procedures\initial items quantity" />
     <Folder Include="dbo\Constraints" />
+    <Folder Include="dbo\Stored Procedures\Items" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Items.sql" />
@@ -73,25 +74,16 @@
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\StockOutDetails.sql" />
     <Build Include="dbo\Stored Procedures\spUsers_Login.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_GetByBarcode.sql" />
     <Build Include="dbo\Stored Procedures\spStockIn_GetAll.sql" />
     <Build Include="dbo\Stored Procedures\spStockIn_Delete.sql" />
     <Build Include="dbo\Stored Procedures\spStockIn_Insert.sql" />
     <Build Include="dbo\Stored Procedures\spStockIn_Update.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_UpdateImage.sql" />
     <Build Include="dbo\Stored Procedures\spStockInDetails_GetAllDetailsOfStockIn.sql" />
     <Build Include="dbo\Stored Procedures\spStockInDetails_Insert.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_GetAll.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_Insert.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_Get.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_Update.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_Delete.sql" />
     <Build Include="dbo\Stored Procedures\spUsers_Select.sql" />
     <Build Include="dbo\Stored Procedures\spUsers_Insert.sql" />
     <Build Include="dbo\Stored Procedures\spUsers_Update.sql" />
     <Build Include="dbo\Stored Procedures\spUsers_Delete.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_GetItemsOfCategory.sql" />
-    <Build Include="dbo\Stored Procedures\spItem_GetAllBarcodes.sql" />
     <Build Include="dbo\Stored Procedures\spStockOutDetails_Insert.sql" />
     <Build Include="dbo\Stored Procedures\spStockOut_Insert.sql" />
     <Build Include="dbo\Stored Procedures\spStockOut_GetAll.sql" />
@@ -102,6 +94,16 @@
     <Build Include="dbo\Tables\ReportingPeriods.sql" />
     <Build Include="dbo\Stored Procedures\initial items quantity\spItem_DeployInitialQuantity.sql" />
     <Build Include="dbo\Stored Procedures\initial items quantity\spItem_DeployAllInitialQuantity.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_GetSubGroups.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_Get.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_GetAllBarcodes.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_GetByBarcode.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_GetItemsOfCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_UpdateImage.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Workshop.refactorlog" />

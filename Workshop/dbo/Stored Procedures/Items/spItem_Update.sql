@@ -8,6 +8,7 @@ CREATE PROCEDURE [dbo].[spItem_Update]
            @ItemNumberOnWB nvarchar(100),
            @InternalCode nvarchar(100),
            @ProductName nvarchar(100),
+           @SubGroup nvarchar(100),
            @Color nvarchar(100),
            @HardboardBoxNumber nvarchar(100),
            @Unit nvarchar(100),
@@ -28,6 +29,7 @@ begin
            ,[ItemNumberOnWB]=@ItemNumberOnWB
            ,[InternalCode]=@InternalCode
            ,[ProductName]=@ProductName
+           ,[SubGroup]=@SubGroup
            ,[Color]=@Color
            ,[HardboardBoxNumber]=@HardboardBoxNumber
            ,[Unit]=@Unit

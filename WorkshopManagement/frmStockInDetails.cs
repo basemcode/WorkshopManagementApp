@@ -80,7 +80,7 @@ public partial class frmStockInDetails : Form
     {
         if (e.KeyValue == 13)
         {
-            AddItem(txtBarcode.Text);
+            AddItemToDataGridView(txtBarcode.Text);
             System.Media.SystemSounds.Beep.Play();              
         } 
         else
@@ -89,7 +89,7 @@ public partial class frmStockInDetails : Form
         }
     }
 
-    void AddItem(string Barcode)
+    void AddItemToDataGridView(string Barcode)
     {
         ItemModel itemToAdd = ItemData.GetItemByBarcode(Barcode);
         if (itemToAdd != null)
@@ -209,7 +209,7 @@ public partial class frmStockInDetails : Form
             
             if (cboBarcode.Items.Count == 1)
             {
-                AddItem(cboBarcode.Text);
+                AddItemToDataGridView(cboBarcode.Text);
                 //txtBarcode.Focus();
             }
 
@@ -227,7 +227,7 @@ public partial class frmStockInDetails : Form
    
     private void btnShowItem_Click(object sender, EventArgs e)
     {
-        AddItem(cboBarcode.Text);
+        AddItemToDataGridView(cboBarcode.Text);
         txtBarcode.Focus();
     }
 
@@ -294,7 +294,7 @@ public partial class frmStockInDetails : Form
 
     private void btnAddItemToDGV_Click(object sender, EventArgs e)
     {
-        AddItem(txtBarcode.Text);
+        AddItemToDataGridView(txtBarcode.Text);
         txtBarcode.Focus();
     }
 
@@ -315,7 +315,7 @@ public partial class frmStockInDetails : Form
     private void cboBarcode_SelectedIndexChanged(object sender, EventArgs e)
     {
         ItemModel itemToAdd = ItemData.GetItemByBarcode(cboBarcode.Text);
-        txtSearchItemName.Text = itemToAdd.ItemCodeWithColor;
+        txtSearchItemName.Text = itemToAdd.ProductName;
         picSearchItemPhoto.Image = displayImage((byte[])itemToAdd.Image);
     }
 }

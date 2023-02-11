@@ -26,6 +26,7 @@ namespace WorkshopManagement
     {
         //List<ItemModel> ItemsList = new List<ItemModel>();
         static DataTable ItemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
+        static string[] subGroups=ItemData.GetSubGroups().ToArray();
         DataView dataView ;
         public frmItems()
         {
@@ -53,7 +54,7 @@ namespace WorkshopManagement
             //dgvItemsTable.AutoGenerateColumns=true;
             //ItemsTable = DataHelper.ToDataTable(ItemData.GetItemsOfCategory(category));
             ItemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
-            
+            subGroups = ItemData.GetSubGroups().ToArray();
             for (int i = 0; i < ItemsTable.Rows.Count; i++)
             {
                 object a = ItemsTable.Rows[i]["Image"];
@@ -64,49 +65,7 @@ namespace WorkshopManagement
                     ItemsTable.Rows[i]["Image"] = Utilities.newBytes;
                 }
             }
-            /*ItemsList = ItemData.GetItemsOfCategory(category).ToList();
-            if (ItemsList != null&& ItemsList.Count!=0)
-            {
-                //dgvItemsTable.DataSource= ItemsList;
-                foreach (var item in ItemsList)
-                {
-                    try
-                    {
-                        DataGridViewRow newRow = new DataGridViewRow();
-
-                        //newRow.CreateCells(dgvItemsTable);
-                        //newRow.Cells.Add()
-                        //newRow.Cells[dgvItemsTable.Columns["ItemID"].Name].Value = item.ItemID;
-                        //newRow.Cells["ItemNumber"].Value = item.ItemNumber;
-                        //newRow.Cells["ItemImage"].Value = displayImage((byte[])item.Image);
-                        //dgvItemsTable.Rows.Add(newRow);
-
-                        int rowIndex = this.dgvItemsTable.Rows.Add();
-
-                        //Obtain a reference to the newly created DataGridViewRow 
-                        var row = this.dgvItemsTable.Rows[rowIndex];
-                        row.Cells["ItemID"].Value = item.ItemID;
-                        row.Cells["ItemCode"].Value = item.ItemCode;
-                        row.Cells["ItemCodeWithColor"].Value = item.ItemCodeWithColor;
-                        row.Cells["Barcode"].Value = item.Barcode;
-                        row.Cells["ItemImage"].Value = displayImage((byte[])item.Image);
-                        row.Cells["ItemNumberOnWB"].Value = item.ItemNumberOnWB;
-                        row.Cells["InternalCode"].Value = item.InternalCode;
-                        row.Cells["ProductNameCol"].Value = item.ProductName;
-                        row.Cells["Color"].Value = item.Color;
-                        row.Cells["HardboardBoxNumber"].Value = item.HardboardBoxNumber;
-                        row.Cells["Unit"].Value = item.Unit;
-                        row.Cells["GofferNumber"].Value = item.GofferNumber;
-                        row.Cells["Category"].Value = item.Category;
-                        row.Cells["Note"].Value = item.Note;
-                        dgvItemsTable.Sort(ItemID, ListSortDirection.Descending);
-                    }
-                    catch (Exception e)
-                    {
-                        MessageBox.Show(e.Message);
-                    }
-                }
-            }*/
+            ItemsTable.DefaultView.Sort = "SubGroup Desc";
             try
             {
                 dgvItemsTable.DataSource = ItemsTable;
@@ -114,12 +73,25 @@ namespace WorkshopManagement
             }
             catch (Exception e3)
             {
-
                 MessageBox.Show(e3.Message);
             }
             ItemsTable.DefaultView.RowFilter = "[Category] = '" + cbCategory.Text + "'";
             tbWarehouseCategoryQuantity.Text = ItemsTable.DefaultView.Count.ToString();
             tbWarehouseAllQuantity.Text = ItemsTable.Rows.Count.ToString();
+            cboSubGroup.Items.Clear();
+            
+            if (subGroups.Length>0)
+            {
+                foreach (var item in subGroups)
+                {
+                    if (item!=null)
+                    {
+                        cboSubGroup.Items.Add(item);   
+                    }
+                    
+                } 
+            }
+            
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -170,6 +142,7 @@ namespace WorkshopManagement
                     newItem.ItemNumberOnWB = tbItemNumberOnWB.Text;
                     newItem.InternalCode = tbInternalCode.Text;
                     newItem.ProductName = tbProductName.Text;
+                    newItem.SubGroup = cboSubGroup.Text;
                     newItem.Color = tbColor.Text;
                     newItem.HardboardBoxNumber = tbHardboardBoxNumber.Text;
                     newItem.Unit = tbUnit.Text;
@@ -283,6 +256,7 @@ namespace WorkshopManagement
                     newItem.ItemNumberOnWB = tbItemNumberOnWB.Text;
                     newItem.InternalCode = tbInternalCode.Text;
                     newItem.ProductName = tbProductName.Text;
+                    newItem.SubGroup = cboSubGroup.Text;
                     newItem.Color = tbColor.Text;
                     newItem.HardboardBoxNumber = tbHardboardBoxNumber.Text;
                     newItem.Unit = tbUnit.Text;
@@ -358,6 +332,7 @@ namespace WorkshopManagement
                     tbItemNumberOnWB.Text = dgvItemsTable.Rows[mouseLocation.RowIndex].Cells["ItemNumberOnWB"].Value.ToString();
                     tbInternalCode.Text = dgvItemsTable.Rows[mouseLocation.RowIndex].Cells["InternalCode"].Value.ToString();
                     tbProductName.Text = dgvItemsTable.Rows[mouseLocation.RowIndex].Cells["ProductNameCol"].Value.ToString();
+                    cboSubGroup.Text = dgvItemsTable.Rows[mouseLocation.RowIndex].Cells["SubGroup"].Value.ToString();
                     tbColor.Text = dgvItemsTable.Rows[mouseLocation.RowIndex].Cells["Color"].Value?.ToString();
                     tbHardboardBoxNumber.Text = dgvItemsTable.Rows[mouseLocation.RowIndex].Cells["HardboardBoxNumber"].Value.ToString();
                     tbUnit.Text = dgvItemsTable.Rows[mouseLocation.RowIndex].Cells["Unit"].Value.ToString();
@@ -411,18 +386,21 @@ namespace WorkshopManagement
                                 tbProductName.Text = choice;
                                 break;
                             case 8:
-                                tbColor.Text = choice;
+                                cboSubGroup.Text = choice;
                                 break;
                             case 9:
-                                tbHardboardBoxNumber.Text = choice;
+                                tbColor.Text = choice;
                                 break;
                             case 10:
-                                tbUnit.Text = choice;
+                                tbHardboardBoxNumber.Text = choice;
                                 break;
                             case 11:
+                                tbUnit.Text = choice;
+                                break;
+                            case 12:
                                 tbGofferNumber.Text = choice;
                                 break;
-                            case 13:
+                            case 14:
                                 tbNote.Text = choice;
                                 break;
                         }
@@ -479,6 +457,11 @@ namespace WorkshopManagement
         }
 
         private void ShowImageFromFile(object sender, DownloadDataCompletedEventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             
         }

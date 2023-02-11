@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvStockOutDetails = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAddItemToDGV = new System.Windows.Forms.Button();
             this.txtNote = new System.Windows.Forms.TextBox();
             this.picItemPhoto = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -50,17 +51,17 @@
             this.grpUser = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSumOfAllProducts = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnShowItem = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cboBarcode = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtSearchItemName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.picSearchItemPhoto = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboBarcode = new System.Windows.Forms.ComboBox();
+            this.btnShowItem = new System.Windows.Forms.Button();
+            this.txtSumOfAllProducts = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockOutDetails)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -90,8 +91,8 @@
             // dgvStockOutDetails
             // 
             this.dgvStockOutDetails.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvStockOutDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvStockOutDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStockOutDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStockOutDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvStockOutDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -107,6 +108,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAddItemToDGV);
             this.groupBox1.Controls.Add(this.txtNote);
             this.groupBox1.Controls.Add(this.picItemPhoto);
             this.groupBox1.Controls.Add(this.label9);
@@ -128,6 +130,17 @@
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Товар";
+            // 
+            // btnAddItemToDGV
+            // 
+            this.btnAddItemToDGV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddItemToDGV.Location = new System.Drawing.Point(603, 63);
+            this.btnAddItemToDGV.Name = "btnAddItemToDGV";
+            this.btnAddItemToDGV.Size = new System.Drawing.Size(156, 30);
+            this.btnAddItemToDGV.TabIndex = 28;
+            this.btnAddItemToDGV.Text = "Добавить";
+            this.btnAddItemToDGV.UseVisualStyleBackColor = true;
+            this.btnAddItemToDGV.Click += new System.EventHandler(this.btnAddItemToDGV_Click);
             // 
             // txtNote
             // 
@@ -163,7 +176,7 @@
             // 
             this.txtBoxesQuantity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxesQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxesQuantity.Location = new System.Drawing.Point(603, 101);
+            this.txtBoxesQuantity.Location = new System.Drawing.Point(603, 139);
             this.txtBoxesQuantity.Name = "txtBoxesQuantity";
             this.txtBoxesQuantity.Size = new System.Drawing.Size(156, 27);
             this.txtBoxesQuantity.TabIndex = 2;
@@ -182,7 +195,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(443, 104);
+            this.label8.Location = new System.Drawing.Point(443, 142);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(160, 20);
             this.label8.TabIndex = 0;
@@ -223,7 +236,7 @@
             this.txtQuantity.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtQuantity.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtQuantity.Location = new System.Drawing.Point(603, 63);
+            this.txtQuantity.Location = new System.Drawing.Point(603, 101);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(156, 27);
             this.txtQuantity.TabIndex = 1;
@@ -264,7 +277,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(443, 65);
+            this.label2.Location = new System.Drawing.Point(443, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 0;
@@ -316,86 +329,6 @@
             this.panel1.Size = new System.Drawing.Size(260, 747);
             this.panel1.TabIndex = 25;
             // 
-            // txtSumOfAllProducts
-            // 
-            this.txtSumOfAllProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSumOfAllProducts.Location = new System.Drawing.Point(18, 562);
-            this.txtSumOfAllProducts.Name = "txtSumOfAllProducts";
-            this.txtSumOfAllProducts.Size = new System.Drawing.Size(219, 27);
-            this.txtSumOfAllProducts.TabIndex = 23;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(16, 534);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(191, 23);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Cумма всех продуктов:";
-            // 
-            // btnShowItem
-            // 
-            this.btnShowItem.Location = new System.Drawing.Point(33, 94);
-            this.btnShowItem.Name = "btnShowItem";
-            this.btnShowItem.Size = new System.Drawing.Size(185, 40);
-            this.btnShowItem.TabIndex = 4;
-            this.btnShowItem.Text = "Использовать";
-            this.btnShowItem.UseVisualStyleBackColor = true;
-            this.btnShowItem.Click += new System.EventHandler(this.btnShowItem_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSave.Image = global::WorkshopManagement.Properties.Resources.icons8_save_32;
-            this.btnSave.Location = new System.Drawing.Point(39, 604);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(184, 55);
-            this.btnSave.TabIndex = 16;
-            this.btnSave.TabStop = false;
-            this.btnSave.Text = "Сохранить";
-            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCancel.Image = global::WorkshopManagement.Properties.Resources.icons8_unavailable_32;
-            this.btnCancel.Location = new System.Drawing.Point(39, 667);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(184, 55);
-            this.btnCancel.TabIndex = 16;
-            this.btnCancel.TabStop = false;
-            this.btnCancel.Text = "Отмена";
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 20);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Поиск продукта :";
-            // 
-            // cboBarcode
-            // 
-            this.cboBarcode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboBarcode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboBarcode.FormattingEnabled = true;
-            this.cboBarcode.Location = new System.Drawing.Point(33, 60);
-            this.cboBarcode.Name = "cboBarcode";
-            this.cboBarcode.Size = new System.Drawing.Size(185, 28);
-            this.cboBarcode.TabIndex = 3;
-            this.cboBarcode.SelectedIndexChanged += new System.EventHandler(this.cboBarcode_SelectedIndexChanged);
-            this.cboBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboBarcode_KeyDown);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtSearchItemName);
@@ -439,6 +372,84 @@
             this.picSearchItemPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSearchItemPhoto.TabIndex = 23;
             this.picSearchItemPhoto.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 20);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Поиск продукта :";
+            // 
+            // cboBarcode
+            // 
+            this.cboBarcode.FormattingEnabled = true;
+            this.cboBarcode.Location = new System.Drawing.Point(33, 60);
+            this.cboBarcode.Name = "cboBarcode";
+            this.cboBarcode.Size = new System.Drawing.Size(185, 28);
+            this.cboBarcode.TabIndex = 3;
+            this.cboBarcode.SelectedIndexChanged += new System.EventHandler(this.cboBarcode_SelectedIndexChanged);
+            this.cboBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboBarcode_KeyDown);
+            // 
+            // btnShowItem
+            // 
+            this.btnShowItem.Location = new System.Drawing.Point(33, 94);
+            this.btnShowItem.Name = "btnShowItem";
+            this.btnShowItem.Size = new System.Drawing.Size(185, 40);
+            this.btnShowItem.TabIndex = 4;
+            this.btnShowItem.Text = "Использовать";
+            this.btnShowItem.UseVisualStyleBackColor = true;
+            this.btnShowItem.Click += new System.EventHandler(this.btnShowItem_Click);
+            // 
+            // txtSumOfAllProducts
+            // 
+            this.txtSumOfAllProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtSumOfAllProducts.Location = new System.Drawing.Point(18, 562);
+            this.txtSumOfAllProducts.Name = "txtSumOfAllProducts";
+            this.txtSumOfAllProducts.Size = new System.Drawing.Size(219, 27);
+            this.txtSumOfAllProducts.TabIndex = 23;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(16, 534);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(191, 23);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Cумма всех продуктов:";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSave.Image = global::WorkshopManagement.Properties.Resources.icons8_save_32;
+            this.btnSave.Location = new System.Drawing.Point(39, 604);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(184, 55);
+            this.btnSave.TabIndex = 16;
+            this.btnSave.TabStop = false;
+            this.btnSave.Text = "Сохранить";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancel.Image = global::WorkshopManagement.Properties.Resources.icons8_unavailable_32;
+            this.btnCancel.Location = new System.Drawing.Point(39, 667);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(184, 55);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.TabStop = false;
+            this.btnCancel.Text = "Отмена";
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmStockOutDetails
             // 
@@ -503,5 +514,6 @@
         private TextBox txtSearchItemName;
         private Label label11;
         private PictureBox picSearchItemPhoto;
+        private Button btnAddItemToDGV;
     }
 }

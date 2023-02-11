@@ -12,6 +12,8 @@ public class ItemData
 {
     public static IEnumerable<ItemModel> GetAllItems() =>
         SqlDataAccess.LoadData<ItemModel, dynamic>("dbo.spItem_GetAll", new { });
+    public static IEnumerable<string> GetSubGroups() =>
+        SqlDataAccess.LoadData<string, dynamic>("dbo.spItem_GetSubGroups", new { });
     public static IEnumerable<string> GetAllBarcodes() =>
         SqlDataAccess.LoadData<string, dynamic>("dbo.spItem_GetAllBarcodes", new { });
 
@@ -41,7 +43,7 @@ public class ItemData
         SqlDataAccess.SaveData("dbo.spItem_Update", Item);
 
     public static void UpdateItemImage(ItemModel Item) =>
-        SqlDataAccess.SaveData("dbo.spItem_UpdateImage", Item);
+        SqlDataAccess.SaveData("dbo.spItem_UpdateImage", new {ItemID=Item.ItemID,Image=Item.Image});
 
     public static void DeleteItem(int ItemID) =>
         SqlDataAccess.SaveData("dbo.spItem_Delete", new { ItemID = ItemID });

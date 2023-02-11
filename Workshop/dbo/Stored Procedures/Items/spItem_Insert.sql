@@ -7,6 +7,7 @@
     @ItemNumberOnWB nvarchar(100) = NULL,
     @InternalCode nvarchar(100) = NULL,
     @ProductName nvarchar(100) = NULL,
+    @SubGroup nvarchar(100) = NULL,
     @Color nvarchar(100) = NULL,
     @HardboardBoxNumber nvarchar(100) = NULL,
     @Unit nvarchar(100) = NULL,
@@ -27,6 +28,7 @@ begin
            ,[ItemNumberOnWB]
            ,[InternalCode]
            ,[ProductName]
+           ,[SubGroup]
            ,[Color]
            ,[HardboardBoxNumber]
            ,[Unit]
@@ -43,6 +45,7 @@ begin
            ,@ItemNumberOnWB
            ,@InternalCode
            ,@ProductName
+           ,@SubGroup
            ,@Color
            ,@HardboardBoxNumber
            ,@Unit

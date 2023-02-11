@@ -47,34 +47,29 @@ public partial class frmStockOuts : Form
 
     private void btnDeleteStockOut_Click(object sender, EventArgs e)
     {
-        if (dgvStockOuts.Rows.Count > 0)
+        if (dgvStockOuts.Rows.Count <= 0)
+        { return; }
+        
+        if (dgvStockOuts.SelectedRows[0] != null)
         {
-            if (dgvStockOuts.SelectedRows[0] != null)
+            
+            string message = $"Вы хотите удалить отгрузку с ID: {dgvStockOuts.SelectedRows[0].Cells["StockOutID"].Value} и дата: {dgvStockOuts.SelectedRows[0].Cells["Date"].Value}?";
+            string title = "Удалить отгрузки";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult messageBoxResult = MessageBox.Show(message, title, buttons);
+            if (messageBoxResult == DialogResult.Yes)
             {
-                
-                string message = $"Вы хотите удалить отгрузку с ID: {dgvStockOuts.SelectedRows[0].Cells["StockOutID"].Value} и дата: {dgvStockOuts.SelectedRows[0].Cells["Date"].Value}?";
-                string title = "Удалить отгрузки";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult messageBoxResult = MessageBox.Show(message, title, buttons);
-                if (messageBoxResult == DialogResult.Yes)
-                {
-                    int result = StockOutData.DeleteStockOut(Convert.ToInt32(dgvStockOuts.SelectedRows[0].Cells["StockOutID"].Value));
-                    MessageBox.Show("Успешно!, " + result.ToString());
-                    LoadDataToDGV();
-                    if (dgvStockOuts.Rows.Count == 0)
-                        dgvStockOutDetails.DataSource = null;
-                }
-                else
-                {
-                    // Do something  
-                }
-               
-
-
+                int result = StockOutData.DeleteStockOut(Convert.ToInt32(dgvStockOuts.SelectedRows[0].Cells["StockOutID"].Value));
+                MessageBox.Show("Успешно!, " + result.ToString());
+                LoadDataToDGV();
+                if (dgvStockOuts.Rows.Count == 0)
+                    dgvStockOutDetails.DataSource = null;
+            }
+            else
+            {
+                // Do something  
             }
         }
-
-
     }
 
     private void btnUpdateStockOut_Click(object sender, EventArgs e)

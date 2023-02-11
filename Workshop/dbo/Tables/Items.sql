@@ -7,6 +7,7 @@
     [ItemNumberOnWB]     NVARCHAR (100)  NULL,
     [InternalCode]       NVARCHAR (100)  NULL,
     [ProductName]        NVARCHAR (100)  NULL,
+    [SubGroup]           NVARCHAR (100)  NULL,
     [Color]              NVARCHAR (100)  NULL,
     [HardboardBoxNumber] NVARCHAR (100)  NULL,
     [Unit]               NVARCHAR (100)  NULL,

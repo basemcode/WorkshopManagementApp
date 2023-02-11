@@ -322,7 +322,13 @@ public partial class frmStockOutDetails : Form
     private void cboBarcode_SelectedIndexChanged(object sender, EventArgs e)
     {
         ItemModel itemToAdd = ItemData.GetItemByBarcode(cboBarcode.Text);
-        txtSearchItemName.Text = itemToAdd.ItemCodeWithColor;
+        txtSearchItemName.Text = itemToAdd.ProductName;
         picSearchItemPhoto.Image = displayImage((byte[])itemToAdd.Image);
+    }
+
+    private void btnAddItemToDGV_Click(object sender, EventArgs e)
+    {
+        AddItemToDataGridView(txtBarcode.Text);
+        txtBarcode.Focus();
     }
 }

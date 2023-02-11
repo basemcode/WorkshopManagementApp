@@ -17,6 +17,7 @@ public class ItemModel
     public string ItemNumberOnWB { get; set; }
     public string InternalCode { get; set; }
     public string ProductName { get; set; }
+    public string SubGroup { get; set; }
     public string Color { get; set; }
     public string HardboardBoxNumber { get; set; }
     public string Unit { get; set; }

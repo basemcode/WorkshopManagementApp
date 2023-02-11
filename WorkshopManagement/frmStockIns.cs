@@ -40,31 +40,29 @@ public partial class frmStockIns : Form
 
     private void btnDeleteStockIn_Click(object sender, EventArgs e)
     {
-        if (dgvStockIns.Rows.Count>0)
+        if (dgvStockIns.Rows.Count<=0)
+            return;
+        
+        if (dgvStockIns.SelectedRows[0] != null)
         {
-            if (dgvStockIns.SelectedRows[0] != null)
+            string message = $"Вы хотите удалить поставку с ID: {dgvStockIns.SelectedRows[0].Cells["StockInID"].Value} и дата: {dgvStockIns.SelectedRows[0].Cells["Date"].Value}?";
+            string title = "Удалить поставки";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult messageBoxResult = MessageBox.Show(message, title, buttons);
+            if (messageBoxResult == DialogResult.Yes)
             {
-                string message = $"Вы хотите удалить поставку с ID: {dgvStockIns.SelectedRows[0].Cells["StockInID"].Value} и дата: {dgvStockIns.SelectedRows[0].Cells["Date"].Value}?";
-                string title = "Удалить поставки";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult messageBoxResult = MessageBox.Show(message, title, buttons);
-                if (messageBoxResult == DialogResult.Yes)
-                {
-                    int result = StockInData.DeleteStockIn(Convert.ToInt32(dgvStockIns.SelectedRows[0].Cells["StockInID"].Value));
-                    MessageBox.Show("Успешно!, " + result.ToString());
-                    LoadDataToDGV();
-                    if (dgvStockIns.Rows.Count == 0)
-                        dgvStockInDetails.DataSource = null;
-                }
-                else
-                {
-                    // Do something  
-                }
-                /////////
-                
-
+                int result = StockInData.DeleteStockIn(Convert.ToInt32(dgvStockIns.SelectedRows[0].Cells["StockInID"].Value));
+                MessageBox.Show("Успешно!, " + result.ToString());
+                LoadDataToDGV();
+                if (dgvStockIns.Rows.Count == 0)
+                    dgvStockInDetails.DataSource = null;
+            }
+            else
+            {
+                // Do something  
             }
         }
+        
         
         
     }

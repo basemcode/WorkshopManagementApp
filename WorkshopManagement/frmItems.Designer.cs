@@ -58,30 +58,18 @@ namespace WorkshopManagement
             this.tbNote = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.gbItem = new System.Windows.Forms.GroupBox();
+            this.cboSubGroup = new System.Windows.Forms.ComboBox();
             this.pbItemImage = new System.Windows.Forms.PictureBox();
             this.btnClearControlsValues = new System.Windows.Forms.Button();
             this.btnAddImageFromWB = new System.Windows.Forms.Button();
             this.btnAddImage = new System.Windows.Forms.Button();
             this.lblImage = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tbItemID = new System.Windows.Forms.TextBox();
             this.btnUpdateItem = new System.Windows.Forms.Button();
             this.btnDeleteItem = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.dgvItemsTable = new System.Windows.Forms.DataGridView();
-            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemImage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ItemNumberOnWB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InternalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HardboardBoxNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GofferNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmsItemsDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUseValue = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,6 +85,21 @@ namespace WorkshopManagement
             this.tbWarehouseAllQuantity = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnUpdateAllImages = new System.Windows.Forms.Button();
+            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemImage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ItemNumberOnWB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InternalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SubGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HardboardBoxNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GofferNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemsTable)).BeginInit();
@@ -248,6 +251,7 @@ namespace WorkshopManagement
             // gbItem
             // 
             resources.ApplyResources(this.gbItem, "gbItem");
+            this.gbItem.Controls.Add(this.cboSubGroup);
             this.gbItem.Controls.Add(this.pbItemImage);
             this.gbItem.Controls.Add(this.lblID);
             this.gbItem.Controls.Add(this.tbNote);
@@ -271,6 +275,7 @@ namespace WorkshopManagement
             this.gbItem.Controls.Add(this.tbBarcode);
             this.gbItem.Controls.Add(this.lblHardboardBoxNumber);
             this.gbItem.Controls.Add(this.lblImage);
+            this.gbItem.Controls.Add(this.label2);
             this.gbItem.Controls.Add(this.lblNote);
             this.gbItem.Controls.Add(this.tbItemID);
             this.gbItem.Controls.Add(this.tbItemCode);
@@ -279,6 +284,14 @@ namespace WorkshopManagement
             this.gbItem.Controls.Add(this.lblGofferNumber);
             this.gbItem.Name = "gbItem";
             this.gbItem.TabStop = false;
+            // 
+            // cboSubGroup
+            // 
+            resources.ApplyResources(this.cboSubGroup, "cboSubGroup");
+            this.cboSubGroup.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboSubGroup.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboSubGroup.FormattingEnabled = true;
+            this.cboSubGroup.Name = "cboSubGroup";
             // 
             // pbItemImage
             // 
@@ -315,6 +328,11 @@ namespace WorkshopManagement
             // 
             resources.ApplyResources(this.lblImage, "lblImage");
             this.lblImage.Name = "lblImage";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // tbItemID
             // 
@@ -363,6 +381,7 @@ namespace WorkshopManagement
             this.ItemNumberOnWB,
             this.InternalCode,
             this.ProductNameCol,
+            this.SubGroup,
             this.Color,
             this.HardboardBoxNumber,
             this.Unit,
@@ -388,109 +407,6 @@ namespace WorkshopManagement
             this.dgvItemsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvItemsTable.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemsTable_CellMouseEnter);
             this.dgvItemsTable.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvItemsTable_DataError);
-            // 
-            // ItemID
-            // 
-            this.ItemID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ItemID.DataPropertyName = "ItemID";
-            this.ItemID.FillWeight = 2F;
-            resources.ApplyResources(this.ItemID, "ItemID");
-            this.ItemID.Name = "ItemID";
-            this.ItemID.ReadOnly = true;
-            // 
-            // ItemCode
-            // 
-            this.ItemCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ItemCode.DataPropertyName = "ItemCode";
-            this.ItemCode.FillWeight = 7F;
-            resources.ApplyResources(this.ItemCode, "ItemCode");
-            this.ItemCode.Name = "ItemCode";
-            // 
-            // ItemCodeWithColor
-            // 
-            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
-            this.ItemCodeWithColor.FillWeight = 7F;
-            resources.ApplyResources(this.ItemCodeWithColor, "ItemCodeWithColor");
-            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
-            // 
-            // Barcode
-            // 
-            this.Barcode.DataPropertyName = "Barcode";
-            this.Barcode.FillWeight = 7F;
-            resources.ApplyResources(this.Barcode, "Barcode");
-            this.Barcode.Name = "Barcode";
-            // 
-            // ItemImage
-            // 
-            this.ItemImage.DataPropertyName = "Image";
-            this.ItemImage.FillWeight = 7F;
-            resources.ApplyResources(this.ItemImage, "ItemImage");
-            this.ItemImage.Image = global::WorkshopManagement.Properties.Resources.download;
-            this.ItemImage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ItemImage.Name = "ItemImage";
-            // 
-            // ItemNumberOnWB
-            // 
-            this.ItemNumberOnWB.DataPropertyName = "ItemNumberOnWB";
-            this.ItemNumberOnWB.FillWeight = 7F;
-            resources.ApplyResources(this.ItemNumberOnWB, "ItemNumberOnWB");
-            this.ItemNumberOnWB.Name = "ItemNumberOnWB";
-            // 
-            // InternalCode
-            // 
-            this.InternalCode.DataPropertyName = "InternalCode";
-            this.InternalCode.FillWeight = 7F;
-            resources.ApplyResources(this.InternalCode, "InternalCode");
-            this.InternalCode.Name = "InternalCode";
-            // 
-            // ProductNameCol
-            // 
-            this.ProductNameCol.DataPropertyName = "ProductName";
-            this.ProductNameCol.FillWeight = 7F;
-            resources.ApplyResources(this.ProductNameCol, "ProductNameCol");
-            this.ProductNameCol.Name = "ProductNameCol";
-            // 
-            // Color
-            // 
-            this.Color.DataPropertyName = "Color";
-            this.Color.FillWeight = 7F;
-            resources.ApplyResources(this.Color, "Color");
-            this.Color.Name = "Color";
-            // 
-            // HardboardBoxNumber
-            // 
-            this.HardboardBoxNumber.DataPropertyName = "HardboardBoxNumber";
-            this.HardboardBoxNumber.FillWeight = 7F;
-            resources.ApplyResources(this.HardboardBoxNumber, "HardboardBoxNumber");
-            this.HardboardBoxNumber.Name = "HardboardBoxNumber";
-            // 
-            // Unit
-            // 
-            this.Unit.DataPropertyName = "Unit";
-            this.Unit.FillWeight = 7F;
-            resources.ApplyResources(this.Unit, "Unit");
-            this.Unit.Name = "Unit";
-            // 
-            // GofferNumber
-            // 
-            this.GofferNumber.DataPropertyName = "GofferNumber";
-            this.GofferNumber.FillWeight = 7F;
-            resources.ApplyResources(this.GofferNumber, "GofferNumber");
-            this.GofferNumber.Name = "GofferNumber";
-            // 
-            // Category
-            // 
-            this.Category.DataPropertyName = "Category";
-            this.Category.FillWeight = 7F;
-            resources.ApplyResources(this.Category, "Category");
-            this.Category.Name = "Category";
-            // 
-            // Note
-            // 
-            this.Note.DataPropertyName = "Note";
-            this.Note.FillWeight = 7F;
-            resources.ApplyResources(this.Note, "Note");
-            this.Note.Name = "Note";
             // 
             // cmsItemsDataGrid
             // 
@@ -604,6 +520,115 @@ namespace WorkshopManagement
             this.btnUpdateAllImages.UseVisualStyleBackColor = true;
             this.btnUpdateAllImages.Click += new System.EventHandler(this.btnUpdateAllImages_Click);
             // 
+            // ItemID
+            // 
+            this.ItemID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ItemID.DataPropertyName = "ItemID";
+            this.ItemID.FillWeight = 2F;
+            resources.ApplyResources(this.ItemID, "ItemID");
+            this.ItemID.Name = "ItemID";
+            this.ItemID.ReadOnly = true;
+            // 
+            // ItemCode
+            // 
+            this.ItemCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ItemCode.DataPropertyName = "ItemCode";
+            this.ItemCode.FillWeight = 7F;
+            resources.ApplyResources(this.ItemCode, "ItemCode");
+            this.ItemCode.Name = "ItemCode";
+            // 
+            // ItemCodeWithColor
+            // 
+            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
+            this.ItemCodeWithColor.FillWeight = 7F;
+            resources.ApplyResources(this.ItemCodeWithColor, "ItemCodeWithColor");
+            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
+            // 
+            // Barcode
+            // 
+            this.Barcode.DataPropertyName = "Barcode";
+            this.Barcode.FillWeight = 7F;
+            resources.ApplyResources(this.Barcode, "Barcode");
+            this.Barcode.Name = "Barcode";
+            // 
+            // ItemImage
+            // 
+            this.ItemImage.DataPropertyName = "Image";
+            this.ItemImage.FillWeight = 7F;
+            resources.ApplyResources(this.ItemImage, "ItemImage");
+            this.ItemImage.Image = global::WorkshopManagement.Properties.Resources.download;
+            this.ItemImage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ItemImage.Name = "ItemImage";
+            // 
+            // ItemNumberOnWB
+            // 
+            this.ItemNumberOnWB.DataPropertyName = "ItemNumberOnWB";
+            this.ItemNumberOnWB.FillWeight = 7F;
+            resources.ApplyResources(this.ItemNumberOnWB, "ItemNumberOnWB");
+            this.ItemNumberOnWB.Name = "ItemNumberOnWB";
+            // 
+            // InternalCode
+            // 
+            this.InternalCode.DataPropertyName = "InternalCode";
+            this.InternalCode.FillWeight = 7F;
+            resources.ApplyResources(this.InternalCode, "InternalCode");
+            this.InternalCode.Name = "InternalCode";
+            // 
+            // ProductNameCol
+            // 
+            this.ProductNameCol.DataPropertyName = "ProductName";
+            this.ProductNameCol.FillWeight = 7F;
+            resources.ApplyResources(this.ProductNameCol, "ProductNameCol");
+            this.ProductNameCol.Name = "ProductNameCol";
+            // 
+            // SubGroup
+            // 
+            this.SubGroup.DataPropertyName = "SubGroup";
+            resources.ApplyResources(this.SubGroup, "SubGroup");
+            this.SubGroup.Name = "SubGroup";
+            // 
+            // Color
+            // 
+            this.Color.DataPropertyName = "Color";
+            this.Color.FillWeight = 7F;
+            resources.ApplyResources(this.Color, "Color");
+            this.Color.Name = "Color";
+            // 
+            // HardboardBoxNumber
+            // 
+            this.HardboardBoxNumber.DataPropertyName = "HardboardBoxNumber";
+            this.HardboardBoxNumber.FillWeight = 7F;
+            resources.ApplyResources(this.HardboardBoxNumber, "HardboardBoxNumber");
+            this.HardboardBoxNumber.Name = "HardboardBoxNumber";
+            // 
+            // Unit
+            // 
+            this.Unit.DataPropertyName = "Unit";
+            this.Unit.FillWeight = 7F;
+            resources.ApplyResources(this.Unit, "Unit");
+            this.Unit.Name = "Unit";
+            // 
+            // GofferNumber
+            // 
+            this.GofferNumber.DataPropertyName = "GofferNumber";
+            this.GofferNumber.FillWeight = 7F;
+            resources.ApplyResources(this.GofferNumber, "GofferNumber");
+            this.GofferNumber.Name = "GofferNumber";
+            // 
+            // Category
+            // 
+            this.Category.DataPropertyName = "Category";
+            this.Category.FillWeight = 7F;
+            resources.ApplyResources(this.Category, "Category");
+            this.Category.Name = "Category";
+            // 
+            // Note
+            // 
+            this.Note.DataPropertyName = "Note";
+            this.Note.FillWeight = 7F;
+            resources.ApplyResources(this.Note, "Note");
+            this.Note.Name = "Note";
+            // 
             // frmItems
             // 
             resources.ApplyResources(this, "$this");
@@ -694,5 +719,9 @@ namespace WorkshopManagement
         private Label label1;
         private TextBox tbWarehouseAllQuantity;
         private Button btnUpdateAllImages;
+        private Button button1;
+        private ComboBox cboSubGroup;
+        private Label label2;
+        private DataGridViewTextBoxColumn SubGroup;
     }
 }
