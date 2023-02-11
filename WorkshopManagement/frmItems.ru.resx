@@ -59,7 +59,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAddItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 738</value>
+    <value>14, 746</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAddItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -284,13 +284,13 @@
     <value>11, 9</value>
   </data>
   <data name="gbItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>419, 708</value>
+    <value>419, 724</value>
   </data>
   <data name="gbItem.Text" xml:space="preserve">
     <value>Продукт</value>
   </data>
   <data name="btnUpdateItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 738</value>
+    <value>156, 746</value>
   </data>
   <data name="btnUpdateItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
@@ -299,7 +299,7 @@
     <value>Обновить</value>
   </data>
   <data name="btnDeleteItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 738</value>
+    <value>297, 746</value>
   </data>
   <data name="btnDeleteItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
@@ -334,6 +334,9 @@
   <data name="ItemCodeWithColor.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="ItemCodeWithColor.Width" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
   <data name="Barcode.HeaderText" xml:space="preserve">
     <value>Баркод</value>
   </data>
@@ -359,7 +362,7 @@
     <value>20</value>
   </data>
   <data name="ItemNumberOnWB.Width" type="System.Int32, mscorlib">
-    <value>121</value>
+    <value>111</value>
   </data>
   <data name="InternalCode.HeaderText" xml:space="preserve">
     <value>Внутренний код </value>
@@ -373,14 +376,8 @@
   <data name="ProductNameCol.MinimumWidth" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="SubGroup.HeaderText" xml:space="preserve">
-    <value>Подгруппа</value>
-  </data>
   <data name="SubGroup.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
-  </data>
-  <data name="SubGroup.Width" type="System.Int32, mscorlib">
-    <value>114</value>
   </data>
   <data name="Color.HeaderText" xml:space="preserve">
     <value>Цвет </value>
