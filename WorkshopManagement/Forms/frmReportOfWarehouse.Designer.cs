@@ -1,4 +1,4 @@
-﻿namespace WorkshopManagement
+﻿namespace WorkshopManagement.Forms
 {
     partial class frmReportOfWarehouse
     {

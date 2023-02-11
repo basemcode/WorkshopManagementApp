@@ -20,7 +20,7 @@ public class ItemModel
     public string SubGroup { get; set; }
     public string Color { get; set; }
     public string HardboardBoxNumber { get; set; }
-    public string Unit { get; set; }
+    public string PackagingAndDimensions { get; set; }
     public string GofferNumber { get; set; }
     public string Note { get; set; }
     public string Category { get; set; }

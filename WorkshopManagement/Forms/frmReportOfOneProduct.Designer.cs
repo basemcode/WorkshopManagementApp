@@ -40,7 +40,7 @@
             this.tbNote = new System.Windows.Forms.TextBox();
             this.lblItemNumber = new System.Windows.Forms.Label();
             this.tbGofferNumber = new System.Windows.Forms.TextBox();
-            this.tbUnit = new System.Windows.Forms.TextBox();
+            this.tbPackagingAndDimensions = new System.Windows.Forms.TextBox();
             this.lblItemCodeWithColor = new System.Windows.Forms.Label();
             this.tbHardboardBoxNumber = new System.Windows.Forms.TextBox();
             this.lblBarcode = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.tbItemID = new System.Windows.Forms.TextBox();
             this.tbItemCode = new System.Windows.Forms.TextBox();
             this.tbItemCodeWithColor = new System.Windows.Forms.TextBox();
-            this.lblUnit = new System.Windows.Forms.Label();
+            this.lblPackagingAndDimensions = new System.Windows.Forms.Label();
             this.lblGofferNumber = new System.Windows.Forms.Label();
             this.btnShowItem = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             this.gbItem.Controls.Add(this.tbNote);
             this.gbItem.Controls.Add(this.lblItemNumber);
             this.gbItem.Controls.Add(this.tbGofferNumber);
-            this.gbItem.Controls.Add(this.tbUnit);
+            this.gbItem.Controls.Add(this.tbPackagingAndDimensions);
             this.gbItem.Controls.Add(this.lblItemCodeWithColor);
             this.gbItem.Controls.Add(this.tbHardboardBoxNumber);
             this.gbItem.Controls.Add(this.lblBarcode);
@@ -100,7 +100,7 @@
             this.gbItem.Controls.Add(this.tbItemID);
             this.gbItem.Controls.Add(this.tbItemCode);
             this.gbItem.Controls.Add(this.tbItemCodeWithColor);
-            this.gbItem.Controls.Add(this.lblUnit);
+            this.gbItem.Controls.Add(this.lblPackagingAndDimensions);
             this.gbItem.Controls.Add(this.lblGofferNumber);
             this.gbItem.Location = new System.Drawing.Point(12, 12);
             this.gbItem.Name = "gbItem";
@@ -215,14 +215,14 @@
             this.tbGofferNumber.Size = new System.Drawing.Size(213, 27);
             this.tbGofferNumber.TabIndex = 11;
             // 
-            // tbUnit
+            // tbPackagingAndDimensions
             // 
-            this.tbUnit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUnit.Location = new System.Drawing.Point(192, 341);
-            this.tbUnit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.tbUnit.Name = "tbUnit";
-            this.tbUnit.Size = new System.Drawing.Size(213, 27);
-            this.tbUnit.TabIndex = 10;
+            this.tbPackagingAndDimensions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackagingAndDimensions.Location = new System.Drawing.Point(192, 341);
+            this.tbPackagingAndDimensions.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tbPackagingAndDimensions.Name = "tbPackagingAndDimensions";
+            this.tbPackagingAndDimensions.Size = new System.Drawing.Size(213, 27);
+            this.tbPackagingAndDimensions.TabIndex = 10;
             // 
             // lblItemCodeWithColor
             // 
@@ -398,15 +398,15 @@
             this.tbItemCodeWithColor.Size = new System.Drawing.Size(213, 27);
             this.tbItemCodeWithColor.TabIndex = 3;
             // 
-            // lblUnit
+            // lblPackagingAndDimensions
             // 
-            this.lblUnit.AutoSize = true;
-            this.lblUnit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblUnit.Location = new System.Drawing.Point(15, 344);
-            this.lblUnit.Name = "lblUnit";
-            this.lblUnit.Size = new System.Drawing.Size(158, 20);
-            this.lblUnit.TabIndex = 1;
-            this.lblUnit.Text = "Единица измерения :";
+            this.lblPackagingAndDimensions.AutoSize = true;
+            this.lblPackagingAndDimensions.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblPackagingAndDimensions.Location = new System.Drawing.Point(15, 344);
+            this.lblPackagingAndDimensions.Name = "lblPackagingAndDimensions";
+            this.lblPackagingAndDimensions.Size = new System.Drawing.Size(154, 20);
+            this.lblPackagingAndDimensions.TabIndex = 1;
+            this.lblPackagingAndDimensions.Text = "Упаковка, габариты :";
             // 
             // lblGofferNumber
             // 
@@ -426,6 +426,7 @@
             this.btnShowItem.TabIndex = 22;
             this.btnShowItem.Text = "показать продукт";
             this.btnShowItem.UseVisualStyleBackColor = true;
+            this.btnShowItem.Click += new System.EventHandler(this.btnShowItem_Click);
             // 
             // label5
             // 
@@ -485,7 +486,7 @@
         private TextBox tbNote;
         private Label lblItemNumber;
         private TextBox tbGofferNumber;
-        private TextBox tbUnit;
+        private TextBox tbPackagingAndDimensions;
         private Label lblItemCodeWithColor;
         private TextBox tbHardboardBoxNumber;
         private Label lblBarcode;
@@ -504,7 +505,7 @@
         private TextBox tbItemID;
         private TextBox tbItemCode;
         private TextBox tbItemCodeWithColor;
-        private Label lblUnit;
+        private Label lblPackagingAndDimensions;
         private Label lblGofferNumber;
         private Button btnShowItem;
         private Label label5;

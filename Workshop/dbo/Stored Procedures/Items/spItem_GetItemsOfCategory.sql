@@ -13,7 +13,7 @@ begin
       ,[ProductName]
       ,[Color]
       ,[HardboardBoxNumber]
-      ,[Unit]
+      ,[PackagingAndDimensions]
       ,[GofferNumber]
       ,[Category]
       ,[Note]

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkshopManagement.Helpers;
 
-namespace WorkshopManagement
+namespace WorkshopManagement.Forms
 {
     public partial class frmReportOfWarehouse : Form
     {

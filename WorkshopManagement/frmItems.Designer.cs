@@ -50,8 +50,7 @@ namespace WorkshopManagement
             this.tbColor = new System.Windows.Forms.TextBox();
             this.lblHardboardBoxNumber = new System.Windows.Forms.Label();
             this.tbHardboardBoxNumber = new System.Windows.Forms.TextBox();
-            this.lblUnit = new System.Windows.Forms.Label();
-            this.tbUnit = new System.Windows.Forms.TextBox();
+            this.tbPackagingAndDimensions = new System.Windows.Forms.TextBox();
             this.lblGofferNumber = new System.Windows.Forms.Label();
             this.tbGofferNumber = new System.Windows.Forms.TextBox();
             this.lblNote = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@ namespace WorkshopManagement
             this.lblImage = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbItemID = new System.Windows.Forms.TextBox();
+            this.lblPackagingAndDimensions = new System.Windows.Forms.Label();
             this.btnUpdateItem = new System.Windows.Forms.Button();
             this.btnDeleteItem = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -81,7 +81,7 @@ namespace WorkshopManagement
             this.SubGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HardboardBoxNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PackagingAndDimensions = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GofferNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -210,16 +210,11 @@ namespace WorkshopManagement
             this.tbHardboardBoxNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbHardboardBoxNumber.Name = "tbHardboardBoxNumber";
             // 
-            // lblUnit
+            // tbPackagingAndDimensions
             // 
-            resources.ApplyResources(this.lblUnit, "lblUnit");
-            this.lblUnit.Name = "lblUnit";
-            // 
-            // tbUnit
-            // 
-            resources.ApplyResources(this.tbUnit, "tbUnit");
-            this.tbUnit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUnit.Name = "tbUnit";
+            resources.ApplyResources(this.tbPackagingAndDimensions, "tbPackagingAndDimensions");
+            this.tbPackagingAndDimensions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackagingAndDimensions.Name = "tbPackagingAndDimensions";
             // 
             // lblGofferNumber
             // 
@@ -260,7 +255,7 @@ namespace WorkshopManagement
             this.gbItem.Controls.Add(this.tbGofferNumber);
             this.gbItem.Controls.Add(this.btnAddImageFromWB);
             this.gbItem.Controls.Add(this.btnAddImage);
-            this.gbItem.Controls.Add(this.tbUnit);
+            this.gbItem.Controls.Add(this.tbPackagingAndDimensions);
             this.gbItem.Controls.Add(this.lblItemCodeWithColor);
             this.gbItem.Controls.Add(this.tbHardboardBoxNumber);
             this.gbItem.Controls.Add(this.lblBarcode);
@@ -280,7 +275,7 @@ namespace WorkshopManagement
             this.gbItem.Controls.Add(this.tbItemID);
             this.gbItem.Controls.Add(this.tbItemCode);
             this.gbItem.Controls.Add(this.tbItemCodeWithColor);
-            this.gbItem.Controls.Add(this.lblUnit);
+            this.gbItem.Controls.Add(this.lblPackagingAndDimensions);
             this.gbItem.Controls.Add(this.lblGofferNumber);
             this.gbItem.Name = "gbItem";
             this.gbItem.TabStop = false;
@@ -340,6 +335,11 @@ namespace WorkshopManagement
             this.tbItemID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbItemID.Name = "tbItemID";
             // 
+            // lblPackagingAndDimensions
+            // 
+            resources.ApplyResources(this.lblPackagingAndDimensions, "lblPackagingAndDimensions");
+            this.lblPackagingAndDimensions.Name = "lblPackagingAndDimensions";
+            // 
             // btnUpdateItem
             // 
             resources.ApplyResources(this.btnUpdateItem, "btnUpdateItem");
@@ -384,7 +384,7 @@ namespace WorkshopManagement
             this.SubGroup,
             this.Color,
             this.HardboardBoxNumber,
-            this.Unit,
+            this.PackagingAndDimensions,
             this.GofferNumber,
             this.Category,
             this.Note});
@@ -489,12 +489,12 @@ namespace WorkshopManagement
             resources.ApplyResources(this.HardboardBoxNumber, "HardboardBoxNumber");
             this.HardboardBoxNumber.Name = "HardboardBoxNumber";
             // 
-            // Unit
+            // PackagingAndDimensions
             // 
-            this.Unit.DataPropertyName = "Unit";
-            this.Unit.FillWeight = 7F;
-            resources.ApplyResources(this.Unit, "Unit");
-            this.Unit.Name = "Unit";
+            this.PackagingAndDimensions.DataPropertyName = "PackagingAndDimensions";
+            this.PackagingAndDimensions.FillWeight = 7F;
+            resources.ApplyResources(this.PackagingAndDimensions, "PackagingAndDimensions");
+            this.PackagingAndDimensions.Name = "PackagingAndDimensions";
             // 
             // GofferNumber
             // 
@@ -637,7 +637,7 @@ namespace WorkshopManagement
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmItems";
-            this.Load += new System.EventHandler(this.frmAddItems_Load);
+            this.Load += new System.EventHandler(this.frmItems_Load);
             this.gbItem.ResumeLayout(false);
             this.gbItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
@@ -672,8 +672,8 @@ namespace WorkshopManagement
         private System.Windows.Forms.TextBox tbColor;
         private System.Windows.Forms.Label lblHardboardBoxNumber;
         private System.Windows.Forms.TextBox tbHardboardBoxNumber;
-        private System.Windows.Forms.Label lblUnit;
-        private System.Windows.Forms.TextBox tbUnit;
+        
+        private System.Windows.Forms.TextBox tbPackagingAndDimensions;
         private System.Windows.Forms.Label lblGofferNumber;
         private System.Windows.Forms.TextBox tbGofferNumber;
         private System.Windows.Forms.Label lblNote;
@@ -702,6 +702,12 @@ namespace WorkshopManagement
         private ContextMenuStrip cmsItemsDataGrid;
         private ToolStripMenuItem tsmiEdit;
         private ToolStripMenuItem tsmiUseValue;
+        private Label label1;
+        private TextBox tbWarehouseAllQuantity;
+        private Button btnUpdateAllImages;
+        private Button button1;
+        private ComboBox cboSubGroup;
+        private Label label2;
         private DataGridViewTextBoxColumn ItemID;
         private DataGridViewTextBoxColumn ItemCode;
         private DataGridViewTextBoxColumn ItemCodeWithColor;
@@ -710,18 +716,13 @@ namespace WorkshopManagement
         private DataGridViewTextBoxColumn ItemNumberOnWB;
         private DataGridViewTextBoxColumn InternalCode;
         private DataGridViewTextBoxColumn ProductNameCol;
+        private DataGridViewTextBoxColumn SubGroup;
         private DataGridViewTextBoxColumn Color;
         private DataGridViewTextBoxColumn HardboardBoxNumber;
-        private DataGridViewTextBoxColumn Unit;
+        private DataGridViewTextBoxColumn PackagingAndDimensions;
         private DataGridViewTextBoxColumn GofferNumber;
         private DataGridViewTextBoxColumn Category;
         private DataGridViewTextBoxColumn Note;
-        private Label label1;
-        private TextBox tbWarehouseAllQuantity;
-        private Button btnUpdateAllImages;
-        private Button button1;
-        private ComboBox cboSubGroup;
-        private Label label2;
-        private DataGridViewTextBoxColumn SubGroup;
+        private Label lblPackagingAndDimensions;
     }
 }

@@ -43,7 +43,7 @@
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HardboardBoxNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            
             this.GofferNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MinimumQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,7 +97,6 @@
             this.ProductName,
             this.Color,
             this.HardboardBoxNumber,
-            this.Unit,
             this.GofferNumber,
             this.Category,
             this.MinimumQuantity,
@@ -206,15 +205,7 @@
             this.HardboardBoxNumber.MinimumWidth = 20;
             this.HardboardBoxNumber.Name = "HardboardBoxNumber";
             this.HardboardBoxNumber.Width = 164;
-            // 
-            // Unit
-            // 
-            this.Unit.DataPropertyName = "Unit";
-            this.Unit.FillWeight = 7F;
-            this.Unit.HeaderText = "Единица измерения";
-            this.Unit.MinimumWidth = 20;
-            this.Unit.Name = "Unit";
-            this.Unit.Width = 164;
+           
             // 
             // GofferNumber
             // 
@@ -417,15 +408,7 @@
             this.dataGridViewTextBoxColumn7.MinimumWidth = 20;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 164;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Unit";
-            this.dataGridViewTextBoxColumn8.FillWeight = 7F;
-            this.dataGridViewTextBoxColumn8.HeaderText = "Единица измерения";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 20;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 164;
+            
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -519,7 +502,7 @@
         private DataGridViewTextBoxColumn ProductName;
         private DataGridViewTextBoxColumn Color;
         private DataGridViewTextBoxColumn HardboardBoxNumber;
-        private DataGridViewTextBoxColumn Unit;
+        
         private DataGridViewTextBoxColumn GofferNumber;
         private DataGridViewTextBoxColumn Category;
         private DataGridViewTextBoxColumn MinimumQuantity;
