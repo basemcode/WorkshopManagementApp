@@ -1,5 +1,4 @@
-﻿
-CREATE   PROCEDURE [dbo].[spStockInDetails_GetAllDetailsOfStockIn]
+﻿CREATE   PROCEDURE [dbo].[spStockInDetails_GetAllDetailsOfStockIn]
 @StockInID int
 AS
 begin

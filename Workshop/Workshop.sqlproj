@@ -64,6 +64,9 @@
     <Folder Include="dbo\Stored Procedures\initial items quantity" />
     <Folder Include="dbo\Constraints" />
     <Folder Include="dbo\Stored Procedures\Items" />
+    <Folder Include="dbo\Stored Procedures\StockIns" />
+    <Folder Include="dbo\Stored Procedures\StockOuts" />
+    <Folder Include="dbo\Stored Procedures\Users" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Items.sql" />
@@ -73,22 +76,6 @@
     <Build Include="dbo\Tables\InitialQuantityOfItems.sql" />
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\StockOutDetails.sql" />
-    <Build Include="dbo\Stored Procedures\spUsers_Login.sql" />
-    <Build Include="dbo\Stored Procedures\spStockIn_GetAll.sql" />
-    <Build Include="dbo\Stored Procedures\spStockIn_Delete.sql" />
-    <Build Include="dbo\Stored Procedures\spStockIn_Insert.sql" />
-    <Build Include="dbo\Stored Procedures\spStockIn_Update.sql" />
-    <Build Include="dbo\Stored Procedures\spStockInDetails_GetAllDetailsOfStockIn.sql" />
-    <Build Include="dbo\Stored Procedures\spStockInDetails_Insert.sql" />
-    <Build Include="dbo\Stored Procedures\spUsers_Select.sql" />
-    <Build Include="dbo\Stored Procedures\spUsers_Insert.sql" />
-    <Build Include="dbo\Stored Procedures\spUsers_Update.sql" />
-    <Build Include="dbo\Stored Procedures\spUsers_Delete.sql" />
-    <Build Include="dbo\Stored Procedures\spStockOutDetails_Insert.sql" />
-    <Build Include="dbo\Stored Procedures\spStockOut_Insert.sql" />
-    <Build Include="dbo\Stored Procedures\spStockOut_GetAll.sql" />
-    <Build Include="dbo\Stored Procedures\spStockOutDetails_GetAllDetailsOfStockOut.sql" />
-    <Build Include="dbo\Stored Procedures\spStockOut_Delete.sql" />
     <Build Include="dbo\Stored Procedures\initial items quantity\spItem_SetInitialQuantity.sql" />
     <Build Include="dbo\Constraints\UniqueKeyConstraint1.sql" />
     <Build Include="dbo\Tables\ReportingPeriods.sql" />
@@ -104,6 +91,24 @@
     <Build Include="dbo\Stored Procedures\Items\spItem_Insert.sql" />
     <Build Include="dbo\Stored Procedures\Items\spItem_Update.sql" />
     <Build Include="dbo\Stored Procedures\Items\spItem_UpdateImage.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockIn_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockIn_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockIn_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockIn_Update.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockInDetails_GetAllDetailsOfStockIn.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockInDetails_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\StockOuts\spStockOut_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\StockOuts\spStockOut_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\StockOuts\spStockOut_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\StockOuts\spStockOutDetails_GetAllDetailsOfStockOut.sql" />
+    <Build Include="dbo\Stored Procedures\StockOuts\spStockOutDetails_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Users\spUsers_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Users\spUsers_Select.sql" />
+    <Build Include="dbo\Stored Procedures\Users\spUsers_Login.sql" />
+    <Build Include="dbo\Stored Procedures\Users\spUsers_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Users\spUsers_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockInDetails_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\StockOuts\spStockOutDetails_Delete.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Workshop.refactorlog" />

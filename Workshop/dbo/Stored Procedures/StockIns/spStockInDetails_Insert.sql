@@ -1,7 +1,4 @@
-﻿
-
-
-CREATE   PROCEDURE [dbo].[spStockInDetails_Insert]
+﻿CREATE   PROCEDURE [dbo].[spStockInDetails_Insert]
            @StockInID int,
            @ItemID int,
            @Quantity int,
