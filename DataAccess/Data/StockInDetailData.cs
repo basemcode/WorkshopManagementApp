@@ -28,4 +28,6 @@ public class StockInDetailData
 
     public static void DeleteStockIn(int StockInID) =>
         SqlDataAccess.SaveData("dbo.spStockIn_Delete", new { StockInID = StockInID });
+
+    
 }

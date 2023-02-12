@@ -14,9 +14,12 @@ namespace WorkshopManagement;
 
 public partial class frmStockOutDetails : Form
 {
+    public bool editMode;
+    public int StockOutID;
     int NewStockOutID = 1;
     List<StockOutDetailModel> ToAddStockOutDetailsList = new List<StockOutDetailModel>();
     DataTable ToAddStockOutDetailsTable = new DataTable();
+    DataTable ToEditStockOutDetailsTable = new DataTable();
     IEnumerable<string> BarcodesDataTable;
     public frmStockOutDetails()
     {
@@ -25,6 +28,7 @@ public partial class frmStockOutDetails : Form
 
     private void frmStockOutDetails_Load(object sender, EventArgs e)
     {
+        dgvStockOutDetails.AutoGenerateColumns = false;
         BarcodesDataTable = ItemData.GetAllBarcodes();
         AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
 
@@ -48,27 +52,19 @@ public partial class frmStockOutDetails : Form
         });
         dgvStockOutDetails.DataSource = ToAddStockOutDetailsTable;
 
-        //lock columns so the barcode reader doesn't edit them suddenly
-        dgvStockOutDetails.Columns["StockOutID"].Visible = false;
-        
-        dgvStockOutDetails.Columns["ItemID"].ReadOnly = true;
-        dgvStockOutDetails.Columns["ItemCodeWithColor"].ReadOnly = true;
-        dgvStockOutDetails.Columns["ProductName"].ReadOnly = true;
-        dgvStockOutDetails.Columns["Category"].ReadOnly = true;
-
-        //changing the header text of the columns
-        dgvStockOutDetails.Columns["ProductName"].HeaderText = "Наименование изделия";
-        dgvStockOutDetails.Columns["StockOutID"].HeaderText = "ID расхода";
-        dgvStockOutDetails.Columns["ItemID"].HeaderText = "ID товара";
-        dgvStockOutDetails.Columns["ItemCodeWithColor"].HeaderText = "Артикул цвета";
-        dgvStockOutDetails.Columns["Barcode"].HeaderText = "Баркод";
-        dgvStockOutDetails.Columns["Quantity"].HeaderText = "Количество";
-        dgvStockOutDetails.Columns["BoxesQuantity"].HeaderText = "Количество коробок";
-        dgvStockOutDetails.Columns["Category"].HeaderText = "Раздел";
         //show user name
         txtLoggedUser.Text = $"{SessionHelper.loggedUser?.FirstName} {SessionHelper.loggedUser?.MiddleName}";
         txtSearchItemName.Text = string.Empty;
         picSearchItemPhoto.Image = null;
+        if (editMode)
+        {
+            ToEditStockOutDetailsTable = DataHelper.ToDataTable<StockOutDetailModel>
+            (
+                    StockOutDetailData.GetAllDetailsOfStockOut(StockOutID)
+            );
+            ToAddStockOutDetailsTable = ToEditStockOutDetailsTable.Copy();
+        }
+        dgvStockOutDetails.DataSource = ToAddStockOutDetailsTable;
     }
     private void txtBarcode_KeyDown(object sender, KeyEventArgs e)
     {
@@ -168,11 +164,12 @@ public partial class frmStockOutDetails : Form
                 txtBoxesQuantity.Text = "";
             }
             //check the amount in the warehouse if enough 
-            if (itemToAdd.QuantityInStock-amountOfTheItemToAdd<0)
+            if (itemToAdd.QuantityInStock-amountOfTheItemToAdd<0&&!editMode)
             {
                 MessageBox.Show("Недостаточное количество товара на складе!");
                 dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Style.BackColor = Color.Red;
                 dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Value = itemToAdd.QuantityInStock;
+                dgvStockOutDetails.ClearSelection();
             }
             else
             {
@@ -207,10 +204,7 @@ public partial class frmStockOutDetails : Form
             NewDataTable = BarcodesDataTable.Where((item) => item.Contains(cboBarcode.Text)).ToList<string>();
             //cboBarcode.DataSource = NewDataTable;
             AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
-            /*foreach (var row in NewDataTable)
-            {
-
-            }*/
+           
             for (int i = 0; i < NewDataTable.Count(); i++)
             {
                 autoCompleteStringCollection.Add(NewDataTable.ToList<string>()[i]);
@@ -219,7 +213,8 @@ public partial class frmStockOutDetails : Form
             if (cboBarcode.Items.Count == 1)
             {
                 AddItemToDataGridView(cboBarcode.Text);
-                //txtBarcode.Focus();
+                txtBarcode.Text= cboBarcode.Text;
+                txtBarcode.Focus();
             }
             if (cboBarcode.Items.Count > 1)
             {
@@ -277,16 +272,54 @@ public partial class frmStockOutDetails : Form
             {
                 return;
             }
-            int newStockOutID = StockOutData.InsertStockOut(new() { Date = DateTime.Now, UserID = SessionHelper.loggedUser.UserID, Note = txtNote.Text });
-
-            foreach (DataGridViewRow row in dgvStockOutDetails.Rows)
+            if (editMode)
             {
-                if ((int)row.Cells["Quantity"].Value>0 || (int)row.Cells["BoxesQuantity"].Value>0)
+                foreach (DataRow item in ToEditStockOutDetailsTable.Rows)
                 {
-                    StockOutDetailData.InsertStockOutDetail(new() { ItemID = (int)row.Cells["ItemID"].Value, StockOutID = newStockOutID, Quantity = (int)row.Cells["Quantity"].Value, BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value });
+                    int StockOutDetailIDToDelete = Convert.ToInt32(item["StockOutDetailID"]);
+                    StockOutDetailData.DeleteStockOutDetail(StockOutDetailIDToDelete);
+                }
+                foreach (DataGridViewRow row in dgvStockOutDetails.Rows)
+                {
+                    StockOutDetailData.InsertStockOutDetail(new()
+                    {
+                        ItemID = (int)row.Cells["ItemID"].Value
+                       ,
+                        StockOutID = StockOutID
+                       ,
+                        Quantity = (int)row.Cells["Quantity"].Value
+                       ,
+                        BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value
+                    });
                 }
             }
-            
+            else
+            {
+                int newStockOutID = StockOutData.InsertStockOut(new()
+                {
+                    Date = DateTime.Now
+                    ,
+                    UserID = SessionHelper.loggedUser.UserID
+                    ,
+                    Note = txtNote.Text
+                });
+                foreach (DataGridViewRow row in dgvStockOutDetails.Rows)
+                {
+                    if ((int)row.Cells["Quantity"].Value > 0 || (int)row.Cells["BoxesQuantity"].Value > 0)
+                    {
+                        StockOutDetailData.InsertStockOutDetail(new()
+                        {
+                            ItemID = (int)row.Cells["ItemID"].Value
+                            ,
+                            StockOutID = newStockOutID
+                            ,
+                            Quantity = (int)row.Cells["Quantity"].Value
+                            ,
+                            BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value
+                        });
+                    }
+                }
+            }
             MessageBox.Show("Успешно!");
             this.Close();
         }
@@ -330,5 +363,19 @@ public partial class frmStockOutDetails : Form
     {
         AddItemToDataGridView(txtBarcode.Text);
         txtBarcode.Focus();
+    }
+
+    private void dgvStockOutDetails_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+            if (e.ColumnIndex == dgvStockOutDetails.Columns["plusBtnCol"].Index & e.RowIndex >= 0)
+            {
+                int newValue = Convert.ToInt32(dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
+                dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue + 1;
+            }
+            if (e.ColumnIndex == dgvStockOutDetails.Columns["minusBtnCol"].Index & e.RowIndex >= 0)
+            {
+                int newValue = Convert.ToInt32(dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
+                dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue - 1;
+            }
     }
 }

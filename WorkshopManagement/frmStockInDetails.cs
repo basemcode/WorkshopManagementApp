@@ -30,7 +30,7 @@ public partial class frmStockInDetails : Form
         dgvStockInDetails.AutoGenerateColumns = false;
     }
 
-    private void frmStockIn_Load(object sender, EventArgs e)
+    private void frmStockInDetails_Load(object sender, EventArgs e)
     {
         BarcodesDataTable = ItemData.GetAllBarcodes();
         AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
@@ -53,25 +53,6 @@ public partial class frmStockInDetails : Form
             new DataColumn { ColumnName = "BoxesQuantity" ,DataType =typeof(Int32)},
             new DataColumn { ColumnName = "Category" ,DataType =typeof(string)}
         });
-        
-        //lock columns so the barcode reader doesn't edit them suddenly
-        /*dgvStockInDetails.Columns["StockInID"].Visible=false;
-        dgvStockInDetails.Columns["ItemID"].ReadOnly = true;
-        dgvStockInDetails.Columns["ItemCodeWithColor"].ReadOnly = true;
-        dgvStockInDetails.Columns["ProductName"].ReadOnly = true;
-        dgvStockInDetails.Columns["Category"].ReadOnly = true;*/
-        //dgvStockInDetails.Columns["Quantity"].ReadOnly = true;
-        /*dgvStockInDetails.Columns["BoxesQuantity"].ReadOnly = true;*/
-
-        //changing the header text of the columns
-        /*dgvStockInDetails.Columns["ProductName"].HeaderText = "Наименование изделия";
-        dgvStockInDetails.Columns["StockInID"].HeaderText = "ID прихода";
-        dgvStockInDetails.Columns["ItemID"].HeaderText = "ID товара";
-        dgvStockInDetails.Columns["ItemCodeWithColor"].HeaderText = "Артикул цвета";
-        dgvStockInDetails.Columns["Barcode"].HeaderText = "Баркод";
-        dgvStockInDetails.Columns["Quantity"].HeaderText = "Количество";
-        dgvStockInDetails.Columns["BoxesQuantity"].HeaderText = "Количество коробок";
-        dgvStockInDetails.Columns["Category"].HeaderText = "Раздел";*/
         
         //show user name
         txtLoggedUser.Text = $"{SessionHelper.loggedUser?.FirstName} {SessionHelper.loggedUser?.MiddleName}";
@@ -220,7 +201,8 @@ public partial class frmStockInDetails : Form
             if (cboBarcode.Items.Count == 1)
             {
                 AddItemToDataGridView(cboBarcode.Text);
-                //txtBarcode.Focus();
+                txtBarcode.Text = cboBarcode.Text;
+                txtBarcode.Focus();
             }
 
             if (cboBarcode.Items.Count>1)
