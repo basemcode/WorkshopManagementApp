@@ -43,9 +43,12 @@
             this.lblConnecting = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cboServer = new System.Windows.Forms.ComboBox();
+            this.chkRememberUserAndPass = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -55,7 +58,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.Image = global::WorkshopManagement.Properties.Resources.icons8_login_32;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogin.Location = new System.Drawing.Point(53, 428);
+            this.btnLogin.Location = new System.Drawing.Point(53, 440);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(310, 58);
             this.btnLogin.TabIndex = 3;
@@ -70,7 +73,7 @@
             this.txtUsername.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtUsername.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsername.Location = new System.Drawing.Point(95, 292);
+            this.txtUsername.Location = new System.Drawing.Point(95, 272);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(268, 31);
             this.txtUsername.TabIndex = 1;
@@ -80,7 +83,7 @@
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPassword.Location = new System.Drawing.Point(95, 360);
+            this.txtPassword.Location = new System.Drawing.Point(95, 340);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(268, 31);
             this.txtPassword.TabIndex = 2;
@@ -93,7 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(53, 264);
+            this.label1.Location = new System.Drawing.Point(53, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 3;
@@ -105,7 +108,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(53, 332);
+            this.label2.Location = new System.Drawing.Point(53, 312);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 25);
             this.label2.TabIndex = 3;
@@ -117,7 +120,7 @@
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClose.Image = global::WorkshopManagement.Properties.Resources.icons8_Exit_Sign_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.Location = new System.Drawing.Point(53, 492);
+            this.btnClose.Location = new System.Drawing.Point(53, 504);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(310, 58);
             this.btnClose.TabIndex = 4;
@@ -130,7 +133,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::WorkshopManagement.Properties.Resources.background;
-            this.pictureBox1.Location = new System.Drawing.Point(53, 88);
+            this.pictureBox1.Location = new System.Drawing.Point(53, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(310, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +146,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(57, 394);
+            this.lblError.Location = new System.Drawing.Point(62, 403);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 25);
             this.lblError.TabIndex = 3;
@@ -153,7 +156,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::WorkshopManagement.Properties.Resources.icons8_male_user_321;
-            this.pictureBox2.Location = new System.Drawing.Point(53, 292);
+            this.pictureBox2.Location = new System.Drawing.Point(53, 272);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -164,7 +167,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::WorkshopManagement.Properties.Resources.icons8_password_32;
-            this.pictureBox3.Location = new System.Drawing.Point(53, 360);
+            this.pictureBox3.Location = new System.Drawing.Point(53, 340);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,7 +178,7 @@
             // 
             this.chkShowPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.Location = new System.Drawing.Point(271, 335);
+            this.chkShowPassword.Location = new System.Drawing.Point(271, 315);
             this.chkShowPassword.Name = "chkShowPassword";
             this.chkShowPassword.Size = new System.Drawing.Size(95, 24);
             this.chkShowPassword.TabIndex = 6;
@@ -189,7 +192,7 @@
             this.lblConnectionError.AutoSize = true;
             this.lblConnectionError.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblConnectionError.ForeColor = System.Drawing.Color.Red;
-            this.lblConnectionError.Location = new System.Drawing.Point(80, 618);
+            this.lblConnectionError.Location = new System.Drawing.Point(33, 52);
             this.lblConnectionError.Name = "lblConnectionError";
             this.lblConnectionError.Size = new System.Drawing.Size(259, 40);
             this.lblConnectionError.TabIndex = 7;
@@ -203,7 +206,7 @@
             this.lblConnecting.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblConnecting.AutoSize = true;
             this.lblConnecting.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblConnecting.Location = new System.Drawing.Point(119, 597);
+            this.lblConnecting.Location = new System.Drawing.Point(72, 31);
             this.lblConnecting.Name = "lblConnecting";
             this.lblConnecting.Size = new System.Drawing.Size(184, 20);
             this.lblConnecting.TabIndex = 8;
@@ -213,7 +216,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(79, 562);
+            this.label3.Location = new System.Drawing.Point(79, 574);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 20);
             this.label3.TabIndex = 9;
@@ -225,22 +228,45 @@
             this.cboServer.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cboServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.cboServer.FormattingEnabled = true;
-            this.cboServer.Location = new System.Drawing.Point(147, 559);
+            this.cboServer.Location = new System.Drawing.Point(147, 571);
             this.cboServer.Name = "cboServer";
             this.cboServer.Size = new System.Drawing.Size(182, 28);
             this.cboServer.TabIndex = 10;
             this.cboServer.Text = "Default";
+            // 
+            // chkRememberUserAndPass
+            // 
+            this.chkRememberUserAndPass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chkRememberUserAndPass.AutoSize = true;
+            this.chkRememberUserAndPass.Location = new System.Drawing.Point(95, 377);
+            this.chkRememberUserAndPass.Name = "chkRememberUserAndPass";
+            this.chkRememberUserAndPass.Size = new System.Drawing.Size(221, 24);
+            this.chkRememberUserAndPass.TabIndex = 6;
+            this.chkRememberUserAndPass.Text = "Запомнить логин и пароль";
+            this.chkRememberUserAndPass.UseVisualStyleBackColor = true;
+            this.chkRememberUserAndPass.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblConnecting);
+            this.groupBox1.Controls.Add(this.lblConnectionError);
+            this.groupBox1.Location = new System.Drawing.Point(53, 605);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(313, 117);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Уведомление";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(425, 663);
+            this.ClientSize = new System.Drawing.Size(425, 734);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cboServer);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblConnecting);
-            this.Controls.Add(this.lblConnectionError);
+            this.Controls.Add(this.chkRememberUserAndPass);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -263,6 +289,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,5 +313,7 @@
         private Label lblConnecting;
         private Label label3;
         private ComboBox cboServer;
+        private CheckBox chkRememberUserAndPass;
+        private GroupBox groupBox1;
     }
 }
