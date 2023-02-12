@@ -4,6 +4,7 @@ using DataAccess.Models;
 using System.Data;
 using System.Drawing.Imaging;
 using System.Net;
+using System.Windows.Forms;
 using WorkshopManagement.Helpers;
 
 namespace WorkshopManagement
@@ -140,6 +141,8 @@ namespace WorkshopManagement
                     ItemData.InsertItem(newItem);
                     LoadDataToDGV(cbCategory.Text);
                     ClearControlsValues();
+                    SelectRow(newItem.Barcode);
+                    
                 }
                 else
                 {
@@ -151,6 +154,26 @@ namespace WorkshopManagement
                 MessageBox.Show("Баркод недействителен.");
             }
         }
+
+        /// <summary>
+        /// select a row in the DataGridView
+        /// </summary>
+        /// <param name="barcode"></param>
+        private void SelectRow(string barcode)
+        {
+            int rowIndex = -1;
+            var rows = dgvItemsTable.Rows
+                .Cast<DataGridViewRow>()
+                .Where(r => r.Cells["Barcode"].Value.ToString().Contains(barcode));
+            if (rows.Count()>0)
+            {
+                var row=rows.First();
+                rowIndex = row.Index;
+                dgvItemsTable.FirstDisplayedScrollingRowIndex = rowIndex;
+                dgvItemsTable.Rows[rowIndex].Selected = true;
+            }  
+        }
+
         public static byte[] SaveImage(PictureBox pb)
         {
             try
@@ -251,6 +274,7 @@ namespace WorkshopManagement
                 newItem.Note = tbNote.Text;
                 ItemData.UpdateItem(newItem);
                 LoadDataToDGV(cbCategory.Text);
+                SelectRow(newItem.Barcode);
             }
             else
             {
@@ -451,9 +475,18 @@ namespace WorkshopManagement
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void tbSearchByBarcode_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyValue==13)
+            {
+                ItemsTable.DefaultView.RowFilter = "[Barcode] like '%" + tbSearchByBarcode.Text + "%'";
+            }
+        }
 
+        private void tbSearchByBarcode_TextChanged(object sender, EventArgs e)
+        {
+            SelectRow(tbSearchByBarcode.Text);
+            //ItemsTable.DefaultView.RowFilter = "[Barcode] like '%" + tbSearchByBarcode.Text + "%'";
         }
     }
 }

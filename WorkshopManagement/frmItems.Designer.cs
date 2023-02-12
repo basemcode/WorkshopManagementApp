@@ -96,6 +96,8 @@ namespace WorkshopManagement
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tbSearchByBarcode = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbWarehouseAllQuantity = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -596,13 +598,28 @@ namespace WorkshopManagement
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Controls.Add(this.tbSearchByBarcode);
             this.panel3.Controls.Add(this.lblCategory);
             this.panel3.Controls.Add(this.cbCategory);
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lblWarehouseCategoryQuantity);
             this.panel3.Controls.Add(this.tbWarehouseAllQuantity);
             this.panel3.Controls.Add(this.tbWarehouseCategoryQuantity);
             this.panel3.Name = "panel3";
+            // 
+            // tbSearchByBarcode
+            // 
+            resources.ApplyResources(this.tbSearchByBarcode, "tbSearchByBarcode");
+            this.tbSearchByBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSearchByBarcode.Name = "tbSearchByBarcode";
+            this.tbSearchByBarcode.TextChanged += new System.EventHandler(this.tbSearchByBarcode_TextChanged);
+            this.tbSearchByBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSearchByBarcode_KeyDown);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // label1
             // 
@@ -724,5 +741,7 @@ namespace WorkshopManagement
         private DataGridViewTextBoxColumn Category;
         private DataGridViewTextBoxColumn Note;
         private Label lblPackagingAndDimensions;
+        private TextBox tbSearchByBarcode;
+        private Label label3;
     }
 }

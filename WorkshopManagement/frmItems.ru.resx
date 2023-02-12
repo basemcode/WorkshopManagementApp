@@ -326,7 +326,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>939, 13</value>
+    <value>1166, 13</value>
   </data>
   <data name="btnClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
@@ -473,7 +473,7 @@
     <value>0, 0</value>
   </data>
   <data name="dgvItemsTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1097, 693</value>
+    <value>1324, 693</value>
   </data>
   <data name="cbCategory.Items1" xml:space="preserve">
     <value>НГ23</value>
@@ -548,7 +548,34 @@
     <value>0, 0, 5, 0</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1102, 693</value>
+    <value>1329, 693</value>
+  </data>
+  <data name="tbSearchByBarcode.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="tbSearchByBarcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1131, 7</value>
+  </data>
+  <data name="tbSearchByBarcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 27</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1074, 8</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Поиск :</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -572,7 +599,7 @@
     <value>Top</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1102, 40</value>
+    <value>1329, 40</value>
   </data>
   <data name="btnUpdateAllImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -599,7 +626,7 @@
     <value>0, 733</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1102, 96</value>
+    <value>1329, 96</value>
   </data>
   <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -608,16 +635,16 @@
     <value>439, 0</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1102, 829</value>
+    <value>1329, 829</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1541, 829</value>
+    <value>1768, 829</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>973, 810</value>
+    <value>1786, 876</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>товары </value>
