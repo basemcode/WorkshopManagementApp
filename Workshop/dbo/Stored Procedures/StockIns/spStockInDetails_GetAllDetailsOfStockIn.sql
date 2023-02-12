@@ -6,6 +6,8 @@ SELECT
 		Items.Barcode
 		,Items.ItemCodeWithColor
 		,Items.[Image]
+		,[StockInDetails].StockInDetailID
+		,[StockInDetails].ItemID
 		,[StockInDetails].Quantity
 		,[StockInDetails].BoxesQuantity
 		,Items.ProductName

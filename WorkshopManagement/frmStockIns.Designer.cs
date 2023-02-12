@@ -33,17 +33,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStockIns));
             this.dgvStockIns = new System.Windows.Forms.DataGridView();
-            this.btnAddStockIn = new System.Windows.Forms.Button();
-            this.btnDeleteStockIn = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.dgvStockInDetails = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.StockInID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAddStockIn = new System.Windows.Forms.Button();
+            this.btnDeleteStockIn = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.dgvStockInDetails = new System.Windows.Forms.DataGridView();
             this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +48,10 @@
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Image = new System.Windows.Forms.DataGridViewImageColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdateStockIn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockIns)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockInDetails)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -85,13 +86,46 @@
             this.dgvStockIns.TabIndex = 0;
             this.dgvStockIns.SelectionChanged += new System.EventHandler(this.dgvStockIns_SelectionChanged);
             // 
+            // StockInID
+            // 
+            this.StockInID.DataPropertyName = "StockInID";
+            this.StockInID.HeaderText = "ID прихода";
+            this.StockInID.MinimumWidth = 6;
+            this.StockInID.Name = "StockInID";
+            this.StockInID.ReadOnly = true;
+            this.StockInID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Date
+            // 
+            this.Date.DataPropertyName = "Date";
+            this.Date.HeaderText = "Дата";
+            this.Date.MinimumWidth = 6;
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // UserFullName
+            // 
+            this.UserFullName.DataPropertyName = "UserFullName";
+            this.UserFullName.HeaderText = "Пользователь";
+            this.UserFullName.MinimumWidth = 6;
+            this.UserFullName.Name = "UserFullName";
+            this.UserFullName.ReadOnly = true;
+            // 
+            // Note
+            // 
+            this.Note.DataPropertyName = "Note";
+            this.Note.HeaderText = "Дополнительно";
+            this.Note.MinimumWidth = 6;
+            this.Note.Name = "Note";
+            this.Note.ReadOnly = true;
+            // 
             // btnAddStockIn
             // 
             this.btnAddStockIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddStockIn.Image = global::WorkshopManagement.Properties.Resources.icons8_add_48;
             this.btnAddStockIn.Location = new System.Drawing.Point(6, 16);
             this.btnAddStockIn.Name = "btnAddStockIn";
-            this.btnAddStockIn.Size = new System.Drawing.Size(177, 97);
+            this.btnAddStockIn.Size = new System.Drawing.Size(135, 97);
             this.btnAddStockIn.TabIndex = 1;
             this.btnAddStockIn.Text = "добавить приход";
             this.btnAddStockIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -102,9 +136,9 @@
             // 
             this.btnDeleteStockIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDeleteStockIn.Image = global::WorkshopManagement.Properties.Resources.icons8_cancel_48;
-            this.btnDeleteStockIn.Location = new System.Drawing.Point(188, 16);
+            this.btnDeleteStockIn.Location = new System.Drawing.Point(149, 16);
             this.btnDeleteStockIn.Name = "btnDeleteStockIn";
-            this.btnDeleteStockIn.Size = new System.Drawing.Size(177, 97);
+            this.btnDeleteStockIn.Size = new System.Drawing.Size(125, 97);
             this.btnDeleteStockIn.TabIndex = 2;
             this.btnDeleteStockIn.Text = "Удалить приход";
             this.btnDeleteStockIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -115,9 +149,9 @@
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCancel.Image = global::WorkshopManagement.Properties.Resources.icons8_door_closed_48;
-            this.btnCancel.Location = new System.Drawing.Point(371, 16);
+            this.btnCancel.Location = new System.Drawing.Point(430, 16);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(177, 97);
+            this.btnCancel.Size = new System.Drawing.Size(126, 97);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Отмена";
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -156,76 +190,6 @@
             this.dgvStockInDetails.TabIndex = 0;
             this.dgvStockInDetails.TabStop = false;
             this.dgvStockInDetails.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvStockInDetails_DataError);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dgvStockInDetails, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1482, 640);
-            this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dgvStockIns);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(586, 506);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.Controls.Add(this.btnDeleteStockIn);
-            this.panel2.Controls.Add(this.btnCancel);
-            this.panel2.Controls.Add(this.btnAddStockIn);
-            this.panel2.Location = new System.Drawing.Point(17, 515);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(557, 122);
-            this.panel2.TabIndex = 2;
-            // 
-            // StockInID
-            // 
-            this.StockInID.DataPropertyName = "StockInID";
-            this.StockInID.HeaderText = "ID прихода";
-            this.StockInID.MinimumWidth = 6;
-            this.StockInID.Name = "StockInID";
-            this.StockInID.ReadOnly = true;
-            this.StockInID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            // 
-            // Date
-            // 
-            this.Date.DataPropertyName = "Date";
-            this.Date.HeaderText = "Дата";
-            this.Date.MinimumWidth = 6;
-            this.Date.Name = "Date";
-            this.Date.ReadOnly = true;
-            // 
-            // UserFullName
-            // 
-            this.UserFullName.DataPropertyName = "UserFullName";
-            this.UserFullName.HeaderText = "Пользователь";
-            this.UserFullName.MinimumWidth = 6;
-            this.UserFullName.Name = "UserFullName";
-            this.UserFullName.ReadOnly = true;
-            // 
-            // Note
-            // 
-            this.Note.DataPropertyName = "Note";
-            this.Note.HeaderText = "Дополнительно";
-            this.Note.MinimumWidth = 6;
-            this.Note.Name = "Note";
-            this.Note.ReadOnly = true;
             // 
             // Barcode
             // 
@@ -291,6 +255,57 @@
             this.Category.Name = "Category";
             this.Category.ReadOnly = true;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dgvStockInDetails, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1482, 640);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dgvStockIns);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(586, 506);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.btnUpdateStockIn);
+            this.panel2.Controls.Add(this.btnDeleteStockIn);
+            this.panel2.Controls.Add(this.btnCancel);
+            this.panel2.Controls.Add(this.btnAddStockIn);
+            this.panel2.Location = new System.Drawing.Point(17, 515);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(557, 122);
+            this.panel2.TabIndex = 2;
+            // 
+            // btnUpdateStockIn
+            // 
+            this.btnUpdateStockIn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateStockIn.Image = global::WorkshopManagement.Properties.Resources.icons8_update_48;
+            this.btnUpdateStockIn.Location = new System.Drawing.Point(280, 16);
+            this.btnUpdateStockIn.Name = "btnUpdateStockIn";
+            this.btnUpdateStockIn.Size = new System.Drawing.Size(144, 97);
+            this.btnUpdateStockIn.TabIndex = 3;
+            this.btnUpdateStockIn.Text = "Обновить приход";
+            this.btnUpdateStockIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdateStockIn.UseVisualStyleBackColor = true;
+            this.btnUpdateStockIn.Click += new System.EventHandler(this.btnUpdateStockIn_Click);
+            // 
             // frmStockIns
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -331,5 +346,6 @@
         private DataGridViewTextBoxColumn ProductName;
         private DataGridViewImageColumn Image;
         private DataGridViewTextBoxColumn Category;
+        private Button btnUpdateStockIn;
     }
 }

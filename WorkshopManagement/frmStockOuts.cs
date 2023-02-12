@@ -99,10 +99,4 @@ public partial class frmStockOuts : Form
         }
 
     }
-
-    private void dgvStockOutDetails_DataError(object sender, DataGridViewDataErrorEventArgs e)
-    {
-        dgvStockOutDetails.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = global::WorkshopManagement.Properties.Resources.download;
-
-    }
 }

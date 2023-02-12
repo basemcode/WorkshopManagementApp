@@ -14,14 +14,17 @@ namespace WorkshopManagement.Forms
 {
     public partial class frmReportOfWarehouse : Form
     {
-        DataTable itemsTable = new DataTable();
+        public static DataTable itemsTable = new DataTable();
+        
         public frmReportOfWarehouse()
         {
             InitializeComponent();
+            this.Activated += (s, args) => frmReportOfWarehouse_Load(s, args);
         }
 
-        private void frmReportOfWarehouse_Load(object sender, EventArgs e)
+        public void frmReportOfWarehouse_Load(object sender, EventArgs e)
         {
+            
             dgvItemsTable.AutoGenerateColumns = false;
             itemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
             for (int i = 0; i < itemsTable.Rows.Count; i++)

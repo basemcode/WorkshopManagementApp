@@ -62,16 +62,25 @@ public partial class frmStockIns : Form
                 // Do something  
             }
         }
-        
-        
-        
     }
 
     private void btnUpdateStockIn_Click(object sender, EventArgs e)
     {
-        StockInData.UpdateStockIn(new StockInModel() { StockInID = 2, Note = "new note", UserID = 2, Date = DateTime.Parse("5-5-2022") });
-        stockInsTable = DataHelper.ToDataTable<StockInModel>(StockInData.GetAllStockIns());
-        LoadDataToDGV();
+        if (dgvStockIns.Rows.Count <= 0)
+            return;
+        if (dgvStockIns.SelectedRows[0] != null)
+        {
+            int StockInToEdit = Convert.ToInt32(dgvStockIns.SelectedRows[0].Cells["StockInID"].Value);
+            //StockInData.UpdateStockIn(new StockInModel() { StockInID = 2, Note = "new note", UserID = 2, Date = DateTime.Parse("5-5-2022") });
+            frmStockInDetails frmStockIn = new frmStockInDetails();
+            frmStockIn.MdiParent = this.MdiParent;
+            frmStockIn.editMode = true;
+            frmStockIn.StockInID = StockInToEdit;
+            frmStockIn.FormClosed += (s, args) => LoadDataToDGV();
+            frmStockIn.Show();
+        }
+        
+        
     }
 
     private void btnCancel_Click(object sender, EventArgs e)

@@ -8,6 +8,8 @@ SELECT
 		Items.Barcode
 		,Items.ItemCodeWithColor
 		,Items.[Image]
+		,[StockOutDetails].StockOutDetailID
+		,[StockOutDetails].ItemID
 		,[StockOutDetails].Quantity
 		,[StockOutDetails].BoxesQuantity
 		,Items.ProductName
