@@ -90,6 +90,7 @@ public partial class frmMain : Form
         SetPrivileges();
         ChangeMdiBackgroundColor();
         toolStripStatusLabel1.Text = $"Здравствуй {SessionHelper.loggedUser.FirstName}!";
+        ShowReportOfWarehouseForm(sender, e);
     }
 
     private void SetPrivileges()
@@ -148,6 +149,11 @@ public partial class frmMain : Form
     }
 
     private void reportOfWarehouseToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        ShowReportOfWarehouseForm(sender,e);
+    }
+
+    private void ShowReportOfWarehouseForm(object sender, EventArgs e)
     {
         if (!Utilities.FormIsOpen("frmReportOfWarehouse"))
         {

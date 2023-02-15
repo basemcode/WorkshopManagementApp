@@ -11,7 +11,7 @@ CREATE PROCEDURE [dbo].[spItem_Update]
            @SubGroup nvarchar(100),
            @Color nvarchar(100),
            @HardboardBoxNumber nvarchar(100),
-           @Unit nvarchar(100),
+           @PackagingAndDimensions nvarchar(100),
            @GofferNumber nvarchar(100),
 		   @Category nvarchar(100),
            @Note nvarchar(max),
@@ -32,7 +32,7 @@ begin
            ,[SubGroup]=@SubGroup
            ,[Color]=@Color
            ,[HardboardBoxNumber]=@HardboardBoxNumber
-           ,[Unit]=@Unit
+           ,[PackagingAndDimensions]=@PackagingAndDimensions
            ,[GofferNumber]=@GofferNumber
 		   ,[Category]=@Category
            ,[Note]=@Note

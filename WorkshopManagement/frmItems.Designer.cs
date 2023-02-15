@@ -33,6 +33,7 @@ namespace WorkshopManagement
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmItems));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddItem = new System.Windows.Forms.Button();
             this.lblItemNumber = new System.Windows.Forms.Label();
             this.tbItemCode = new System.Windows.Forms.TextBox();
@@ -50,8 +51,7 @@ namespace WorkshopManagement
             this.tbColor = new System.Windows.Forms.TextBox();
             this.lblHardboardBoxNumber = new System.Windows.Forms.Label();
             this.tbHardboardBoxNumber = new System.Windows.Forms.TextBox();
-            this.lblUnit = new System.Windows.Forms.Label();
-            this.tbUnit = new System.Windows.Forms.TextBox();
+            this.tbPackagingAndDimensions = new System.Windows.Forms.TextBox();
             this.lblGofferNumber = new System.Windows.Forms.Label();
             this.tbGofferNumber = new System.Windows.Forms.TextBox();
             this.lblNote = new System.Windows.Forms.Label();
@@ -66,6 +66,7 @@ namespace WorkshopManagement
             this.lblImage = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbItemID = new System.Windows.Forms.TextBox();
+            this.lblPackagingAndDimensions = new System.Windows.Forms.Label();
             this.btnUpdateItem = new System.Windows.Forms.Button();
             this.btnDeleteItem = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -81,7 +82,7 @@ namespace WorkshopManagement
             this.SubGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HardboardBoxNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PackagingAndDimensions = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GofferNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -96,6 +97,8 @@ namespace WorkshopManagement
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tbSearchByBarcode = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbWarehouseAllQuantity = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -210,16 +213,11 @@ namespace WorkshopManagement
             this.tbHardboardBoxNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbHardboardBoxNumber.Name = "tbHardboardBoxNumber";
             // 
-            // lblUnit
+            // tbPackagingAndDimensions
             // 
-            resources.ApplyResources(this.lblUnit, "lblUnit");
-            this.lblUnit.Name = "lblUnit";
-            // 
-            // tbUnit
-            // 
-            resources.ApplyResources(this.tbUnit, "tbUnit");
-            this.tbUnit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUnit.Name = "tbUnit";
+            resources.ApplyResources(this.tbPackagingAndDimensions, "tbPackagingAndDimensions");
+            this.tbPackagingAndDimensions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackagingAndDimensions.Name = "tbPackagingAndDimensions";
             // 
             // lblGofferNumber
             // 
@@ -260,7 +258,7 @@ namespace WorkshopManagement
             this.gbItem.Controls.Add(this.tbGofferNumber);
             this.gbItem.Controls.Add(this.btnAddImageFromWB);
             this.gbItem.Controls.Add(this.btnAddImage);
-            this.gbItem.Controls.Add(this.tbUnit);
+            this.gbItem.Controls.Add(this.tbPackagingAndDimensions);
             this.gbItem.Controls.Add(this.lblItemCodeWithColor);
             this.gbItem.Controls.Add(this.tbHardboardBoxNumber);
             this.gbItem.Controls.Add(this.lblBarcode);
@@ -280,7 +278,7 @@ namespace WorkshopManagement
             this.gbItem.Controls.Add(this.tbItemID);
             this.gbItem.Controls.Add(this.tbItemCode);
             this.gbItem.Controls.Add(this.tbItemCodeWithColor);
-            this.gbItem.Controls.Add(this.lblUnit);
+            this.gbItem.Controls.Add(this.lblPackagingAndDimensions);
             this.gbItem.Controls.Add(this.lblGofferNumber);
             this.gbItem.Name = "gbItem";
             this.gbItem.TabStop = false;
@@ -340,6 +338,11 @@ namespace WorkshopManagement
             this.tbItemID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbItemID.Name = "tbItemID";
             // 
+            // lblPackagingAndDimensions
+            // 
+            resources.ApplyResources(this.lblPackagingAndDimensions, "lblPackagingAndDimensions");
+            this.lblPackagingAndDimensions.Name = "lblPackagingAndDimensions";
+            // 
             // btnUpdateItem
             // 
             resources.ApplyResources(this.btnUpdateItem, "btnUpdateItem");
@@ -369,9 +372,12 @@ namespace WorkshopManagement
             resources.ApplyResources(this.dgvItemsTable, "dgvItemsTable");
             this.dgvItemsTable.AllowUserToAddRows = false;
             this.dgvItemsTable.AllowUserToDeleteRows = false;
-            this.dgvItemsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvItemsTable.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvItemsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvItemsTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvItemsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItemsTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvItemsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvItemsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ItemID,
             this.ItemCode,
@@ -384,24 +390,24 @@ namespace WorkshopManagement
             this.SubGroup,
             this.Color,
             this.HardboardBoxNumber,
-            this.Unit,
+            this.PackagingAndDimensions,
             this.GofferNumber,
             this.Category,
             this.Note});
             this.dgvItemsTable.ContextMenuStrip = this.cmsItemsDataGrid;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvItemsTable.MultiSelect = false;
             this.dgvItemsTable.Name = "dgvItemsTable";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvItemsTable.RowTemplate.Height = 150;
             this.dgvItemsTable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvItemsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -410,7 +416,6 @@ namespace WorkshopManagement
             // 
             // ItemID
             // 
-            this.ItemID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ItemID.DataPropertyName = "ItemID";
             this.ItemID.FillWeight = 2F;
             resources.ApplyResources(this.ItemID, "ItemID");
@@ -419,7 +424,6 @@ namespace WorkshopManagement
             // 
             // ItemCode
             // 
-            this.ItemCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ItemCode.DataPropertyName = "ItemCode";
             this.ItemCode.FillWeight = 7F;
             resources.ApplyResources(this.ItemCode, "ItemCode");
@@ -489,12 +493,12 @@ namespace WorkshopManagement
             resources.ApplyResources(this.HardboardBoxNumber, "HardboardBoxNumber");
             this.HardboardBoxNumber.Name = "HardboardBoxNumber";
             // 
-            // Unit
+            // PackagingAndDimensions
             // 
-            this.Unit.DataPropertyName = "Unit";
-            this.Unit.FillWeight = 7F;
-            resources.ApplyResources(this.Unit, "Unit");
-            this.Unit.Name = "Unit";
+            this.PackagingAndDimensions.DataPropertyName = "PackagingAndDimensions";
+            this.PackagingAndDimensions.FillWeight = 7F;
+            resources.ApplyResources(this.PackagingAndDimensions, "PackagingAndDimensions");
+            this.PackagingAndDimensions.Name = "PackagingAndDimensions";
             // 
             // GofferNumber
             // 
@@ -596,13 +600,28 @@ namespace WorkshopManagement
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Controls.Add(this.tbSearchByBarcode);
             this.panel3.Controls.Add(this.lblCategory);
             this.panel3.Controls.Add(this.cbCategory);
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lblWarehouseCategoryQuantity);
             this.panel3.Controls.Add(this.tbWarehouseAllQuantity);
             this.panel3.Controls.Add(this.tbWarehouseCategoryQuantity);
             this.panel3.Name = "panel3";
+            // 
+            // tbSearchByBarcode
+            // 
+            resources.ApplyResources(this.tbSearchByBarcode, "tbSearchByBarcode");
+            this.tbSearchByBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSearchByBarcode.Name = "tbSearchByBarcode";
+            this.tbSearchByBarcode.TextChanged += new System.EventHandler(this.tbSearchByBarcode_TextChanged);
+            this.tbSearchByBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSearchByBarcode_KeyDown);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // label1
             // 
@@ -637,7 +656,7 @@ namespace WorkshopManagement
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmItems";
-            this.Load += new System.EventHandler(this.frmAddItems_Load);
+            this.Load += new System.EventHandler(this.frmItems_Load);
             this.gbItem.ResumeLayout(false);
             this.gbItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
@@ -672,8 +691,8 @@ namespace WorkshopManagement
         private System.Windows.Forms.TextBox tbColor;
         private System.Windows.Forms.Label lblHardboardBoxNumber;
         private System.Windows.Forms.TextBox tbHardboardBoxNumber;
-        private System.Windows.Forms.Label lblUnit;
-        private System.Windows.Forms.TextBox tbUnit;
+        
+        private System.Windows.Forms.TextBox tbPackagingAndDimensions;
         private System.Windows.Forms.Label lblGofferNumber;
         private System.Windows.Forms.TextBox tbGofferNumber;
         private System.Windows.Forms.Label lblNote;
@@ -702,6 +721,15 @@ namespace WorkshopManagement
         private ContextMenuStrip cmsItemsDataGrid;
         private ToolStripMenuItem tsmiEdit;
         private ToolStripMenuItem tsmiUseValue;
+        private Label label1;
+        private TextBox tbWarehouseAllQuantity;
+        private Button btnUpdateAllImages;
+        private Button button1;
+        private ComboBox cboSubGroup;
+        private Label label2;
+        private Label lblPackagingAndDimensions;
+        private TextBox tbSearchByBarcode;
+        private Label label3;
         private DataGridViewTextBoxColumn ItemID;
         private DataGridViewTextBoxColumn ItemCode;
         private DataGridViewTextBoxColumn ItemCodeWithColor;
@@ -710,18 +738,12 @@ namespace WorkshopManagement
         private DataGridViewTextBoxColumn ItemNumberOnWB;
         private DataGridViewTextBoxColumn InternalCode;
         private DataGridViewTextBoxColumn ProductNameCol;
+        private DataGridViewTextBoxColumn SubGroup;
         private DataGridViewTextBoxColumn Color;
         private DataGridViewTextBoxColumn HardboardBoxNumber;
-        private DataGridViewTextBoxColumn Unit;
+        private DataGridViewTextBoxColumn PackagingAndDimensions;
         private DataGridViewTextBoxColumn GofferNumber;
         private DataGridViewTextBoxColumn Category;
         private DataGridViewTextBoxColumn Note;
-        private Label label1;
-        private TextBox tbWarehouseAllQuantity;
-        private Button btnUpdateAllImages;
-        private Button button1;
-        private ComboBox cboSubGroup;
-        private Label label2;
-        private DataGridViewTextBoxColumn SubGroup;
     }
 }

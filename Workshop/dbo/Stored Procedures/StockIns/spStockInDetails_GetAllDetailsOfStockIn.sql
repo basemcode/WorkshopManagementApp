@@ -1,5 +1,4 @@
-﻿
-CREATE   PROCEDURE [dbo].[spStockInDetails_GetAllDetailsOfStockIn]
+﻿CREATE   PROCEDURE [dbo].[spStockInDetails_GetAllDetailsOfStockIn]
 @StockInID int
 AS
 begin
@@ -7,6 +6,8 @@ SELECT
 		Items.Barcode
 		,Items.ItemCodeWithColor
 		,Items.[Image]
+		,[StockInDetails].StockInDetailID
+		,[StockInDetails].ItemID
 		,[StockInDetails].Quantity
 		,[StockInDetails].BoxesQuantity
 		,Items.ProductName

@@ -1,4 +1,4 @@
-﻿namespace WorkshopManagement
+﻿namespace WorkshopManagement.Forms
 {
     partial class frmReportOfWarehouse
     {
@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvItemsTable = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -41,7 +42,6 @@
             this.Image = new System.Windows.Forms.DataGridViewImageColumn();
             this.InternalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantityInStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BoxesQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MinimumQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,7 +54,8 @@
             // 
             this.dgvItemsTable.AllowUserToAddRows = false;
             this.dgvItemsTable.AllowUserToDeleteRows = false;
-            this.dgvItemsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvItemsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvItemsTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvItemsTable.ColumnHeadersHeight = 50;
             this.dgvItemsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -65,27 +66,26 @@
             this.Image,
             this.InternalCode,
             this.ProductNameCol,
-            this.dataGridViewTextBoxColumn1,
             this.QuantityInStock,
             this.BoxesQuantity,
             this.MinimumQuantity,
             this.Category});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvItemsTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvItemsTable.Location = new System.Drawing.Point(3, 3);
             this.dgvItemsTable.MultiSelect = false;
             this.dgvItemsTable.Name = "dgvItemsTable";
             this.dgvItemsTable.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvItemsTable.RowTemplate.Height = 120;
             this.dgvItemsTable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvItemsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -127,6 +127,7 @@
             this.ItemID.MinimumWidth = 20;
             this.ItemID.Name = "ItemID";
             this.ItemID.ReadOnly = true;
+            this.ItemID.Width = 50;
             // 
             // ItemCode
             // 
@@ -134,6 +135,7 @@
             this.ItemCode.HeaderText = "Артикул";
             this.ItemCode.MinimumWidth = 20;
             this.ItemCode.Name = "ItemCode";
+            this.ItemCode.Width = 75;
             // 
             // ItemCodeWithColor
             // 
@@ -141,6 +143,7 @@
             this.ItemCodeWithColor.HeaderText = "Артикул цвета ";
             this.ItemCodeWithColor.MinimumWidth = 20;
             this.ItemCodeWithColor.Name = "ItemCodeWithColor";
+            this.ItemCodeWithColor.Width = 175;
             // 
             // Barcode
             // 
@@ -148,17 +151,19 @@
             this.Barcode.HeaderText = "Баркод";
             this.Barcode.MinimumWidth = 20;
             this.Barcode.Name = "Barcode";
+            this.Barcode.Width = 130;
             // 
             // Image
             // 
             this.Image.DataPropertyName = "Image";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Image.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Image.DefaultCellStyle = dataGridViewCellStyle2;
             this.Image.HeaderText = "Изображение";
             this.Image.Image = global::WorkshopManagement.Properties.Resources.download;
             this.Image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Image.MinimumWidth = 6;
             this.Image.Name = "Image";
+            this.Image.Width = 110;
             // 
             // InternalCode
             // 
@@ -166,6 +171,7 @@
             this.InternalCode.HeaderText = "Внутренний код ";
             this.InternalCode.MinimumWidth = 20;
             this.InternalCode.Name = "InternalCode";
+            this.InternalCode.Width = 95;
             // 
             // ProductNameCol
             // 
@@ -173,14 +179,7 @@
             this.ProductNameCol.HeaderText = "Наименование изделия";
             this.ProductNameCol.MinimumWidth = 20;
             this.ProductNameCol.Name = "ProductNameCol";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Category";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Раздел";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 20;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.ProductNameCol.Width = 120;
             // 
             // QuantityInStock
             // 
@@ -188,6 +187,7 @@
             this.QuantityInStock.HeaderText = "количество на складе";
             this.QuantityInStock.MinimumWidth = 20;
             this.QuantityInStock.Name = "QuantityInStock";
+            this.QuantityInStock.Width = 85;
             // 
             // BoxesQuantity
             // 
@@ -195,6 +195,7 @@
             this.BoxesQuantity.HeaderText = "количество коробок";
             this.BoxesQuantity.MinimumWidth = 20;
             this.BoxesQuantity.Name = "BoxesQuantity";
+            this.BoxesQuantity.Width = 85;
             // 
             // MinimumQuantity
             // 
@@ -202,6 +203,7 @@
             this.MinimumQuantity.HeaderText = "Нормативный запас";
             this.MinimumQuantity.MinimumWidth = 20;
             this.MinimumQuantity.Name = "MinimumQuantity";
+            this.MinimumQuantity.Width = 90;
             // 
             // Category
             // 
@@ -209,6 +211,7 @@
             this.Category.HeaderText = "Раздел";
             this.Category.MinimumWidth = 20;
             this.Category.Name = "Category";
+            this.Category.Width = 105;
             // 
             // frmReportOfWarehouse
             // 
@@ -232,6 +235,7 @@
         private DataGridView dgvItemsTable;
         private Button button1;
         private TableLayoutPanel tableLayoutPanel1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn ItemID;
         private DataGridViewTextBoxColumn ItemCode;
         private DataGridViewTextBoxColumn ItemCodeWithColor;
@@ -239,7 +243,6 @@
         private DataGridViewImageColumn Image;
         private DataGridViewTextBoxColumn InternalCode;
         private DataGridViewTextBoxColumn ProductNameCol;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn QuantityInStock;
         private DataGridViewTextBoxColumn BoxesQuantity;
         private DataGridViewTextBoxColumn MinimumQuantity;

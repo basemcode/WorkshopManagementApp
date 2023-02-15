@@ -10,7 +10,7 @@
     [SubGroup]           NVARCHAR (100)  NULL,
     [Color]              NVARCHAR (100)  NULL,
     [HardboardBoxNumber] NVARCHAR (100)  NULL,
-    [Unit]               NVARCHAR (100)  NULL,
+    [PackagingAndDimensions]               NVARCHAR (100)  NULL,
     [GofferNumber]       NVARCHAR (100)  NULL,
     [Category]           NVARCHAR (100)  NULL,
     [Note]               NVARCHAR (MAX)  NULL,

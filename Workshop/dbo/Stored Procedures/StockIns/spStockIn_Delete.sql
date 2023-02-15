@@ -27,8 +27,8 @@ where ItemID=@ItemID
 fetch next from StockIns_cursor into @ItemID, @Quantity,@BoxesQuantity
 end
 
-close StockIns_cursor  --open and start cursor
-deallocate StockIns_cursor 
+close StockIns_cursor  --close cursor
+deallocate StockIns_cursor --deallocate cursor
 /****** end of cursor ******/
 
 --delete all records with StockInID from StockInDetails

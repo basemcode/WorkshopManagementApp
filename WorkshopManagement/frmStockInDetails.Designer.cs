@@ -552,7 +552,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Новый приход";
-            this.Load += new System.EventHandler(this.frmStockIn_Load);
+            this.Load += new System.EventHandler(this.frmStockInDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockInDetails)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

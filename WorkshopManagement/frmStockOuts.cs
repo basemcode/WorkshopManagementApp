@@ -74,9 +74,22 @@ public partial class frmStockOuts : Form
 
     private void btnUpdateStockOut_Click(object sender, EventArgs e)
     {
-        StockOutData.UpdateStockOut(new StockOutModel() { StockOutID = 2, Note = "new note", UserID = 2, Date = DateTime.Parse("5-5-2022") });
-        stockOutsTable = DataHelper.ToDataTable<StockOutModel>(StockOutData.GetAllStockOuts());
-        LoadDataToDGV();
+        //StockOutData.UpdateStockOut(new StockOutModel() { StockOutID = 2, Note = "new note", UserID = 2, Date = DateTime.Parse("5-5-2022") });
+        //stockOutsTable = DataHelper.ToDataTable<StockOutModel>(StockOutData.GetAllStockOuts());
+        if (dgvStockOuts.Rows.Count <= 0)
+            return;
+        if (dgvStockOuts.SelectedRows[0] != null)
+        {
+            int StockOutToEdit = Convert.ToInt32(dgvStockOuts.SelectedRows[0].Cells["StockOutID"].Value);
+            //StockInData.UpdateStockIn(new StockInModel() { StockInID = 2, Note = "new note", UserID = 2, Date = DateTime.Parse("5-5-2022") });
+            frmStockOutDetails frmStockOutDetails = new frmStockOutDetails();
+            frmStockOutDetails.MdiParent = this.MdiParent;
+            frmStockOutDetails.editMode = true;
+            frmStockOutDetails.StockOutID = StockOutToEdit;
+            frmStockOutDetails.FormClosed += (s, args) => LoadDataToDGV();
+            frmStockOutDetails.Show();
+        }
+        //LoadDataToDGV();
     }
 
     private void btnCancel_Click(object sender, EventArgs e)

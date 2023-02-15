@@ -21,10 +21,13 @@ public class StockInDetailData
             Item.Quantity,
             Item.BoxesQuantity
         });
-
+    public static void DeleteStockInDetail(int StockInDetailID) =>
+        SqlDataAccess.SaveData("dbo.spStockInDetails_Delete", new { StockInDetailID });
     public static void UpdateStockIn(StockInModel Item) =>
         SqlDataAccess.SaveData("dbo.spStockIn_Update", Item);
 
     public static void DeleteStockIn(int StockInID) =>
         SqlDataAccess.SaveData("dbo.spStockIn_Delete", new { StockInID = StockInID });
+
+    
 }

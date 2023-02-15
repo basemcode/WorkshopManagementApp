@@ -16,9 +16,12 @@ namespace WorkshopManagement;
 
 public partial class frmStockInDetails : Form
 {
+    public bool editMode;
+    public int StockInID;
     int NewStockInID = 1;
-    List<StockInDetailModel> ToAddStockInDetailsList = new List<StockInDetailModel>();
+    //List<StockInDetailModel> ToAddStockInDetailsList = new List<StockInDetailModel>();
     DataTable ToAddStockInDetailsTable= new DataTable();
+    DataTable ToEditStockInDetailsTable = new DataTable();
     IEnumerable<string> BarcodesDataTable;
 
     public frmStockInDetails()
@@ -27,7 +30,7 @@ public partial class frmStockInDetails : Form
         dgvStockInDetails.AutoGenerateColumns = false;
     }
 
-    private void frmStockIn_Load(object sender, EventArgs e)
+    private void frmStockInDetails_Load(object sender, EventArgs e)
     {
         BarcodesDataTable = ItemData.GetAllBarcodes();
         AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
@@ -50,30 +53,18 @@ public partial class frmStockInDetails : Form
             new DataColumn { ColumnName = "BoxesQuantity" ,DataType =typeof(Int32)},
             new DataColumn { ColumnName = "Category" ,DataType =typeof(string)}
         });
-        dgvStockInDetails.DataSource = ToAddStockInDetailsTable;
-        //lock columns so the barcode reader doesn't edit them suddenly
-        /*dgvStockInDetails.Columns["StockInID"].Visible=false;
-        dgvStockInDetails.Columns["ItemID"].ReadOnly = true;
-        dgvStockInDetails.Columns["ItemCodeWithColor"].ReadOnly = true;
-        dgvStockInDetails.Columns["ProductName"].ReadOnly = true;
-        dgvStockInDetails.Columns["Category"].ReadOnly = true;*/
-        //dgvStockInDetails.Columns["Quantity"].ReadOnly = true;
-        /*dgvStockInDetails.Columns["BoxesQuantity"].ReadOnly = true;*/
-
-        //changing the header text of the columns
-        /*dgvStockInDetails.Columns["ProductName"].HeaderText = "Наименование изделия";
-        dgvStockInDetails.Columns["StockInID"].HeaderText = "ID прихода";
-        dgvStockInDetails.Columns["ItemID"].HeaderText = "ID товара";
-        dgvStockInDetails.Columns["ItemCodeWithColor"].HeaderText = "Артикул цвета";
-        dgvStockInDetails.Columns["Barcode"].HeaderText = "Баркод";
-        dgvStockInDetails.Columns["Quantity"].HeaderText = "Количество";
-        dgvStockInDetails.Columns["BoxesQuantity"].HeaderText = "Количество коробок";
-        dgvStockInDetails.Columns["Category"].HeaderText = "Раздел";*/
         
         //show user name
         txtLoggedUser.Text = $"{SessionHelper.loggedUser?.FirstName} {SessionHelper.loggedUser?.MiddleName}";
         txtSearchItemName.Text = string.Empty;
         picSearchItemPhoto.Image= null;
+        if (editMode)
+        {
+            ToEditStockInDetailsTable = DataHelper.ToDataTable<StockInDetailModel>(
+                    StockInDetailData.GetAllDetailsOfStockIn(StockInID));
+            ToAddStockInDetailsTable = ToEditStockInDetailsTable.Copy();
+        }
+        dgvStockInDetails.DataSource = ToAddStockInDetailsTable;
     }
 
     private void txtBarcode_KeyDown(object sender, KeyEventArgs e)
@@ -210,7 +201,8 @@ public partial class frmStockInDetails : Form
             if (cboBarcode.Items.Count == 1)
             {
                 AddItemToDataGridView(cboBarcode.Text);
-                //txtBarcode.Focus();
+                txtBarcode.Text = cboBarcode.Text;
+                txtBarcode.Focus();
             }
 
             if (cboBarcode.Items.Count>1)
@@ -244,25 +236,51 @@ public partial class frmStockInDetails : Form
     {
         try
         {
+            //do nothing if there is nothing to add
             if (dgvStockInDetails.Rows.Count == 0)
             {
                 return;
             }
-            int newStockInID=StockInData.InsertStockIn(new() { Date = DateTime.Now, UserID = SessionHelper.loggedUser.UserID ,Note=txtNote.Text});
-            foreach (DataGridViewRow row in dgvStockInDetails.Rows)
+            //if the edit mode is active we delete old data and we insert new ones
+            if (editMode)
             {
-                StockInDetailData.InsertStockInDetail(new() { ItemID = (int)row.Cells["ItemID"].Value, StockInID = newStockInID, Quantity = (int)row.Cells["Quantity"].Value, BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value });
+                foreach (DataRow item in ToEditStockInDetailsTable.Rows)
+                {
+                    int StockInDetailIDToDelete = Convert.ToInt32(item["StockInDetailID"]);
+                    StockInDetailData.DeleteStockInDetail(StockInDetailIDToDelete); 
+                }
+                foreach (DataGridViewRow row in dgvStockInDetails.Rows)
+                {
+                    StockInDetailData.InsertStockInDetail(new() {
+                        ItemID = (int)row.Cells["ItemID"].Value
+                       ,StockInID = StockInID
+                       ,Quantity = (int)row.Cells["Quantity"].Value
+                       ,BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value });
+                }
             }
+            //if the edit mode not active we create a new stockIn operation and we add all from the dgv
+            else
+            {
+                int newStockInID = StockInData.InsertStockIn(new() {
+                    Date = DateTime.Now
+                   ,UserID = SessionHelper.loggedUser.UserID
+                   ,Note = txtNote.Text });
+                foreach (DataGridViewRow row in dgvStockInDetails.Rows)
+                {
+                    StockInDetailData.InsertStockInDetail(new() {
+                        ItemID = (int)row.Cells["ItemID"].Value
+                        , StockInID = newStockInID
+                        , Quantity = (int)row.Cells["Quantity"].Value
+                        , BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value });
+                }
+            }   
             MessageBox.Show("Успешно!");
-            this.Close();
-            
+            this.Close();   
         }
         catch (Exception addingStockinDetailsError)
         {
             MessageBox.Show($"Ошибка {addingStockinDetailsError.Message}");
-        }
-        
-
+        }   
     }
 
     private void btnCancel_Click(object sender, EventArgs e)

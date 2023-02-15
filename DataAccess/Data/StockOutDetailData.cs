@@ -27,4 +27,9 @@ public class StockOutDetailData
 
     public static void DeleteStockOut(int StockOutID) =>
         SqlDataAccess.SaveData("dbo.spStockOut_Delete", new { StockOutID = StockOutID });
+
+    public static void DeleteStockOutDetail(int StockOutDetailID)
+    {
+        SqlDataAccess.SaveData("dbo.spStockOutDetails_Delete", new { StockOutDetailID });
+    }
 }

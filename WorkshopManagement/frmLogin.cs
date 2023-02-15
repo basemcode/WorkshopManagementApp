@@ -44,7 +44,7 @@ public partial class frmLogin : Form
         {
             lblConnecting.Invoke((MethodInvoker)delegate {
                 // Running on the UI thread
-                lblConnecting.Visible = false;
+                lblConnecting.Text = "Подключен к серверу!";
             });
             lblError.Invoke((MethodInvoker)delegate {
                 lblConnectionError.Visible = false;
@@ -90,6 +90,20 @@ public partial class frmLogin : Form
             else
             {
                 SessionHelper.loggedUser = loggedUser;
+                if (chkRememberUserAndPass.Checked)
+                {
+                    Properties.Settings.Default.UserName = txtUsername.Text;
+                    Properties.Settings.Default.Password = txtPassword.Text;
+                    Properties.Settings.Default.RememberUserData = chkRememberUserAndPass.Checked;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    Properties.Settings.Default.UserName = string.Empty;
+                    Properties.Settings.Default.Password = string.Empty;
+                    Properties.Settings.Default.RememberUserData = chkRememberUserAndPass.Checked;
+                    Properties.Settings.Default.Save();
+                }
                 frmMain frmMain = new frmMain();
                 this.Hide();
                 frmMain.ShowDialog();
@@ -134,7 +148,9 @@ public partial class frmLogin : Form
 
     private void frmLogin_Load(object sender, EventArgs e)
     {
-        
+        txtUsername.Text = Properties.Settings.Default.UserName;
+        txtPassword.Text = Properties.Settings.Default.Password;
+        chkRememberUserAndPass.Checked = Properties.Settings.Default.RememberUserData;
     }
 
    

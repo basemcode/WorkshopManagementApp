@@ -31,6 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvStockOutDetails = new System.Windows.Forms.DataGridView();
+            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BoxesQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAddItemToDGV = new System.Windows.Forms.Button();
             this.txtNote = new System.Windows.Forms.TextBox();
@@ -96,15 +103,81 @@
             this.dgvStockOutDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStockOutDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvStockOutDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStockOutDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemID,
+            this.Barcode,
+            this.ItemCodeWithColor,
+            this.ProductName,
+            this.Quantity,
+            this.BoxesQuantity,
+            this.Category});
             this.dgvStockOutDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStockOutDetails.Location = new System.Drawing.Point(13, 233);
             this.dgvStockOutDetails.MultiSelect = false;
             this.dgvStockOutDetails.Name = "dgvStockOutDetails";
+            this.dgvStockOutDetails.ReadOnly = true;
             this.dgvStockOutDetails.RowHeadersWidth = 51;
             this.dgvStockOutDetails.RowTemplate.Height = 29;
+            this.dgvStockOutDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStockOutDetails.Size = new System.Drawing.Size(1104, 501);
-            this.dgvStockOutDetails.TabIndex = 17;
+            this.dgvStockOutDetails.TabIndex = 29;
             this.dgvStockOutDetails.TabStop = false;
+            // 
+            // ItemID
+            // 
+            this.ItemID.DataPropertyName = "ItemID";
+            this.ItemID.HeaderText = "ID товара";
+            this.ItemID.MinimumWidth = 6;
+            this.ItemID.Name = "ItemID";
+            this.ItemID.ReadOnly = true;
+            // 
+            // Barcode
+            // 
+            this.Barcode.DataPropertyName = "Barcode";
+            this.Barcode.HeaderText = "Баркод";
+            this.Barcode.MinimumWidth = 6;
+            this.Barcode.Name = "Barcode";
+            this.Barcode.ReadOnly = true;
+            // 
+            // ItemCodeWithColor
+            // 
+            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
+            this.ItemCodeWithColor.HeaderText = "Артикул цвета";
+            this.ItemCodeWithColor.MinimumWidth = 6;
+            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
+            this.ItemCodeWithColor.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "Наименование изделия";
+            this.ProductName.MinimumWidth = 6;
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "Quantity";
+            this.Quantity.HeaderText = "Количество";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // BoxesQuantity
+            // 
+            this.BoxesQuantity.DataPropertyName = "BoxesQuantity";
+            this.BoxesQuantity.HeaderText = "Количество коробок";
+            this.BoxesQuantity.MinimumWidth = 6;
+            this.BoxesQuantity.Name = "BoxesQuantity";
+            this.BoxesQuantity.ReadOnly = true;
+            // 
+            // Category
+            // 
+            this.Category.DataPropertyName = "Category";
+            this.Category.HeaderText = "Раздел";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -384,6 +457,8 @@
             // 
             // cboBarcode
             // 
+            this.cboBarcode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboBarcode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.cboBarcode.FormattingEnabled = true;
             this.cboBarcode.Location = new System.Drawing.Point(33, 60);
             this.cboBarcode.Name = "cboBarcode";
@@ -483,7 +558,6 @@
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private DataGridView dgvStockOutDetails;
         private GroupBox groupBox1;
         private PictureBox picItemPhoto;
         private TextBox txtBoxesQuantity;
@@ -515,5 +589,15 @@
         private Label label11;
         private PictureBox picSearchItemPhoto;
         private Button btnAddItemToDGV;
+        private DataGridView dgvStockOutDetails;
+        private DataGridViewTextBoxColumn ItemID;
+        private DataGridViewTextBoxColumn Barcode;
+        private DataGridViewTextBoxColumn ItemCodeWithColor;
+        private DataGridViewTextBoxColumn ProductName;
+        private DataGridViewTextBoxColumn Quantity;
+        private DataGridViewButtonColumn plusBtnCol;
+        private DataGridViewButtonColumn minusBtnCol;
+        private DataGridViewTextBoxColumn BoxesQuantity;
+        private DataGridViewTextBoxColumn Category;
     }
 }

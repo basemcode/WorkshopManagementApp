@@ -10,7 +10,7 @@
     @SubGroup nvarchar(100) = NULL,
     @Color nvarchar(100) = NULL,
     @HardboardBoxNumber nvarchar(100) = NULL,
-    @Unit nvarchar(100) = NULL,
+    @PackagingAndDimensions nvarchar(100) = NULL,
     @GofferNumber nvarchar(100) = NULL,
     @Category nvarchar(100) = NULL,
     @Note nvarchar(MAX) = NULL,
@@ -31,7 +31,7 @@ begin
            ,[SubGroup]
            ,[Color]
            ,[HardboardBoxNumber]
-           ,[Unit]
+           ,[PackagingAndDimensions]
            ,[GofferNumber]
 		   ,[Category]
            ,[Note]
@@ -48,7 +48,7 @@ begin
            ,@SubGroup
            ,@Color
            ,@HardboardBoxNumber
-           ,@Unit
+           ,@PackagingAndDimensions
            ,@GofferNumber
 		   ,@Category
            ,@Note
