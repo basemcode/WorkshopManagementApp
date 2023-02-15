@@ -109,6 +109,7 @@
     <Build Include="dbo\Stored Procedures\Users\spUsers_Delete.sql" />
     <Build Include="dbo\Stored Procedures\StockIns\spStockInDetails_Delete.sql" />
     <Build Include="dbo\Stored Procedures\StockOuts\spStockOutDetails_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Items\spItem_GetCategories.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Workshop.refactorlog" />

@@ -14,7 +14,8 @@ namespace WorkshopManagement
         //List<ItemModel> ItemsList = new List<ItemModel>();
         static DataTable ItemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
         static string[] subGroups = ItemData.GetSubGroups().ToArray();
-        
+        static string[] categories; 
+
         public frmItems()
         {
             InitializeComponent();
@@ -28,9 +29,9 @@ namespace WorkshopManagement
 
             // set it to false if not needed
             dgvItemsTable.RowHeadersVisible = false;
-            cbCategory.SelectedIndex = 0;
+            cboCategory.SelectedIndex = 0;
 
-            LoadDataToDGV(cbCategory.Text);
+            LoadDataToDGV(cboCategory.Text);
             
         }
 
@@ -41,6 +42,10 @@ namespace WorkshopManagement
             //ItemsTable = DataHelper.ToDataTable(ItemData.GetItemsOfCategory(category));
             ItemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
             subGroups = ItemData.GetSubGroups().ToArray();
+            categories = ItemData.GetCategories().ToArray();
+            cboCategory.Items.Clear();
+            Array.Reverse(categories);
+            cboCategory.Items.AddRange(categories);
             for (int i = 0; i < ItemsTable.Rows.Count; i++)
             {
                 object a = ItemsTable.Rows[i]["Image"];
@@ -61,7 +66,7 @@ namespace WorkshopManagement
             {
                 MessageBox.Show(e3.Message);
             }
-            ItemsTable.DefaultView.RowFilter = "[Category] = '" + cbCategory.Text + "'";
+            ItemsTable.DefaultView.RowFilter = "[Category] = '" + cboCategory.Text + "'";
             tbWarehouseCategoryQuantity.Text = ItemsTable.DefaultView.Count.ToString();
             tbWarehouseAllQuantity.Text = ItemsTable.Rows.Count.ToString();
             cboSubGroup.Items.Clear();
@@ -133,13 +138,13 @@ namespace WorkshopManagement
                     newItem.HardboardBoxNumber = tbHardboardBoxNumber.Text;
                     newItem.PackagingAndDimensions = tbPackagingAndDimensions.Text;
                     newItem.GofferNumber = tbGofferNumber.Text;
-                    newItem.Category = cbCategory.Text;
+                    newItem.Category = cboCategory.Text;
                     newItem.Note = tbNote.Text;
                     newItem.QuantityInStock = 0;
                     newItem.MinimumQuantity = 0;
                     newItem.BoxesQuantity = 0;
                     ItemData.InsertItem(newItem);
-                    LoadDataToDGV(cbCategory.Text);
+                    LoadDataToDGV(cboCategory.Text);
                     ClearControlsValues();
                     SelectRow(newItem.Barcode);
                     
@@ -238,7 +243,7 @@ namespace WorkshopManagement
                 {
                     if (dgvItemsTable.SelectedRows[0].Cells["ItemID"].Value != null)
                         ItemData.DeleteItem(Convert.ToInt32(dgvItemsTable.SelectedRows[0].Cells["ItemID"].Value));
-                    LoadDataToDGV(cbCategory.Text);
+                    LoadDataToDGV(cboCategory.Text);
                     ClearControlsValues();
                 }
             }
@@ -270,10 +275,10 @@ namespace WorkshopManagement
                 newItem.HardboardBoxNumber = tbHardboardBoxNumber.Text;
                 newItem.PackagingAndDimensions = tbPackagingAndDimensions.Text;
                 newItem.GofferNumber = tbGofferNumber.Text;
-                newItem.Category = cbCategory.Text;
+                newItem.Category = cboCategory.Text;
                 newItem.Note = tbNote.Text;
                 ItemData.UpdateItem(newItem);
-                LoadDataToDGV(cbCategory.Text);
+                LoadDataToDGV(cboCategory.Text);
                 SelectRow(newItem.Barcode);
             }
             else
@@ -305,7 +310,7 @@ namespace WorkshopManagement
         //change the category
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ItemsTable.DefaultView.RowFilter = "[Category] = '" + cbCategory.Text + "'";
+            ItemsTable.DefaultView.RowFilter = "[Category] = '" + cboCategory.Text + "'";
             tbWarehouseCategoryQuantity.Text = ItemsTable.DefaultView.Count.ToString();
             /*dataView = ItemsTable.DefaultView;
             string category= cbCategory.Text;

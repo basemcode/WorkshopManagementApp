@@ -208,6 +208,15 @@
   <data name="lblID.Text" xml:space="preserve">
     <value>ID :</value>
   </data>
+  <data name="gbItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gbItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 733</value>
+  </data>
+  <data name="gbItem.Text" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
   <data name="cboSubGroup.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 28</value>
   </data>
@@ -288,15 +297,6 @@
   </data>
   <data name="lblPackagingAndDimensions.Text" xml:space="preserve">
     <value>Упаковка, габариты :</value>
-  </data>
-  <data name="gbItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="gbItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>433, 733</value>
-  </data>
-  <data name="gbItem.Text" xml:space="preserve">
-    <value>Продукт</value>
   </data>
   <data name="btnUpdateItem.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -445,15 +445,6 @@
   <data name="Note.Width" type="System.Int32, mscorlib">
     <value>149</value>
   </data>
-  <data name="tsmiEdit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="tsmiEdit.Text" xml:space="preserve">
-    <value>Редактировать</value>
-  </data>
-  <data name="tsmiUseValue.Text" xml:space="preserve">
-    <value>Использовать это значение</value>
-  </data>
   <data name="cmsItemsDataGrid.Size" type="System.Drawing.Size, System.Drawing">
     <value>277, 56</value>
   </data>
@@ -469,20 +460,41 @@
   <data name="dgvItemsTable.Size" type="System.Drawing.Size, System.Drawing">
     <value>1324, 693</value>
   </data>
-  <data name="cbCategory.Items1" xml:space="preserve">
+  <data name="tsmiEdit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="tsmiEdit.Text" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="tsmiUseValue.Text" xml:space="preserve">
+    <value>Использовать это значение</value>
+  </data>
+  <data name="cboCategory.Items" xml:space="preserve">
+    <value>Сводная</value>
+  </data>
+  <data name="cboCategory.Items1" xml:space="preserve">
     <value>НГ23</value>
   </data>
-  <data name="cbCategory.Items2" xml:space="preserve">
+  <data name="cboCategory.Items2" xml:space="preserve">
     <value>Свадебная</value>
   </data>
-  <data name="cbCategory.Items3" xml:space="preserve">
+  <data name="cboCategory.Items3" xml:space="preserve">
     <value>Буквы </value>
   </data>
-  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cboCategory.Items4" xml:space="preserve">
+    <value>Нова</value>
+  </data>
+  <data name="cboCategory.Items5" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="cboCategory.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 5</value>
   </data>
-  <data name="cbCategory.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cboCategory.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 28</value>
+  </data>
+  <data name="cboCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="lblCategory.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -532,6 +544,15 @@
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>439, 829</value>
   </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1329, 829</value>
+  </data>
   <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -543,6 +564,12 @@
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>1329, 693</value>
+  </data>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1329, 40</value>
   </data>
   <data name="tbSearchByBarcode.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -589,11 +616,14 @@
   <data name="tbWarehouseAllQuantity.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 27</value>
   </data>
-  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1329, 40</value>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 733</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1329, 96</value>
   </data>
   <data name="btnUpdateAllImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -612,24 +642,6 @@
   </data>
   <data name="btnUpdateAllImages.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 733</value>
-  </data>
-  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1329, 96</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1329, 829</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1768, 829</value>
