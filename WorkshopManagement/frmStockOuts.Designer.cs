@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStockOuts));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdateStockOut = new System.Windows.Forms.Button();
             this.btnDeleteStockOut = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAddStockOut = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Image = new System.Windows.Forms.DataGridViewImageColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnUpdateStockOut = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -70,6 +70,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(586, 122);
             this.panel2.TabIndex = 2;
+            // 
+            // btnUpdateStockOut
+            // 
+            this.btnUpdateStockOut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateStockOut.Image = global::WorkshopManagement.Properties.Resources.icons8_update_48;
+            this.btnUpdateStockOut.Location = new System.Drawing.Point(298, 12);
+            this.btnUpdateStockOut.Name = "btnUpdateStockOut";
+            this.btnUpdateStockOut.Size = new System.Drawing.Size(144, 97);
+            this.btnUpdateStockOut.TabIndex = 5;
+            this.btnUpdateStockOut.Text = "Обновить расход";
+            this.btnUpdateStockOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdateStockOut.UseVisualStyleBackColor = true;
+            this.btnUpdateStockOut.Click += new System.EventHandler(this.btnUpdateStockOut_Click);
             // 
             // btnDeleteStockOut
             // 
@@ -141,8 +154,8 @@
             this.dgvStockOuts.AllowUserToAddRows = false;
             this.dgvStockOuts.AllowUserToDeleteRows = false;
             this.dgvStockOuts.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dgvStockOuts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dgvStockOuts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStockOuts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStockOuts.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvStockOuts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -201,8 +214,8 @@
             this.dgvStockOutDetails.AllowUserToAddRows = false;
             this.dgvStockOutDetails.AllowUserToDeleteRows = false;
             this.dgvStockOutDetails.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dgvStockOutDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dgvStockOutDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStockOutDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStockOutDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvStockOutDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -227,6 +240,7 @@
             this.dgvStockOutDetails.Size = new System.Drawing.Size(884, 634);
             this.dgvStockOutDetails.TabIndex = 0;
             this.dgvStockOutDetails.TabStop = false;
+            this.dgvStockOutDetails.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvStockOutDetails_DataError);
             // 
             // Barcode
             // 
@@ -271,10 +285,10 @@
             // Image
             // 
             this.Image.DataPropertyName = "Image";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle5.NullValue")));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Image.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Image.DefaultCellStyle = dataGridViewCellStyle3;
             this.Image.HeaderText = "Изображение";
             this.Image.Image = global::WorkshopManagement.Properties.Resources.download;
             this.Image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -291,19 +305,6 @@
             this.Category.MinimumWidth = 6;
             this.Category.Name = "Category";
             this.Category.ReadOnly = true;
-            // 
-            // btnUpdateStockOut
-            // 
-            this.btnUpdateStockOut.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateStockOut.Image = global::WorkshopManagement.Properties.Resources.icons8_update_48;
-            this.btnUpdateStockOut.Location = new System.Drawing.Point(298, 12);
-            this.btnUpdateStockOut.Name = "btnUpdateStockOut";
-            this.btnUpdateStockOut.Size = new System.Drawing.Size(144, 97);
-            this.btnUpdateStockOut.TabIndex = 5;
-            this.btnUpdateStockOut.Text = "Обновить расход";
-            this.btnUpdateStockOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdateStockOut.UseVisualStyleBackColor = true;
-            this.btnUpdateStockOut.Click += new System.EventHandler(this.btnUpdateStockOut_Click);
             // 
             // frmStockOuts
             // 

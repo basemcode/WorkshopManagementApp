@@ -31,8 +31,9 @@ namespace WorkshopManagement
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmItems));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddItem = new System.Windows.Forms.Button();
             this.lblItemNumber = new System.Windows.Forms.Label();
             this.tbItemCode = new System.Windows.Forms.TextBox();
@@ -371,9 +372,12 @@ namespace WorkshopManagement
             resources.ApplyResources(this.dgvItemsTable, "dgvItemsTable");
             this.dgvItemsTable.AllowUserToAddRows = false;
             this.dgvItemsTable.AllowUserToDeleteRows = false;
-            this.dgvItemsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvItemsTable.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvItemsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvItemsTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvItemsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItemsTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvItemsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvItemsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ItemID,
             this.ItemCode,
@@ -391,19 +395,19 @@ namespace WorkshopManagement
             this.Category,
             this.Note});
             this.dgvItemsTable.ContextMenuStrip = this.cmsItemsDataGrid;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvItemsTable.MultiSelect = false;
             this.dgvItemsTable.Name = "dgvItemsTable";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvItemsTable.RowTemplate.Height = 150;
             this.dgvItemsTable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvItemsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -412,7 +416,6 @@ namespace WorkshopManagement
             // 
             // ItemID
             // 
-            this.ItemID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ItemID.DataPropertyName = "ItemID";
             this.ItemID.FillWeight = 2F;
             resources.ApplyResources(this.ItemID, "ItemID");
@@ -421,7 +424,6 @@ namespace WorkshopManagement
             // 
             // ItemCode
             // 
-            this.ItemCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ItemCode.DataPropertyName = "ItemCode";
             this.ItemCode.FillWeight = 7F;
             resources.ApplyResources(this.ItemCode, "ItemCode");
@@ -725,6 +727,9 @@ namespace WorkshopManagement
         private Button button1;
         private ComboBox cboSubGroup;
         private Label label2;
+        private Label lblPackagingAndDimensions;
+        private TextBox tbSearchByBarcode;
+        private Label label3;
         private DataGridViewTextBoxColumn ItemID;
         private DataGridViewTextBoxColumn ItemCode;
         private DataGridViewTextBoxColumn ItemCodeWithColor;
@@ -740,8 +745,5 @@ namespace WorkshopManagement
         private DataGridViewTextBoxColumn GofferNumber;
         private DataGridViewTextBoxColumn Category;
         private DataGridViewTextBoxColumn Note;
-        private Label lblPackagingAndDimensions;
-        private TextBox tbSearchByBarcode;
-        private Label label3;
     }
 }
