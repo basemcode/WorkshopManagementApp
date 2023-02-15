@@ -14,6 +14,8 @@ public class ItemData
         SqlDataAccess.LoadData<ItemModel, dynamic>("dbo.spItem_GetAll", new { });
     public static IEnumerable<string> GetSubGroups() =>
         SqlDataAccess.LoadData<string, dynamic>("dbo.spItem_GetSubGroups", new { });
+    public static IEnumerable<string> GetCategories() =>
+        SqlDataAccess.LoadData<string, dynamic>("dbo.spItem_GetCategories", new { });
     public static IEnumerable<string> GetAllBarcodes() =>
         SqlDataAccess.LoadData<string, dynamic>("dbo.spItem_GetAllBarcodes", new { });
 
