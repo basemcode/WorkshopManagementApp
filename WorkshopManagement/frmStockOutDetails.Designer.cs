@@ -31,6 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvStockOutDetails = new System.Windows.Forms.DataGridView();
+            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BoxesQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAddItemToDGV = new System.Windows.Forms.Button();
             this.txtNote = new System.Windows.Forms.TextBox();
@@ -62,13 +69,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BoxesQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockOutDetails)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -122,7 +122,62 @@
             this.dgvStockOutDetails.Size = new System.Drawing.Size(1104, 501);
             this.dgvStockOutDetails.TabIndex = 29;
             this.dgvStockOutDetails.TabStop = false;
-            this.dgvStockOutDetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockOutDetails_CellClick);
+            // 
+            // ItemID
+            // 
+            this.ItemID.DataPropertyName = "ItemID";
+            this.ItemID.HeaderText = "ID товара";
+            this.ItemID.MinimumWidth = 6;
+            this.ItemID.Name = "ItemID";
+            this.ItemID.ReadOnly = true;
+            // 
+            // Barcode
+            // 
+            this.Barcode.DataPropertyName = "Barcode";
+            this.Barcode.HeaderText = "Баркод";
+            this.Barcode.MinimumWidth = 6;
+            this.Barcode.Name = "Barcode";
+            this.Barcode.ReadOnly = true;
+            // 
+            // ItemCodeWithColor
+            // 
+            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
+            this.ItemCodeWithColor.HeaderText = "Артикул цвета";
+            this.ItemCodeWithColor.MinimumWidth = 6;
+            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
+            this.ItemCodeWithColor.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "Наименование изделия";
+            this.ProductName.MinimumWidth = 6;
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "Quantity";
+            this.Quantity.HeaderText = "Количество";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // BoxesQuantity
+            // 
+            this.BoxesQuantity.DataPropertyName = "BoxesQuantity";
+            this.BoxesQuantity.HeaderText = "Количество коробок";
+            this.BoxesQuantity.MinimumWidth = 6;
+            this.BoxesQuantity.Name = "BoxesQuantity";
+            this.BoxesQuantity.ReadOnly = true;
+            // 
+            // Category
+            // 
+            this.Category.DataPropertyName = "Category";
+            this.Category.HeaderText = "Раздел";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -470,62 +525,6 @@
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // ItemID
-            // 
-            this.ItemID.DataPropertyName = "ItemID";
-            this.ItemID.HeaderText = "ID товара";
-            this.ItemID.MinimumWidth = 6;
-            this.ItemID.Name = "ItemID";
-            this.ItemID.ReadOnly = true;
-            // 
-            // Barcode
-            // 
-            this.Barcode.DataPropertyName = "Barcode";
-            this.Barcode.HeaderText = "Баркод";
-            this.Barcode.MinimumWidth = 6;
-            this.Barcode.Name = "Barcode";
-            this.Barcode.ReadOnly = true;
-            // 
-            // ItemCodeWithColor
-            // 
-            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
-            this.ItemCodeWithColor.HeaderText = "Артикул цвета";
-            this.ItemCodeWithColor.MinimumWidth = 6;
-            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
-            this.ItemCodeWithColor.ReadOnly = true;
-            // 
-            // ProductName
-            // 
-            this.ProductName.DataPropertyName = "ProductName";
-            this.ProductName.HeaderText = "Наименование изделия";
-            this.ProductName.MinimumWidth = 6;
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            // 
-            // Quantity
-            // 
-            this.Quantity.DataPropertyName = "Quantity";
-            this.Quantity.HeaderText = "Количество";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
-            // 
-            // BoxesQuantity
-            // 
-            this.BoxesQuantity.DataPropertyName = "BoxesQuantity";
-            this.BoxesQuantity.HeaderText = "Количество коробок";
-            this.BoxesQuantity.MinimumWidth = 6;
-            this.BoxesQuantity.Name = "BoxesQuantity";
-            this.BoxesQuantity.ReadOnly = true;
-            // 
-            // Category
-            // 
-            this.Category.DataPropertyName = "Category";
-            this.Category.HeaderText = "Раздел";
-            this.Category.MinimumWidth = 6;
-            this.Category.Name = "Category";
-            this.Category.ReadOnly = true;
             // 
             // frmStockOutDetails
             // 

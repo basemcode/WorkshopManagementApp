@@ -31,8 +31,8 @@ namespace WorkshopManagement
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmItems));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddItem = new System.Windows.Forms.Button();
             this.lblItemNumber = new System.Windows.Forms.Label();
             this.tbItemCode = new System.Windows.Forms.TextBox();
@@ -88,7 +88,7 @@ namespace WorkshopManagement
             this.cmsItemsDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUseValue = new System.Windows.Forms.ToolStripMenuItem();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.cboCategory = new System.Windows.Forms.ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
             this.lblWarehouseCategoryQuantity = new System.Windows.Forms.Label();
             this.tbWarehouseCategoryQuantity = new System.Windows.Forms.TextBox();
@@ -96,11 +96,11 @@ namespace WorkshopManagement
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tbSearchByBarcode = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbWarehouseAllQuantity = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.tbSearchByBarcode = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnUpdateAllImages = new System.Windows.Forms.Button();
             this.gbItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
@@ -371,7 +371,6 @@ namespace WorkshopManagement
             resources.ApplyResources(this.dgvItemsTable, "dgvItemsTable");
             this.dgvItemsTable.AllowUserToAddRows = false;
             this.dgvItemsTable.AllowUserToDeleteRows = false;
-            this.dgvItemsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvItemsTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvItemsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvItemsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -391,24 +390,25 @@ namespace WorkshopManagement
             this.Category,
             this.Note});
             this.dgvItemsTable.ContextMenuStrip = this.cmsItemsDataGrid;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvItemsTable.MultiSelect = false;
             this.dgvItemsTable.Name = "dgvItemsTable";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvItemsTable.RowTemplate.Height = 150;
             this.dgvItemsTable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvItemsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvItemsTable.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemsTable_CellMouseEnter);
             this.dgvItemsTable.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvItemsTable_DataError);
+            this.dgvItemsTable.SelectionChanged += new System.EventHandler(this.dgvItemsTable_SelectionChanged);
             // 
             // ItemID
             // 
@@ -542,19 +542,19 @@ namespace WorkshopManagement
             this.tsmiUseValue.Name = "tsmiUseValue";
             this.tsmiUseValue.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
-            // cbCategory
+            // cboCategory
             // 
-            resources.ApplyResources(this.cbCategory, "cbCategory");
-            this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Items.AddRange(new object[] {
-            resources.GetString("cbCategory.Items"),
-            resources.GetString("cbCategory.Items1"),
-            resources.GetString("cbCategory.Items2"),
-            resources.GetString("cbCategory.Items3"),
-            resources.GetString("cbCategory.Items4"),
-            resources.GetString("cbCategory.Items5")});
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
+            resources.ApplyResources(this.cboCategory, "cboCategory");
+            this.cboCategory.FormattingEnabled = true;
+            this.cboCategory.Items.AddRange(new object[] {
+            resources.GetString("cboCategory.Items"),
+            resources.GetString("cboCategory.Items1"),
+            resources.GetString("cboCategory.Items2"),
+            resources.GetString("cboCategory.Items3"),
+            resources.GetString("cboCategory.Items4"),
+            resources.GetString("cboCategory.Items5")});
+            this.cboCategory.Name = "cboCategory";
+            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // lblCategory
             // 
@@ -598,28 +598,13 @@ namespace WorkshopManagement
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Controls.Add(this.tbSearchByBarcode);
             this.panel3.Controls.Add(this.lblCategory);
-            this.panel3.Controls.Add(this.cbCategory);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.cboCategory);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lblWarehouseCategoryQuantity);
             this.panel3.Controls.Add(this.tbWarehouseAllQuantity);
             this.panel3.Controls.Add(this.tbWarehouseCategoryQuantity);
             this.panel3.Name = "panel3";
-            // 
-            // tbSearchByBarcode
-            // 
-            resources.ApplyResources(this.tbSearchByBarcode, "tbSearchByBarcode");
-            this.tbSearchByBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSearchByBarcode.Name = "tbSearchByBarcode";
-            this.tbSearchByBarcode.TextChanged += new System.EventHandler(this.tbSearchByBarcode_TextChanged);
-            this.tbSearchByBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSearchByBarcode_KeyDown);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
             // 
             // label1
             // 
@@ -635,9 +620,24 @@ namespace WorkshopManagement
             // panel5
             // 
             resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Controls.Add(this.tbSearchByBarcode);
             this.panel5.Controls.Add(this.btnClose);
+            this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.btnUpdateAllImages);
             this.panel5.Name = "panel5";
+            // 
+            // tbSearchByBarcode
+            // 
+            resources.ApplyResources(this.tbSearchByBarcode, "tbSearchByBarcode");
+            this.tbSearchByBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSearchByBarcode.Name = "tbSearchByBarcode";
+            this.tbSearchByBarcode.TextChanged += new System.EventHandler(this.tbSearchByBarcode_TextChanged);
+            this.tbSearchByBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSearchByBarcode_KeyDown);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // btnUpdateAllImages
             // 
@@ -666,6 +666,7 @@ namespace WorkshopManagement
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -706,7 +707,7 @@ namespace WorkshopManagement
         private Label lblImage;
         private TextBox tbItemID;
         private Button btnAddImageFromWB;
-        private ComboBox cbCategory;
+        private ComboBox cboCategory;
         private Label lblCategory;
         private Button btnClearControlsValues;
         private Label lblWarehouseCategoryQuantity;

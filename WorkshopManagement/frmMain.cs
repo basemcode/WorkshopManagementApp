@@ -208,4 +208,18 @@ public partial class frmMain : Form
             Application.OpenForms["frmDatabaseOperations"].Activate();
         }
     }
+
+    private void tsmlFasterList_Click(object sender, EventArgs e)
+    {
+        if (!Utilities.FormIsOpen("frmItemsList"))
+        {
+            frmItemsList frmItemsList = new frmItemsList();
+            frmItemsList.MdiParent = this;
+            frmItemsList.Show();
+        }
+        else
+        {
+            Application.OpenForms["frmItemsList"].Activate();
+        }
+    }
 }

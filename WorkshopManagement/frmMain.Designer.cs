@@ -49,6 +49,7 @@ namespace WorkshopManagement
             this.tsmiDatabaseOperations = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsmlFasterList = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +68,8 @@ namespace WorkshopManagement
             // 
             resources.ApplyResources(this.tsmiProductsList, "tsmiProductsList");
             this.tsmiProductsList.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2});
+            this.toolStripMenuItem2,
+            this.tsmlFasterList});
             this.tsmiProductsList.Name = "tsmiProductsList";
             // 
             // toolStripMenuItem2
@@ -182,6 +184,12 @@ namespace WorkshopManagement
             resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             // 
+            // tsmlFasterList
+            // 
+            resources.ApplyResources(this.tsmlFasterList, "tsmlFasterList");
+            this.tsmlFasterList.Name = "tsmlFasterList";
+            this.tsmlFasterList.Click += new System.EventHandler(this.tsmlFasterList_Click);
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -225,5 +233,6 @@ namespace WorkshopManagement
         private ToolStripMenuItem reportAboutOneItemToolStripMenuItem3;
         private ToolStripMenuItem tsmiDatabaseOperations;
         private ToolStripSeparator toolStripSeparator3;
+        private ToolStripMenuItem tsmlFasterList;
     }
 }

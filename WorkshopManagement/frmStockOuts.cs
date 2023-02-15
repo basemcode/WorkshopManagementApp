@@ -24,9 +24,18 @@ public partial class frmStockOuts : Form
 
     public void LoadDataToDGV()
     {
-        stockOutsTable = DataHelper.ToDataTable<StockOutModel>(StockOutData.GetAllStockOuts());
-        dgvStockOuts.DataSource = stockOutsTable;
-        dgvStockOuts.Sort(dgvStockOuts.Columns["StockOutID"], ListSortDirection.Descending);
+        try
+        {
+            stockOutsTable = DataHelper.ToDataTable<StockOutModel>(StockOutData.GetAllStockOuts());
+            dgvStockOuts.DataSource = stockOutsTable;
+            dgvStockOuts.Sort(dgvStockOuts.Columns["StockOutID"], ListSortDirection.Descending);
+        }
+        catch (Exception e)
+        {
+            MessageBox.Show(e.Message);
+
+        }
+        
 
     }
     private void frmStockOuts_Load(object sender, EventArgs e)
