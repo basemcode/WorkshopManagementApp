@@ -14,6 +14,8 @@ namespace DataAccess.Data;
 
 public class DataHelper
 {
+    //this is a code that rrad the properties of the Enumerable and create a DataTable object
+    //with the same properties and then it copies all the items from the Enumerable to the DataTable
     public static DataTable ToDataTable<T>(IEnumerable<T> items)
     {
         var tb = new DataTable(typeof(T).Name);

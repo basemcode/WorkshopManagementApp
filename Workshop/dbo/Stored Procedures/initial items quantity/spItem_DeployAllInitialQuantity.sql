@@ -3,7 +3,7 @@
 AS
 DECLARE @CursorID INT = 1;
 DECLARE @RowCnt BIGINT = 0;
-DECLARE @Barcode NVARCHAR(50);
+DECLARE @Barcode NVARCHAR(100);
 
 -- get a count of total rows to process 
 SELECT @RowCnt = COUNT(0) FROM dbo.InitialQuantityOfItems;

@@ -10,5 +10,6 @@ namespace WorkshopManagement
     internal class SessionHelper
     {
         public static UserModel? loggedUser;
+        public static string server="Default";
     }
 }

@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spItem_DeployInitialQuantity]
-	@Barcode NVARCHAR(50),
+	@Barcode NVARCHAR(100),
 	@PeriodID int
 AS
 BEGIN

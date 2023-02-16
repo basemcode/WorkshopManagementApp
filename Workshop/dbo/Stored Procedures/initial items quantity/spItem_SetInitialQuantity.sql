@@ -1,6 +1,6 @@
 ﻿
 CREATE PROC [dbo].[spItem_SetInitialQuantity] 
-	@Barcode NVARCHAR (50),
+	@Barcode NVARCHAR (100),
     @InitialQuantity INT,
     @BoxesInitialQuantity INT,
     @PeriodID            INT          
