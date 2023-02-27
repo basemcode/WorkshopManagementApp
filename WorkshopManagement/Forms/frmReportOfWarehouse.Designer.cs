@@ -46,6 +46,7 @@
             this.BoxesQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MinimumQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DifferenceFromReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemsTable)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,7 +70,8 @@
             this.QuantityInStock,
             this.BoxesQuantity,
             this.MinimumQuantity,
-            this.Category});
+            this.Category,
+            this.DifferenceFromReserve});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -213,6 +215,16 @@
             this.Category.Name = "Category";
             this.Category.Width = 105;
             // 
+            // DifferenceFromReserve
+            // 
+            this.DifferenceFromReserve.DataPropertyName = "DifferenceFromReserve";
+            this.DifferenceFromReserve.HeaderText = "DifferenceFromReserve";
+            this.DifferenceFromReserve.MinimumWidth = 6;
+            this.DifferenceFromReserve.Name = "DifferenceFromReserve";
+            this.DifferenceFromReserve.ReadOnly = true;
+            this.DifferenceFromReserve.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.DifferenceFromReserve.Width = 125;
+            // 
             // frmReportOfWarehouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -247,5 +259,6 @@
         private DataGridViewTextBoxColumn BoxesQuantity;
         private DataGridViewTextBoxColumn MinimumQuantity;
         private DataGridViewTextBoxColumn Category;
+        private DataGridViewTextBoxColumn DifferenceFromReserve;
     }
 }

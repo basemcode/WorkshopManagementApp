@@ -34,13 +34,12 @@ namespace WorkshopManagement.Forms
         private void LoadItemInformationsToForm()
         {
             IEnumerable<string> NewDataTable = new List<string>();
-            NewDataTable = BarcodesDataTable.Where((item) => item.Contains(cboBarcode.Text)).ToList<string>();
+            NewDataTable = BarcodesDataTable.Where(
+                (item) => item.Contains(cboBarcode.Text)
+                ).ToList<string>();
             cboBarcode.DataSource = NewDataTable;
             AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
-            /*foreach (var row in NewDataTable)
-            {
-
-            }*/
+            
             for (int i = 0; i < NewDataTable.Count(); i++)
             {
                 autoCompleteStringCollection.Add(NewDataTable.ToList<string>()[i]);

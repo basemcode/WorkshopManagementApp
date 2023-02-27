@@ -35,7 +35,14 @@ namespace WorkshopManagement.Forms
                     itemsTable.Rows[i]["Image"] = Utilities.newBytes;
                 }
             }
-            dgvItemsTable.DataSource = itemsTable;                  
+            itemsTable.Columns.Add("DifferenceFromReserve", typeof(int));
+            for (int i = 0; i < itemsTable.Rows.Count; i++)
+            {
+                itemsTable.Rows[i]["DifferenceFromReserve"] = (int)itemsTable.Rows[i]["QuantityInStock"] - (int)itemsTable.Rows[i][columnName: "MinimumQuantity"];
+            }
+            itemsTable.DefaultView.Sort = "DifferenceFromReserve ASC";
+            dgvItemsTable.DataSource = itemsTable; 
+            
             ColorTheRows();
         }
 

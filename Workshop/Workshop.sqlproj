@@ -67,6 +67,7 @@
     <Folder Include="dbo\Stored Procedures\StockIns" />
     <Folder Include="dbo\Stored Procedures\StockOuts" />
     <Folder Include="dbo\Stored Procedures\Users" />
+    <Folder Include="dbo\Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Items.sql" />
@@ -110,8 +111,13 @@
     <Build Include="dbo\Stored Procedures\StockIns\spStockInDetails_Delete.sql" />
     <Build Include="dbo\Stored Procedures\StockOuts\spStockOutDetails_Delete.sql" />
     <Build Include="dbo\Stored Procedures\Items\spItem_GetCategories.sql" />
+    <Build Include="dbo\Functions\TRUNC_DATE.sql" />
+    <Build Include="dbo\Stored Procedures\StockIns\spStockInDetails_GetSumOfStockInsOfItem.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Workshop.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Workshop.publish.xml" />
   </ItemGroup>
 </Project>
