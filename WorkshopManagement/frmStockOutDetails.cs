@@ -97,7 +97,7 @@ public partial class frmStockOutDetails : Form
                 {
                     founded = true;
                     rowIndex = item.Index;
-                    
+
                 }
             }
             //if we found add to current amounts in the existing row
@@ -106,7 +106,7 @@ public partial class frmStockOutDetails : Form
                 //if the textbox of item quantity have value we use it and if not we add 1 more to quantity
                 if (int.TryParse(txtQuantity.Text, out int quantity))
                 {
-                    amountOfTheItemToAdd =  quantity;
+                    amountOfTheItemToAdd = quantity;
                     dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Value = amountOfTheItemToAdd;
                     txtQuantity.Text = String.Empty;
                 }
@@ -146,17 +146,17 @@ public partial class frmStockOutDetails : Form
                     newRow["Quantity"] = 1;
                 }
                 //
-                if (int.TryParse(txtBoxesQuantity.Text, out int result)&& txtBoxesQuantity.Text!="0")
+                if (int.TryParse(txtBoxesQuantity.Text, out int result) && txtBoxesQuantity.Text != "0")
                 {
                     amountOfBoxesToAdd = result;
                     newRow["BoxesQuantity"] = result;
                 }
                 else
                 {
-                    newRow["BoxesQuantity"] =0;
+                    newRow["BoxesQuantity"] = 0;
                 }
                 //add the item to the list to add to database
-                ToAddStockOutDetailsTable.Rows.InsertAt(newRow,0);
+                ToAddStockOutDetailsTable.Rows.InsertAt(newRow, 0);
                 amountOfTheItemToAdd = Convert.ToInt32(newRow["Quantity"]);
                 //get the index of the added row
                 rowIndex = ToAddStockOutDetailsTable.Rows.IndexOf(newRow);
@@ -164,7 +164,7 @@ public partial class frmStockOutDetails : Form
                 txtBoxesQuantity.Text = "";
             }
             //check the amount in the warehouse if enough 
-            if (itemToAdd.QuantityInStock-amountOfTheItemToAdd<0&&!editMode)
+            if (itemToAdd.QuantityInStock - amountOfTheItemToAdd < 0 && !editMode)
             {
                 MessageBox.Show("Недостаточное количество товара на складе!");
                 dgvStockOutDetails.Rows[rowIndex].Cells["Quantity"].Style.BackColor = Color.Red;
@@ -189,7 +189,7 @@ public partial class frmStockOutDetails : Form
             {
                 dgvStockOutDetails.Rows[rowIndex].Cells["BoxesQuantity"].Style.BackColor = Color.LightGreen;
             }
-            txtSumOfAllProducts.Text= GetSumOfQuantity().ToString();
+            txtSumOfAllProducts.Text = GetSumOfQuantity().ToString();
         }
         else
         {
@@ -204,7 +204,7 @@ public partial class frmStockOutDetails : Form
             NewDataTable = BarcodesDataTable.Where((item) => item.Contains(cboBarcode.Text)).ToList<string>();
             //cboBarcode.DataSource = NewDataTable;
             AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
-           
+
             for (int i = 0; i < NewDataTable.Count(); i++)
             {
                 autoCompleteStringCollection.Add(NewDataTable.ToList<string>()[i]);
@@ -213,7 +213,7 @@ public partial class frmStockOutDetails : Form
             if (cboBarcode.Items.Count == 1)
             {
                 AddItemToDataGridView(cboBarcode.Text);
-                txtBarcode.Text= cboBarcode.Text;
+                txtBarcode.Text = cboBarcode.Text;
                 txtBarcode.Focus();
             }
             if (cboBarcode.Items.Count > 1)
@@ -267,8 +267,8 @@ public partial class frmStockOutDetails : Form
     {
         try
         {
-            
-            if (dgvStockOutDetails.Rows.Count == 0 || GetSumOfQuantity()== 0)
+
+            if (dgvStockOutDetails.Rows.Count == 0 || GetSumOfQuantity() == 0)
             {
                 return;
             }
@@ -357,6 +357,7 @@ public partial class frmStockOutDetails : Form
         ItemModel itemToAdd = ItemData.GetItemByBarcode(cboBarcode.Text);
         txtSearchItemName.Text = itemToAdd.ProductName;
         picSearchItemPhoto.Image = displayImage((byte[])itemToAdd.Image);
+        txtAmountInWarehouse.Text = itemToAdd.QuantityInStock.ToString();
     }
 
     private void btnAddItemToDGV_Click(object sender, EventArgs e)
@@ -367,15 +368,15 @@ public partial class frmStockOutDetails : Form
 
     private void dgvStockOutDetails_CellClick(object sender, DataGridViewCellEventArgs e)
     {
-            if (e.ColumnIndex == dgvStockOutDetails.Columns["plusBtnCol"].Index & e.RowIndex >= 0)
-            {
-                int newValue = Convert.ToInt32(dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
-                dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue + 1;
-            }
-            if (e.ColumnIndex == dgvStockOutDetails.Columns["minusBtnCol"].Index & e.RowIndex >= 0)
-            {
-                int newValue = Convert.ToInt32(dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
-                dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue - 1;
-            }
+        if (e.ColumnIndex == dgvStockOutDetails.Columns["plusBtnCol"].Index & e.RowIndex >= 0)
+        {
+            int newValue = Convert.ToInt32(dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
+            dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue + 1;
+        }
+        if (e.ColumnIndex == dgvStockOutDetails.Columns["minusBtnCol"].Index & e.RowIndex >= 0)
+        {
+            int newValue = Convert.ToInt32(dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value);
+            dgvStockOutDetails.Rows[e.RowIndex].Cells["Quantity"].Value = newValue - 1;
+        }
     }
 }

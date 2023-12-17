@@ -29,7 +29,7 @@ class Program
             
             while (true)
             {
-                Thread.Sleep(2000);
+                Thread.Sleep(500);
                 try
                 {
                     sw.Write($"Listener keeps talking to the client. {Environment.NewLine}");

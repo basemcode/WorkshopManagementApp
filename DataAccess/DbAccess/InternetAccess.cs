@@ -15,7 +15,7 @@ namespace DataAccess.DbAccess
         public static void GetImageFromInternet(string ItemNumberOnWB, DownloadDataCompletedEventHandler fun)
         {
             bool done = false;
-            try
+            /*try
             {
                 if (!Directory.Exists(@"Data\img\"))
                 {
@@ -33,7 +33,7 @@ namespace DataAccess.DbAccess
             catch (Exception)
             {
                 //should log the error
-            }
+            }*/
             //downloading the file
             try
             {

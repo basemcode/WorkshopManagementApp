@@ -14,7 +14,7 @@ namespace WorkshopManagement
         //List<ItemModel> ItemsList = new List<ItemModel>();
         static DataTable ItemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
         static string[] subGroups = ItemData.GetSubGroups().ToArray();
-        static string[] categories; 
+        static string[] categories;
 
         public frmItems()
         {
@@ -24,22 +24,16 @@ namespace WorkshopManagement
         private void frmItems_Load(object sender, EventArgs e)
         {
             dgvItemsTable.AutoGenerateColumns = false;
-            dgvItemsTable.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            // or even better, use .DisableResizing. Most time consuming enum is DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-
-            // set it to false if not needed
+            dgvItemsTable.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing; // or even better, use .DisableResizing. Most time consuming enum is DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
             dgvItemsTable.RowHeadersVisible = false;
             cboCategory.SelectedIndex = 0;
-
-            LoadDataToDGV(cboCategory.Text);
-            
         }
-
+        private void frmItems_Shown(object sender, EventArgs e)
+        {
+            LoadDataToDGV(cboCategory.Text);
+        }
         private void LoadDataToDGV(string category)
         {
-            //dgvItemsTable.Rows.Clear();
-            //dgvItemsTable.AutoGenerateColumns=true;
-            //ItemsTable = DataHelper.ToDataTable(ItemData.GetItemsOfCategory(category));
             ItemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
             subGroups = ItemData.GetSubGroups().ToArray();
             categories = ItemData.GetCategories().ToArray();
@@ -147,7 +141,7 @@ namespace WorkshopManagement
                     LoadDataToDGV(cboCategory.Text);
                     ClearControlsValues();
                     SelectRow(newItem.Barcode);
-                    
+
                 }
                 else
                 {
@@ -170,13 +164,13 @@ namespace WorkshopManagement
             var rows = dgvItemsTable.Rows
                 .Cast<DataGridViewRow>()
                 .Where(r => r.Cells["Barcode"].Value.ToString().Contains(barcode));
-            if (rows.Count()>0)
+            if (rows.Count() > 0)
             {
-                var row=rows.First();
+                var row = rows.First();
                 rowIndex = row.Index;
                 dgvItemsTable.FirstDisplayedScrollingRowIndex = rowIndex;
                 dgvItemsTable.Rows[rowIndex].Selected = true;
-            }  
+            }
         }
 
         public static byte[] SaveImage(PictureBox pb)
@@ -304,7 +298,7 @@ namespace WorkshopManagement
             tbPackagingAndDimensions.Text = string.Empty;
             tbGofferNumber.Text = string.Empty;
             tbNote.Text = string.Empty;
-            cboSubGroup.Text=string.Empty;
+            cboSubGroup.Text = string.Empty;
         }
 
         //change the category
@@ -482,7 +476,7 @@ namespace WorkshopManagement
 
         private void tbSearchByBarcode_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyValue==13)
+            if (e.KeyValue == 13)
             {
                 ItemsTable.DefaultView.RowFilter = "[Barcode] like '%" + tbSearchByBarcode.Text + "%'";
             }
@@ -493,5 +487,7 @@ namespace WorkshopManagement
             SelectRow(tbSearchByBarcode.Text);
             //ItemsTable.DefaultView.RowFilter = "[Barcode] like '%" + tbSearchByBarcode.Text + "%'";
         }
+
+        
     }
 }

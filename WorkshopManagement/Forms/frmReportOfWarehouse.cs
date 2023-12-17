@@ -15,7 +15,7 @@ namespace WorkshopManagement.Forms
     public partial class frmReportOfWarehouse : Form
     {
         public static DataTable itemsTable = new DataTable();
-        
+
         public frmReportOfWarehouse()
         {
             InitializeComponent();
@@ -24,13 +24,13 @@ namespace WorkshopManagement.Forms
 
         public void frmReportOfWarehouse_Load(object sender, EventArgs e)
         {
-            
+
             dgvItemsTable.AutoGenerateColumns = false;
             itemsTable = DataHelper.ToDataTable(ItemData.GetAllItems());
             for (int i = 0; i < itemsTable.Rows.Count; i++)
             {
                 byte[] a = (byte[])itemsTable.Rows[i]["Image"];
-                if (a.Length==0 )
+                if (a.Length == 0)
                 {
                     itemsTable.Rows[i]["Image"] = Utilities.newBytes;
                 }
@@ -41,8 +41,8 @@ namespace WorkshopManagement.Forms
                 itemsTable.Rows[i]["DifferenceFromReserve"] = (int)itemsTable.Rows[i]["QuantityInStock"] - (int)itemsTable.Rows[i][columnName: "MinimumQuantity"];
             }
             itemsTable.DefaultView.Sort = "DifferenceFromReserve ASC";
-            dgvItemsTable.DataSource = itemsTable; 
-            
+            dgvItemsTable.DataSource = itemsTable;
+
             ColorTheRows();
         }
 
@@ -60,7 +60,7 @@ namespace WorkshopManagement.Forms
                 {
                     item.Cells["QuantityInStock"].Style.BackColor = Color.Red;
                 }
-                if (QuantityInStock > MinimumQuantity+5)
+                if (QuantityInStock > MinimumQuantity + 5)
                 {
                     item.Cells["QuantityInStock"].Style.BackColor = Color.LightGreen;
                 }
@@ -75,7 +75,7 @@ namespace WorkshopManagement.Forms
 
         private void dgvItemsTable_SelectionChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)

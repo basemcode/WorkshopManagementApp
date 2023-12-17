@@ -10,7 +10,7 @@ namespace DataAccess.Models;
 public class ItemModel
 {
     public int ItemID { get; set; }
-    public string ItemCode { get; set; }
+    public string ItemCode { get; set; } = string.Empty;
     public string ItemCodeWithColor { get; set; }
     public string Barcode { get; set; }
     public byte[] Image { get; set; }

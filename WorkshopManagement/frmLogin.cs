@@ -80,7 +80,7 @@ public partial class frmLogin : Form
     {
         try
         {
-        if (txtUsername.Text!=string.Empty||txtPassword.Text!=string.Empty)
+        if (txtUsername.Text!=string.Empty && txtPassword.Text!=string.Empty)
         {
             UserModel? loggedUser = UserData.Login(txtUsername.Text, txtPassword.Text);
             if (loggedUser == null)

@@ -103,6 +103,16 @@ namespace WorkshopManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bar_chart_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_bar_chart_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_broom_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_broom_32", resourceCulture);
@@ -163,6 +173,16 @@ namespace WorkshopManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_external_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_external_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_image_file_add_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_image_file_add_32", resourceCulture);
@@ -183,9 +203,29 @@ namespace WorkshopManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_list_of_thumbnails_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_list_of_thumbnails_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_login_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_login_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_rounded_up_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_logout_rounded_up_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +276,16 @@ namespace WorkshopManagement.Properties {
         internal static System.Drawing.Bitmap icons8_save_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_save_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Sign_In_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Sign_In_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

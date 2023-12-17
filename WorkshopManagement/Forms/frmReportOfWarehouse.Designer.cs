@@ -28,218 +28,209 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvItemsTable = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Image = new System.Windows.Forms.DataGridViewImageColumn();
-            this.InternalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantityInStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BoxesQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MinimumQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DifferenceFromReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItemsTable)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            dgvItemsTable = new DataGridView();
+            ItemID = new DataGridViewTextBoxColumn();
+            ItemCode = new DataGridViewTextBoxColumn();
+            ItemCodeWithColor = new DataGridViewTextBoxColumn();
+            Barcode = new DataGridViewTextBoxColumn();
+            Image = new DataGridViewImageColumn();
+            InternalCode = new DataGridViewTextBoxColumn();
+            ProductNameCol = new DataGridViewTextBoxColumn();
+            QuantityInStock = new DataGridViewTextBoxColumn();
+            BoxesQuantity = new DataGridViewTextBoxColumn();
+            MinimumQuantity = new DataGridViewTextBoxColumn();
+            Category = new DataGridViewTextBoxColumn();
+            DifferenceFromReserve = new DataGridViewTextBoxColumn();
+            button1 = new Button();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)dgvItemsTable).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // dgvItemsTable
             // 
-            this.dgvItemsTable.AllowUserToAddRows = false;
-            this.dgvItemsTable.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvItemsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvItemsTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvItemsTable.ColumnHeadersHeight = 50;
-            this.dgvItemsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ItemID,
-            this.ItemCode,
-            this.ItemCodeWithColor,
-            this.Barcode,
-            this.Image,
-            this.InternalCode,
-            this.ProductNameCol,
-            this.QuantityInStock,
-            this.BoxesQuantity,
-            this.MinimumQuantity,
-            this.Category,
-            this.DifferenceFromReserve});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvItemsTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvItemsTable.Location = new System.Drawing.Point(3, 3);
-            this.dgvItemsTable.MultiSelect = false;
-            this.dgvItemsTable.Name = "dgvItemsTable";
-            this.dgvItemsTable.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvItemsTable.RowTemplate.Height = 120;
-            this.dgvItemsTable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItemsTable.Size = new System.Drawing.Size(1204, 726);
-            this.dgvItemsTable.TabIndex = 1;
-            this.dgvItemsTable.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvItemsTable_DataError);
-            this.dgvItemsTable.SelectionChanged += new System.EventHandler(this.dgvItemsTable_SelectionChanged);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(1220, 294);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 143);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "показывать уведомления";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Controls.Add(this.dgvItemsTable, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1345, 726);
-            this.tableLayoutPanel1.TabIndex = 4;
+            dgvItemsTable.AllowUserToAddRows = false;
+            dgvItemsTable.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
+            dgvItemsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvItemsTable.BackgroundColor = Color.WhiteSmoke;
+            dgvItemsTable.ColumnHeadersHeight = 50;
+            dgvItemsTable.Columns.AddRange(new DataGridViewColumn[] { ItemID, ItemCode, ItemCodeWithColor, Barcode, Image, InternalCode, ProductNameCol, QuantityInStock, BoxesQuantity, MinimumQuantity, Category, DifferenceFromReserve });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvItemsTable.Dock = DockStyle.Fill;
+            dgvItemsTable.Location = new Point(3, 2);
+            dgvItemsTable.Margin = new Padding(3, 2, 3, 2);
+            dgvItemsTable.MultiSelect = false;
+            dgvItemsTable.Name = "dgvItemsTable";
+            dgvItemsTable.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dgvItemsTable.RowTemplate.Height = 120;
+            dgvItemsTable.RowTemplate.Resizable = DataGridViewTriState.True;
+            dgvItemsTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvItemsTable.Size = new Size(1053, 544);
+            dgvItemsTable.TabIndex = 1;
+            dgvItemsTable.DataError += dgvItemsTable_DataError;
+            dgvItemsTable.SelectionChanged += dgvItemsTable_SelectionChanged;
             // 
             // ItemID
             // 
-            this.ItemID.DataPropertyName = "ItemID";
-            this.ItemID.HeaderText = "ID";
-            this.ItemID.MinimumWidth = 20;
-            this.ItemID.Name = "ItemID";
-            this.ItemID.ReadOnly = true;
-            this.ItemID.Width = 50;
+            ItemID.DataPropertyName = "ItemID";
+            ItemID.HeaderText = "ID";
+            ItemID.MinimumWidth = 20;
+            ItemID.Name = "ItemID";
+            ItemID.ReadOnly = true;
+            ItemID.Width = 50;
             // 
             // ItemCode
             // 
-            this.ItemCode.DataPropertyName = "ItemCode";
-            this.ItemCode.HeaderText = "Артикул";
-            this.ItemCode.MinimumWidth = 20;
-            this.ItemCode.Name = "ItemCode";
-            this.ItemCode.Width = 75;
+            ItemCode.DataPropertyName = "ItemCode";
+            ItemCode.HeaderText = "Артикул";
+            ItemCode.MinimumWidth = 20;
+            ItemCode.Name = "ItemCode";
+            ItemCode.Width = 75;
             // 
             // ItemCodeWithColor
             // 
-            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
-            this.ItemCodeWithColor.HeaderText = "Артикул цвета ";
-            this.ItemCodeWithColor.MinimumWidth = 20;
-            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
-            this.ItemCodeWithColor.Width = 175;
+            ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
+            ItemCodeWithColor.HeaderText = "Артикул цвета ";
+            ItemCodeWithColor.MinimumWidth = 20;
+            ItemCodeWithColor.Name = "ItemCodeWithColor";
+            ItemCodeWithColor.Width = 175;
             // 
             // Barcode
             // 
-            this.Barcode.DataPropertyName = "Barcode";
-            this.Barcode.HeaderText = "Баркод";
-            this.Barcode.MinimumWidth = 20;
-            this.Barcode.Name = "Barcode";
-            this.Barcode.Width = 130;
+            Barcode.DataPropertyName = "Barcode";
+            Barcode.HeaderText = "Баркод";
+            Barcode.MinimumWidth = 20;
+            Barcode.Name = "Barcode";
+            Barcode.Width = 130;
             // 
             // Image
             // 
-            this.Image.DataPropertyName = "Image";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Image.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Image.HeaderText = "Изображение";
-            this.Image.Image = global::WorkshopManagement.Properties.Resources.download;
-            this.Image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Image.MinimumWidth = 6;
-            this.Image.Name = "Image";
-            this.Image.Width = 110;
+            Image.DataPropertyName = "Image";
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            Image.DefaultCellStyle = dataGridViewCellStyle2;
+            Image.HeaderText = "Изображение";
+            Image.Image = Properties.Resources.download;
+            Image.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            Image.MinimumWidth = 6;
+            Image.Name = "Image";
+            Image.Width = 110;
             // 
             // InternalCode
             // 
-            this.InternalCode.DataPropertyName = "InternalCode";
-            this.InternalCode.HeaderText = "Внутренний код ";
-            this.InternalCode.MinimumWidth = 20;
-            this.InternalCode.Name = "InternalCode";
-            this.InternalCode.Width = 95;
+            InternalCode.DataPropertyName = "InternalCode";
+            InternalCode.HeaderText = "Внутренний код ";
+            InternalCode.MinimumWidth = 20;
+            InternalCode.Name = "InternalCode";
+            InternalCode.Width = 95;
             // 
             // ProductNameCol
             // 
-            this.ProductNameCol.DataPropertyName = "ProductName";
-            this.ProductNameCol.HeaderText = "Наименование изделия";
-            this.ProductNameCol.MinimumWidth = 20;
-            this.ProductNameCol.Name = "ProductNameCol";
-            this.ProductNameCol.Width = 120;
+            ProductNameCol.DataPropertyName = "ProductName";
+            ProductNameCol.HeaderText = "Наименование изделия";
+            ProductNameCol.MinimumWidth = 20;
+            ProductNameCol.Name = "ProductNameCol";
+            ProductNameCol.Width = 120;
             // 
             // QuantityInStock
             // 
-            this.QuantityInStock.DataPropertyName = "QuantityInStock";
-            this.QuantityInStock.HeaderText = "количество на складе";
-            this.QuantityInStock.MinimumWidth = 20;
-            this.QuantityInStock.Name = "QuantityInStock";
-            this.QuantityInStock.Width = 85;
+            QuantityInStock.DataPropertyName = "QuantityInStock";
+            QuantityInStock.HeaderText = "количество на складе";
+            QuantityInStock.MinimumWidth = 20;
+            QuantityInStock.Name = "QuantityInStock";
+            QuantityInStock.Width = 85;
             // 
             // BoxesQuantity
             // 
-            this.BoxesQuantity.DataPropertyName = "BoxesQuantity";
-            this.BoxesQuantity.HeaderText = "количество коробок";
-            this.BoxesQuantity.MinimumWidth = 20;
-            this.BoxesQuantity.Name = "BoxesQuantity";
-            this.BoxesQuantity.Width = 85;
+            BoxesQuantity.DataPropertyName = "BoxesQuantity";
+            BoxesQuantity.HeaderText = "количество коробок";
+            BoxesQuantity.MinimumWidth = 20;
+            BoxesQuantity.Name = "BoxesQuantity";
+            BoxesQuantity.Width = 85;
             // 
             // MinimumQuantity
             // 
-            this.MinimumQuantity.DataPropertyName = "MinimumQuantity";
-            this.MinimumQuantity.HeaderText = "Нормативный запас";
-            this.MinimumQuantity.MinimumWidth = 20;
-            this.MinimumQuantity.Name = "MinimumQuantity";
-            this.MinimumQuantity.Width = 90;
+            MinimumQuantity.DataPropertyName = "MinimumQuantity";
+            MinimumQuantity.HeaderText = "Нормативный запас";
+            MinimumQuantity.MinimumWidth = 20;
+            MinimumQuantity.Name = "MinimumQuantity";
+            MinimumQuantity.Width = 90;
             // 
             // Category
             // 
-            this.Category.DataPropertyName = "Category";
-            this.Category.HeaderText = "Раздел";
-            this.Category.MinimumWidth = 20;
-            this.Category.Name = "Category";
-            this.Category.Width = 105;
+            Category.DataPropertyName = "Category";
+            Category.HeaderText = "Раздел";
+            Category.MinimumWidth = 20;
+            Category.Name = "Category";
+            Category.Width = 105;
             // 
             // DifferenceFromReserve
             // 
-            this.DifferenceFromReserve.DataPropertyName = "DifferenceFromReserve";
-            this.DifferenceFromReserve.HeaderText = "DifferenceFromReserve";
-            this.DifferenceFromReserve.MinimumWidth = 6;
-            this.DifferenceFromReserve.Name = "DifferenceFromReserve";
-            this.DifferenceFromReserve.ReadOnly = true;
-            this.DifferenceFromReserve.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.DifferenceFromReserve.Width = 125;
+            DifferenceFromReserve.DataPropertyName = "DifferenceFromReserve";
+            DifferenceFromReserve.HeaderText = "DifferenceFromReserve";
+            DifferenceFromReserve.MinimumWidth = 6;
+            DifferenceFromReserve.Name = "DifferenceFromReserve";
+            DifferenceFromReserve.ReadOnly = true;
+            DifferenceFromReserve.SortMode = DataGridViewColumnSortMode.Programmatic;
+            DifferenceFromReserve.Width = 125;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.None;
+            button1.Location = new Point(1067, 220);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(101, 107);
+            button1.TabIndex = 3;
+            button1.Text = "показывать уведомления";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 90F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableLayoutPanel1.Controls.Add(dgvItemsTable, 0, 0);
+            tableLayoutPanel1.Controls.Add(button1, 1, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.Size = new Size(1177, 544);
+            tableLayoutPanel1.TabIndex = 4;
             // 
             // frmReportOfWarehouse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1345, 726);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "frmReportOfWarehouse";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmReportOfWarehouse";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmReportOfWarehouse_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItemsTable)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1177, 544);
+            Controls.Add(tableLayoutPanel1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frmReportOfWarehouse";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Report of warehouse";
+            WindowState = FormWindowState.Maximized;
+            Load += frmReportOfWarehouse_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvItemsTable).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

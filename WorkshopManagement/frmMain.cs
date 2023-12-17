@@ -11,6 +11,7 @@ using DataAccess.Data;
 using DataAccess.DbAccess;
 using DataAccess.Models;
 using WorkshopManagement.Forms;
+using WorkshopManagement.Forms.Testing;
 using WorkshopManagement.Helpers;
 
 namespace WorkshopManagement;
@@ -19,7 +20,7 @@ public partial class frmMain : Form
 {
     public frmMain()
     {
-        Thread.CurrentThread.CurrentUICulture=new System.Globalization.CultureInfo("ru-RU");
+        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru-RU");
         InitializeComponent();
     }
 
@@ -40,7 +41,7 @@ public partial class frmMain : Form
         {
             Application.OpenForms["frmItems"].Activate();
         }
-        
+
     }
 
     private void newStockInToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,7 +99,7 @@ public partial class frmMain : Form
         switch (SessionHelper.loggedUser.Privileges)
         {
             case "Admin":
-                AdministrationToolStripMenuItem.Enabled= true;
+                AdministrationToolStripMenuItem.Enabled = true;
                 AddDataFromExcelTSMI.Enabled = true;
                 break;
             default:
@@ -150,7 +151,7 @@ public partial class frmMain : Form
 
     private void reportOfWarehouseToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        ShowReportOfWarehouseForm(sender,e);
+        ShowReportOfWarehouseForm(sender, e);
     }
 
     private void ShowReportOfWarehouseForm(object sender, EventArgs e)
@@ -206,6 +207,20 @@ public partial class frmMain : Form
         else
         {
             Application.OpenForms["frmDatabaseOperations"].Activate();
+        }
+    }
+
+    private void tsmiTestingData_Click(object sender, EventArgs e)
+    {
+        if (!Utilities.FormIsOpen("frmTestingData"))
+        {
+            frmTestingData frmTestingData = new frmTestingData();
+            frmTestingData.MdiParent = this;
+            frmTestingData.Show();
+        }
+        else
+        {
+            Application.OpenForms["frmTestingData"].Activate();
         }
     }
 }

@@ -57,1898 +57,1898 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;ItemNumber.Name" xml:space="preserve">
-    <value>ItemNumber</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbUnit.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ItemCodeWithColor.Width" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 20</value>
+  <data name="btnAddItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 637</value>
   </data>
-  <data name="&gt;&gt;tbHardboardBoxNumber.Name" xml:space="preserve">
-    <value>tbHardboardBoxNumber</value>
-  </data>
-  <data name="&gt;&gt;btnClearControlsValues.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmItemTableViewMenu.Name" xml:space="preserve">
-    <value>cmItemTableViewMenu</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;gbItem.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;tbPackagingAndDimensions.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="dgvItemsTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>847, 607</value>
-  </data>
-  <data name="cbCategory.Items5" xml:space="preserve">
-    <value>Прочее</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cboSubGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;Category.Name" xml:space="preserve">
-    <value>Category</value>
-  </data>
-  <data name="tbColor.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="cbCategory.Items2" xml:space="preserve">
-    <value>Буквы</value>
-  </data>
-  <data name="&gt;&gt;dgvItemsTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 26</value>
-  </data>
-  <data name="&gt;&gt;lblItemCodeWithColor.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="btnDeleteItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 69</value>
-  </data>
-  <data name="ItemNumber.Width" type="System.Int32, mscorlib">
-    <value>122</value>
-  </data>
-  <data name="&gt;&gt;lblItemCode.Name" xml:space="preserve">
-    <value>lblItemCode</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ItemCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 344</value>
-  </data>
-  <data name="&gt;&gt;btnAddImage.Name" xml:space="preserve">
-    <value>btnAddImage</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tbUnit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btnDeleteItem.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;lblNote.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="editToolStripMenuItem.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="&gt;&gt;lblPackagingAndDimensions.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;lblInternalCode.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;ProductName.Name" xml:space="preserve">
-    <value>ProductName</value>
-  </data>
-  <data name="lblItemNumberOnWB.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="cboCategory.Items1" xml:space="preserve">
-    <value>НГ23</value>
-  </data>
-  <data name="&gt;&gt;cboCategory.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>628, 8</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;Unit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ItemID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblNote.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblWarehouseCategoryQuantity.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;tbNote.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 37</value>
-  </data>
-  <data name="&gt;&gt;tbColor.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;lblItemColor.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblUnit.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tbItemCodeWithColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 97</value>
-  </data>
-  <data name="&gt;&gt;lblInternalCode.Name" xml:space="preserve">
-    <value>lblInternalCode</value>
-  </data>
-  <data name="&gt;&gt;cboSubGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ItemNumberOnWB.HeaderText" xml:space="preserve">
-    <value>ItemNumberOnWB</value>
-  </data>
-  <data name="&gt;&gt;lblGofferNumber.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="lblHardboardBoxNumber.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnUpdateItem.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="btnAddImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 46</value>
-  </data>
-  <data name="&gt;&gt;tbBarcode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbPackagingAndDimensions.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="tbBarcode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 132</value>
-  </data>
-  <data name="&gt;&gt;lblCategory.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tbNote.Name" xml:space="preserve">
-    <value>tbNote</value>
-  </data>
-  <data name="&gt;&gt;tsmiUseValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ItemCode.Name" xml:space="preserve">
-    <value>ItemCode</value>
-  </data>
-  <data name="&gt;&gt;lblItemCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnClearControlsValues.Name" xml:space="preserve">
-    <value>btnClearControlsValues</value>
-  </data>
-  <data name="&gt;&gt;btnAddImage.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="gbItem.Text" xml:space="preserve">
-    <value>Item</value>
-  </data>
-  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="Barcode.HeaderText" xml:space="preserve">
-    <value>Barcode</value>
-  </data>
-  <data name="&gt;&gt;tbItemCode.ZOrder" xml:space="preserve">
-    <value>27</value>
+  <data name="lblColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 274</value>
   </data>
   <data name="&gt;&gt;btnUpdateItem.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
+  <data name="lblItemColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 99</value>
   </data>
-  <data name="&gt;&gt;tsmiEdit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnUpdateItem.Text" xml:space="preserve">
+    <value>Update </value>
   </data>
-  <data name="&gt;&gt;btnClearControlsValues.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;tbItemNumberOnWB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblColor.Text" xml:space="preserve">
-    <value>Color :</value>
-  </data>
-  <data name="Note.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;ItemColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ItemColor.Width" type="System.Int32, mscorlib">
+  <data name="ItemImage.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="lblBarcode.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;ItemImage.Name" xml:space="preserve">
-    <value>ItemImage</value>
+  <data name="&gt;&gt;ItemID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnUpdateAllImages.Name" xml:space="preserve">
-    <value>btnUpdateAllImages</value>
+  <data name="&gt;&gt;tbGofferNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;lblBarcode.Parent" xml:space="preserve">
+    <value>gbItem</value>
   </data>
-  <data name="&gt;&gt;gbItem.Name" xml:space="preserve">
+  <data name="ProductNameCol.Width" type="System.Int32, mscorlib">
+    <value>188</value>
+  </data>
+  <data name="ProductName.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;SubGroup.Name" xml:space="preserve">
+    <value>SubGroup</value>
+  </data>
+  <data name="&gt;&gt;dgvItemsTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbPackagingAndDimensions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 341</value>
+  </data>
+  <data name="cboCategory.Items4" xml:space="preserve">
+    <value>Нова</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteItem.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="lblNote.Text" xml:space="preserve">
+    <value>Note :</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.Parent" xml:space="preserve">
     <value>gbItem</value>
   </data>
   <data name="ItemColor.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;ItemColor.Name" xml:space="preserve">
-    <value>ItemColor</value>
-  </data>
-  <data name="lblPackagingAndDimensions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 343</value>
-  </data>
-  <data name="tbItemID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 27</value>
-  </data>
-  <data name="btnClearBoxes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 618</value>
-  </data>
-  <data name="dgvItemsTable.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblImage.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;tbItemCodeWithColor.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="lblPackagingAndDimensions.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tbBarcode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="&gt;&gt;lblGofferNumber.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="GofferNumber.HeaderText" xml:space="preserve">
-    <value>GofferNumber</value>
-  </data>
-  <data name="&gt;&gt;ItemNumberOnWB.Name" xml:space="preserve">
-    <value>ItemNumberOnWB</value>
-  </data>
-  <data name="&gt;&gt;lblCategory.Name" xml:space="preserve">
-    <value>lblCategory</value>
-  </data>
-  <data name="&gt;&gt;tbUnit.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;tbWarehouseAllQuantity.Name" xml:space="preserve">
-    <value>tbWarehouseAllQuantity</value>
-  </data>
-  <data name="ItemID.Width" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="btnUpdateItem.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="ItemNumberOnWB.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="tbItemNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 62</value>
-  </data>
-  <data name="&gt;&gt;btnAddImage.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cboCategory.Items5" xml:space="preserve">
-    <value>Прочее</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.Name" xml:space="preserve">
-    <value>lblUnit</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tbItemID.Name" xml:space="preserve">
-    <value>tbItemID</value>
-  </data>
-  <data name="&gt;&gt;pbItemImage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAddImage.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="btnAddImage.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="tbItemID.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblProductName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tbItemCode.Name" xml:space="preserve">
-    <value>tbItemCode</value>
-  </data>
-  <data name="&gt;&gt;lblColor.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="ItemCode.HeaderText" xml:space="preserve">
-    <value>Артикул</value>
-  </data>
-  <data name="ItemImage.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;ItemNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbInternalCode.Name" xml:space="preserve">
-    <value>tbInternalCode</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 448</value>
-  </data>
-  <data name="&gt;&gt;btnContextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAddItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="&gt;&gt;ItemNumber.Name" xml:space="preserve">
+    <value>ItemNumber</value>
   </data>
   <data name="&gt;&gt;ItemID.Name" xml:space="preserve">
     <value>ItemID</value>
   </data>
-  <data name="&gt;&gt;btnClearControlsValues.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="Unit.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddItem.Name" xml:space="preserve">
-    <value>btnAddItem</value>
-  </data>
-  <data name="lblProductName.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblNote.Text" xml:space="preserve">
-    <value>Note :</value>
-  </data>
-  <data name="&gt;&gt;tbSearchByBarcode.Name" xml:space="preserve">
-    <value>tbSearchByBarcode</value>
-  </data>
-  <data name="&gt;&gt;lblID.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblItemCodeWithColor.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;btnAddImage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tbItemNumberOnWB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 167</value>
-  </data>
-  <data name="gbItem.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblNote.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ItemID.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;dgvItemsTable.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblGofferNumber.Text" xml:space="preserve">
-    <value>Goffer Number :</value>
-  </data>
-  <data name="ItemCodeWithColor.HeaderText" xml:space="preserve">
-    <value>Артикул цвета </value>
-  </data>
-  <data name="&gt;&gt;lblItemNumber.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="cboCategory.Items" xml:space="preserve">
-    <value>Сводная</value>
-  </data>
-  <data name="&gt;&gt;lblCategory.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cboCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="cbCategory.Items1" xml:space="preserve">
-    <value>Свадебная</value>
-  </data>
-  <data name="&gt;&gt;tsmiEdit.Name" xml:space="preserve">
-    <value>tsmiEdit</value>
-  </data>
-  <data name="lblItemCodeWithColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 99</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;btnClearBoxes.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;lblItemCodeWithColor.Name" xml:space="preserve">
-    <value>lblItemCodeWithColor</value>
-  </data>
-  <data name="&gt;&gt;ProductName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PackagingAndDimensions.Name" xml:space="preserve">
-    <value>PackagingAndDimensions</value>
-  </data>
-  <data name="tbProductName.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tbHardboardBoxNumber.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="cmItemTableViewMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 30</value>
-  </data>
-  <data name="cbCategory.Items4" xml:space="preserve">
-    <value>Нова</value>
-  </data>
-  <data name="lblItemNumberOnWB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 169</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAddImage.Text" xml:space="preserve">
-    <value>Add Image</value>
+  <data name="&gt;&gt;lblInternalCode.Name" xml:space="preserve">
+    <value>lblInternalCode</value>
   </data>
   <data name="lblNote.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 414</value>
   </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="ItemCode.Width" type="System.Int32, mscorlib">
+    <value>94</value>
   </data>
-  <data name="&gt;&gt;ItemCodeWithColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnUpdateItem.Name" xml:space="preserve">
-    <value>btnUpdateItem</value>
-  </data>
-  <data name="&gt;&gt;editToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblItemNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblBarcode.Text" xml:space="preserve">
-    <value>Barcode :</value>
-  </data>
-  <data name="tbHardboardBoxNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 307</value>
-  </data>
-  <data name="lblID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="btnDeleteItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 637</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;tbInternalCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbItemImage.Name" xml:space="preserve">
-    <value>pbItemImage</value>
-  </data>
-  <data name="lblGofferNumber.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblGofferNumber.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblItemColor.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblItemColor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;ItemColor.Name" xml:space="preserve">
+    <value>ItemColor</value>
   </data>
-  <data name="&gt;&gt;btnClearBoxes.Name" xml:space="preserve">
-    <value>btnClearBoxes</value>
+  <data name="&gt;&gt;lblID.Name" xml:space="preserve">
+    <value>lblID</value>
   </data>
-  <data name="&gt;&gt;btnAddImageFromWB.Parent" xml:space="preserve">
-    <value>gbItem</value>
+  <data name="&gt;&gt;ItemCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 24</value>
+  <data name="HardboardBoxNumber.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
-  <data name="btnAddItem.Text" xml:space="preserve">
-    <value>Add </value>
+  <data name="tbItemNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
   </data>
-  <data name="&gt;&gt;cboCategory.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="tbProductName.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>add</value>
   </data>
-  <data name="&gt;&gt;lblCategory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblCategory.Parent" xml:space="preserve">
+    <value>panel3</value>
   </data>
   <data name="&gt;&gt;Barcode.Name" xml:space="preserve">
     <value>Barcode</value>
   </data>
-  <data name="&gt;&gt;lblWarehouseCategoryQuantity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tbUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 342</value>
   </data>
-  <data name="Color.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lblWarehouseCategoryQuantity.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="cboSubGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 445</value>
-  </data>
-  <data name="ProductNameCol.Width" type="System.Int32, mscorlib">
-    <value>188</value>
-  </data>
-  <data name="lblItemColor.Text" xml:space="preserve">
-    <value>Item Color :</value>
-  </data>
-  <data name="&gt;&gt;lblColor.Name" xml:space="preserve">
-    <value>lblColor</value>
-  </data>
-  <data name="&gt;&gt;tbItemCode.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="btnClearControlsValues.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnClearBoxes.Location" type="System.Drawing.Point, System.Drawing">
     <value>192, 618</value>
   </data>
-  <data name="lblID.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;ItemNumberOnWB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbItem.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnAddImageFromWB.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbItemNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;lblItemColor.Name" xml:space="preserve">
+    <value>lblItemColor</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="btnDeleteItem.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 344</value>
+  </data>
+  <data name="&gt;&gt;ProductNameCol.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbHardboardBoxNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseAllQuantity.Name" xml:space="preserve">
+    <value>tbWarehouseAllQuantity</value>
+  </data>
+  <data name="&gt;&gt;lblNote.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;btnAddItem.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.Name" xml:space="preserve">
+    <value>tbUnit</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateItem.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gbItem.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;tbItemID.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblItemCodeWithColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cbCategory.Items1" xml:space="preserve">
+    <value>Свадебная</value>
   </data>
-  <data name="pbItemImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="lblCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 33</value>
   </data>
-  <data name="ProductName.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnClose.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;gbItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbItemCodeWithColor.Name" xml:space="preserve">
-    <value>tbItemCodeWithColor</value>
-  </data>
-  <data name="Category.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;tbGofferNumber.Name" xml:space="preserve">
-    <value>tbGofferNumber</value>
-  </data>
-  <data name="tbColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="lblItemNumber.Text" xml:space="preserve">
-    <value>Item Number :</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
-    <value>toolStripMenuItem2</value>
-  </data>
-  <data name="tbUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 342</value>
-  </data>
-  <data name="tbBarcode.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;cbCategory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 30</value>
-  </data>
-  <data name="ItemNumber.HeaderText" xml:space="preserve">
-    <value>ItemNumber</value>
-  </data>
-  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cboCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 5</value>
-  </data>
-  <data name="&gt;&gt;tbWarehouseAllQuantity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="lblItemNumberOnWB.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tbItemNumberOnWB.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblHardboardBoxNumber.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gbItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>419, 618</value>
-  </data>
-  <data name="dgvItemsTable.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;tbPackagingAndDimensions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ItemImage.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tbHardboardBoxNumber.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;tbItemColor.Name" xml:space="preserve">
-    <value>tbItemColor</value>
-  </data>
-  <data name="lblInternalCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 204</value>
-  </data>
-  <data name="&gt;&gt;lblPackagingAndDimensions.Name" xml:space="preserve">
-    <value>lblPackagingAndDimensions</value>
-  </data>
-  <data name="&gt;&gt;PackagingAndDimensions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbWarehouseCategoryQuantity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblItemNumberOnWB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblItemNumberOnWB.Name" xml:space="preserve">
-    <value>lblItemNumberOnWB</value>
-  </data>
-  <data name="cboCategory.Items4" xml:space="preserve">
-    <value>Нова</value>
+  <data name="tbItemColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="tbColor.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;InternalCode.Name" xml:space="preserve">
+    <value>InternalCode</value>
+  </data>
+  <data name="&gt;&gt;btnClearControlsValues.Name" xml:space="preserve">
+    <value>btnClearControlsValues</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tbHardboardBoxNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;tbItemNumberOnWB.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="cbCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;tbPackagingAndDimensions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ItemCodeWithColor.Name" xml:space="preserve">
+    <value>ItemCodeWithColor</value>
+  </data>
+  <data name="&gt;&gt;PackagingAndDimensions.Name" xml:space="preserve">
+    <value>PackagingAndDimensions</value>
+  </data>
+  <data name="dgvItemsTable.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnAddImageFromWB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 543</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;btnContextMenuStrip1.Name" xml:space="preserve">
+    <value>btnContextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;tbHardboardBoxNumber.Name" xml:space="preserve">
+    <value>tbHardboardBoxNumber</value>
+  </data>
+  <data name="Unit.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;tbProductName.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="ItemID.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;lblColor.Type" xml:space="preserve">
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;tbSearchByBarcode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblID.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPackagingAndDimensions.Name" xml:space="preserve">
+    <value>tbPackagingAndDimensions</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;lblImage.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseAllQuantity.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="btnAddImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 56</value>
+  </data>
+  <data name="lblPackagingAndDimensions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gbItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnUpdateAllImages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>797, 13</value>
+  </data>
+  <data name="lblUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="&gt;&gt;btnClearBoxes.Name" xml:space="preserve">
+    <value>btnClearBoxes</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="&gt;&gt;cboSubGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ItemColor.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="Barcode.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;tbSearchByBarcode.Name" xml:space="preserve">
+    <value>tbSearchByBarcode</value>
+  </data>
+  <data name="dgvItemsTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>847, 607</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;tbBarcode.Name" xml:space="preserve">
+    <value>tbBarcode</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateAllImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ItemNumberOnWB.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblProductName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbColor.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tbPackagingAndDimensions.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblPackagingAndDimensions.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="Color.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblItemCodeWithColor.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="HardboardBoxNumber.HeaderText" xml:space="preserve">
+    <value>HardboardBoxNumber</value>
+  </data>
+  <data name="lblItemNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="lblInternalCode.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteItem.Name" xml:space="preserve">
+    <value>btnDeleteItem</value>
+  </data>
+  <data name="&gt;&gt;PackagingAndDimensions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbItemCodeWithColor.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Note.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="pbItemImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 166</value>
   </data>
   <data name="lblItemNumberOnWB.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 20</value>
   </data>
-  <data name="&gt;&gt;tbNote.Type" xml:space="preserve">
+  <data name="&gt;&gt;cboCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductNameCol.Name" xml:space="preserve">
+    <value>ProductNameCol</value>
+  </data>
+  <data name="&gt;&gt;tbHardboardBoxNumber.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tbItemColor.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;tsmiUseValue.Name" xml:space="preserve">
+    <value>tsmiUseValue</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseCategoryQuantity.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tbProductName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="lblImage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gbItem.Name" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;Color.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Category.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;lblBarcode.Name" xml:space="preserve">
+    <value>lblBarcode</value>
+  </data>
+  <data name="cboCategory.Items3" xml:space="preserve">
+    <value>Буквы </value>
+  </data>
   <data name="&gt;&gt;tbColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBarcode.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lblGofferNumber.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="cboSubGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 445</value>
+  </data>
+  <data name="&gt;&gt;lblProductName.Name" xml:space="preserve">
+    <value>lblProductName</value>
+  </data>
+  <data name="&gt;&gt;tbItemCode.Name" xml:space="preserve">
+    <value>tbItemCode</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 37</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 343</value>
+  </data>
+  <data name="&gt;&gt;lblImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PackagingAndDimensions.HeaderText" xml:space="preserve">
+    <value>УПАКОВКА, габариты</value>
+  </data>
+  <data name="&gt;&gt;btnClearBoxes.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="tbItemID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="cboCategory.Items2" xml:space="preserve">
+    <value>Свадебная</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;tbNote.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;lblItemNumberOnWB.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>419, 618</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="btnAddImageFromWB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 56</value>
+  </data>
+  <data name="lblPackagingAndDimensions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 343</value>
+  </data>
+  <data name="lblImage.Text" xml:space="preserve">
+    <value>Image :</value>
+  </data>
+  <data name="tbWarehouseAllQuantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 6</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;Color.Name" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbItemNumber.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbItemNumberOnWB.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cboSubGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAddItem.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="GofferNumber.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="lblItemCodeWithColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 99</value>
+  </data>
+  <data name="&gt;&gt;tbGofferNumber.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 30</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;lblItemNumber.Name" xml:space="preserve">
+    <value>lblItemNumber</value>
+  </data>
+  <data name="lblBarcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 134</value>
+  </data>
+  <data name="tbWarehouseCategoryQuantity.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cboCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lblNote.Name" xml:space="preserve">
+    <value>lblNote</value>
+  </data>
+  <data name="&gt;&gt;lblHardboardBoxNumber.Name" xml:space="preserve">
+    <value>lblHardboardBoxNumber</value>
+  </data>
+  <data name="&gt;&gt;lblItemCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnAddItem.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="btnUpdateItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 637</value>
+  </data>
+  <data name="&gt;&gt;lblColor.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="tbNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 411</value>
+  </data>
+  <data name="&gt;&gt;tbProductName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel4.Name" xml:space="preserve">
     <value>panel4</value>
   </data>
-  <data name="tbProductName.AutoCompleteCustomSource" xml:space="preserve">
-    <value>basem</value>
+  <data name="tbNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;tbNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbGofferNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 377</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="InternalCode.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="ItemNumber.Width" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbItemNumber.Name" xml:space="preserve">
     <value>tbItemNumber</value>
   </data>
-  <data name="btnUpdateAllImages.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="Category.HeaderText" xml:space="preserve">
+    <value>Category</value>
   </data>
-  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
-    <value>btnClose</value>
+  <data name="ProductNameCol.HeaderText" xml:space="preserve">
+    <value>Наименование изделия</value>
   </data>
-  <data name="btnAddImageFromWB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lblColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;tbItemCodeWithColor.Name" xml:space="preserve">
+    <value>tbItemCodeWithColor</value>
+  </data>
+  <data name="ItemImage.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tbProductName.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnDeleteItem.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lblHardboardBoxNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseCategoryQuantity.Name" xml:space="preserve">
+    <value>tbWarehouseCategoryQuantity</value>
+  </data>
+  <data name="btnAddItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="&gt;&gt;tbItemCodeWithColor.Parent" xml:space="preserve">
-    <value>gbItem</value>
+  <data name="tbItemCodeWithColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 97</value>
   </data>
-  <data name="lblItemNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="tbProductName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 237</value>
   </data>
-  <data name="&gt;&gt;lblID.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;tbItemNumber.Type" xml:space="preserve">
+  <data name="&gt;&gt;tbHardboardBoxNumber.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;editToolStripMenuItem.Name" xml:space="preserve">
-    <value>editToolStripMenuItem</value>
+  <data name="Barcode.HeaderText" xml:space="preserve">
+    <value>Barcode</value>
   </data>
-  <data name="&gt;&gt;tbGofferNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tbInternalCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="SubGroup.HeaderText" xml:space="preserve">
-    <value>Подгруппа</value>
+  <data name="tbWarehouseCategoryQuantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>788, 31</value>
   </data>
-  <data name="lblWarehouseCategoryQuantity.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
   </data>
-  <data name="&gt;&gt;cboSubGroup.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblUnit.Parent" xml:space="preserve">
     <value>gbItem</value>
   </data>
-  <data name="dgvItemsTable.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="&gt;&gt;Note.Name" xml:space="preserve">
+    <value>Note</value>
   </data>
-  <data name="tbProductName.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;btnUpdateItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cboCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 5</value>
+  </data>
+  <data name="&gt;&gt;tbNote.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;HardboardBoxNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblProductName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 239</value>
+  </data>
+  <data name="tbItemID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 27</value>
+  </data>
+  <data name="tbItemColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 97</value>
+  </data>
+  <data name="btnClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;btnClearControlsValues.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tbItemColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="tbProductName.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;SubGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbItemID.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblItemColor.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="lblItemColor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblUnit.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;ProductName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPackagingAndDimensions.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddImageFromWB.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnAddItem.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnClearControlsValues.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseCategoryQuantity.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="lblID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="&gt;&gt;lblItemCodeWithColor.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Barcode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbSearchByBarcode.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblColor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbBarcode.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;lblGofferNumber.Name" xml:space="preserve">
+    <value>lblGofferNumber</value>
+  </data>
+  <data name="btnClearControlsValues.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="ItemID.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;tbHardboardBoxNumber.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1301, 719</value>
+  </data>
+  <data name="tbBarcode.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tbSearchByBarcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1042, 6</value>
+  </data>
+  <data name="tbColor.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 27</value>
   </data>
   <data name="btnClearBoxes.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;lblProductName.Name" xml:space="preserve">
-    <value>lblProductName</value>
-  </data>
-  <data name="tbWarehouseAllQuantity.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tbNote.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tbItemCodeWithColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDeleteItem.Text" xml:space="preserve">
-    <value>Delete </value>
-  </data>
-  <data name="tbInternalCode.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblItemNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 64</value>
-  </data>
-  <data name="pbItemImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 166</value>
-  </data>
-  <data name="ProductName.HeaderText" xml:space="preserve">
-    <value>ProductName</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 6</value>
-  </data>
-  <data name="&gt;&gt;Color.Name" xml:space="preserve">
-    <value>Color</value>
-  </data>
-  <data name="btnDeleteItem.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="tbGofferNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="ProductNameCol.HeaderText" xml:space="preserve">
-    <value>Наименование изделия</value>
-  </data>
-  <data name="lblImage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tbInternalCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="&gt;&gt;tbColor.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="HardboardBoxNumber.HeaderText" xml:space="preserve">
-    <value>HardboardBoxNumber</value>
-  </data>
-  <data name="btnClearControlsValues.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="cbCategory.Items" xml:space="preserve">
-    <value>Сводная</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Items</value>
-  </data>
-  <data name="&gt;&gt;tbItemColor.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="tbItemNumberOnWB.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;ProductNameCol.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProductNameCol.Name" xml:space="preserve">
-    <value>ProductNameCol</value>
-  </data>
-  <data name="lblHardboardBoxNumber.Text" xml:space="preserve">
-    <value>Hardboard Box Number :</value>
-  </data>
-  <data name="lblBarcode.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnAddImageFromWB.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;lblItemCodeWithColor.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="tbNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 411</value>
-  </data>
-  <data name="tbItemID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="tbItemColor.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnUpdateItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cbCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="lblNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 20</value>
-  </data>
-  <data name="tbSearchByBarcode.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="tbHardboardBoxNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="Category.HeaderText" xml:space="preserve">
-    <value>Category</value>
-  </data>
-  <data name="lblInternalCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 20</value>
-  </data>
-  <data name="Color.HeaderText" xml:space="preserve">
-    <value>Color</value>
-  </data>
-  <data name="Note.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="tbBarcode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;tbWarehouseCategoryQuantity.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="ItemCode.Width" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="lblBarcode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="&gt;&gt;lblProductName.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;tbProductName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tbNote.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="tbProductName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="lblItemColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 20</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="lblColor.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Barcode.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteItem.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="lblHardboardBoxNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 309</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="btnDeleteItem.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;lblItemNumberOnWB.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;SubGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 33</value>
-  </data>
-  <data name="&gt;&gt;tbUnit.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnUpdateItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblItemNumber.Name" xml:space="preserve">
-    <value>lblItemNumber</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;GofferNumber.Name" xml:space="preserve">
-    <value>GofferNumber</value>
-  </data>
-  <data name="&gt;&gt;tbItemID.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="lblGofferNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 379</value>
-  </data>
-  <data name="Note.HeaderText" xml:space="preserve">
-    <value>Note</value>
-  </data>
-  <data name="Unit.HeaderText" xml:space="preserve">
-    <value>Unit</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="btnAddImageFromWB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 543</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblItemCodeWithColor.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dgvItemsTable.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 69</value>
-  </data>
-  <data name="&gt;&gt;cboCategory.Name" xml:space="preserve">
-    <value>cboCategory</value>
-  </data>
-  <data name="&gt;&gt;lblItemColor.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lblColor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblID.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ItemCodeWithColor.Width" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
-  <data name="tbItemColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="btnUpdateItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 637</value>
-  </data>
-  <data name="&gt;&gt;btnUpdateItem.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblGofferNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="&gt;&gt;cboCategory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Barcode.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tbItemNumber.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="lblID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tbProductName.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>add</value>
-  </data>
-  <data name="&gt;&gt;lblItemNumberOnWB.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="tbPackagingAndDimensions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 341</value>
-  </data>
-  <data name="InternalCode.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;Unit.Name" xml:space="preserve">
-    <value>Unit</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tbWarehouseCategoryQuantity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>788, 31</value>
-  </data>
-  <data name="&gt;&gt;lblInternalCode.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 343</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dgvItemsTable.Name" xml:space="preserve">
-    <value>dgvItemsTable</value>
-  </data>
-  <data name="&gt;&gt;cboSubGroup.Name" xml:space="preserve">
-    <value>cboSubGroup</value>
-  </data>
-  <data name="&gt;&gt;tbUnit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddItem.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;InternalCode.Name" xml:space="preserve">
-    <value>InternalCode</value>
-  </data>
-  <data name="&gt;&gt;Note.Name" xml:space="preserve">
-    <value>Note</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmItems</value>
-  </data>
-  <data name="lblBarcode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 134</value>
-  </data>
-  <data name="ItemImage.HeaderText" xml:space="preserve">
-    <value>Image</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="btnAddImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 479</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;lblGofferNumber.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblItemNumber.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbHardboardBoxNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAddImageFromWB.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pbItemImage.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="tbNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="tbGofferNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btnAddItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 637</value>
-  </data>
-  <data name="&gt;&gt;tbItemCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tbItemCodeWithColor.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblWarehouseCategoryQuantity.Name" xml:space="preserve">
-    <value>lblWarehouseCategoryQuantity</value>
-  </data>
-  <data name="Color.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="tbSearchByBarcode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1042, 6</value>
-  </data>
-  <data name="&gt;&gt;btnAddImageFromWB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAddItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 69</value>
-  </data>
-  <data name="&gt;&gt;btnClearBoxes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblWarehouseCategoryQuantity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 33</value>
-  </data>
-  <data name="dgvItemsTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 23</value>
-  </data>
-  <data name="&gt;&gt;lblItemColor.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;Note.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblUnit.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tbSearchByBarcode.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;tbWarehouseAllQuantity.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HardboardBoxNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnUpdateItem.Text" xml:space="preserve">
-    <value>Update </value>
-  </data>
-  <data name="lblImage.Text" xml:space="preserve">
-    <value>Image :</value>
-  </data>
-  <data name="tsmiEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 26</value>
-  </data>
-  <data name="tbItemCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 97</value>
   </data>
   <data name="lblNote.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="ItemNumber.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tbColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 272</value>
-  </data>
-  <data name="&gt;&gt;cbCategory.Name" xml:space="preserve">
-    <value>cbCategory</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;tbBarcode.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;tbGofferNumber.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="HardboardBoxNumber.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="tbProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 237</value>
-  </data>
-  <data name="&gt;&gt;tbUnit.Name" xml:space="preserve">
-    <value>tbUnit</value>
-  </data>
-  <data name="gbItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="lblItemCode.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmItemTableViewMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPackagingAndDimensions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblItemNumber.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="lblColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 274</value>
-  </data>
-  <data name="&gt;&gt;pbItemImage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cboCategory.Items2" xml:space="preserve">
-    <value>Свадебная</value>
-  </data>
-  <data name="tbItemCode.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label32.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblHardboardBoxNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 20</value>
-  </data>
-  <data name="&gt;&gt;lblID.Name" xml:space="preserve">
-    <value>lblID</value>
-  </data>
-  <data name="lblItemNumberOnWB.Text" xml:space="preserve">
-    <value>Item Number On WB :</value>
-  </data>
-  <data name="tbNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;btnClearBoxes.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnUpdateAllImages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>797, 13</value>
-  </data>
-  <data name="PackagingAndDimensions.Width" type="System.Int32, mscorlib">
-    <value>173</value>
-  </data>
-  <data name="lblProductName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 239</value>
-  </data>
-  <data name="tbItemNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="ItemColor.HeaderText" xml:space="preserve">
-    <value>ItemColor</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1301, 719</value>
-  </data>
-  <data name="&gt;&gt;lblProductName.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="tbInternalCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;tbItemNumber.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="btnAddImageFromWB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 56</value>
-  </data>
-  <data name="lblImage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ProductName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblProductName.Text" xml:space="preserve">
-    <value>Product Name :</value>
-  </data>
-  <data name="btnClose.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;tbSearchByBarcode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;cbCategory.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;SubGroup.Name" xml:space="preserve">
-    <value>SubGroup</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;lblNote.Name" xml:space="preserve">
-    <value>lblNote</value>
-  </data>
-  <data name="&gt;&gt;lblBarcode.Name" xml:space="preserve">
-    <value>lblBarcode</value>
-  </data>
-  <data name="tbGofferNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;tbSearchByBarcode.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;Barcode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbPackagingAndDimensions.Name" xml:space="preserve">
-    <value>tbPackagingAndDimensions</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblGofferNumber.Name" xml:space="preserve">
-    <value>lblGofferNumber</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1074, 9</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="SubGroup.Width" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="&gt;&gt;btnUpdateAllImages.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
-  </data>
-  <data name="Unit.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tbGofferNumber.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 446</value>
-  </data>
-  <data name="lblInternalCode.Text" xml:space="preserve">
-    <value>Internal Code :</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAddItem.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="cbCategory.Items3" xml:space="preserve">
-    <value>Прочее</value>
-  </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnUpdateAllImages.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;GofferNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbItemColor.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="tbUnit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="&gt;&gt;lblImage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label32.Name" xml:space="preserve">
-    <value>label32</value>
-  </data>
-  <data name="tsmiUseValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 26</value>
-  </data>
-  <data name="&gt;&gt;btnUpdateAllImages.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="lblUnit.Text" xml:space="preserve">
-    <value>Unit :</value>
-  </data>
-  <data name="lblItemColor.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lblNote.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="lblID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 34</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>400, 813</value>
-  </data>
-  <data name="&gt;&gt;tbWarehouseCategoryQuantity.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;lblImage.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="btnAddItem.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="InternalCode.HeaderText" xml:space="preserve">
-    <value>InternalCode</value>
-  </data>
-  <data name="ItemNumberOnWB.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteItem.Name" xml:space="preserve">
-    <value>btnDeleteItem</value>
-  </data>
-  <data name="&gt;&gt;btnAddImageFromWB.Name" xml:space="preserve">
-    <value>btnAddImageFromWB</value>
-  </data>
-  <data name="InternalCode.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lblPackagingAndDimensions.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="lblImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
-  </data>
-  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;lblInternalCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblHardboardBoxNumber.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="lblItemColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 99</value>
-  </data>
-  <data name="lblItemNumber.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnUpdateItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 69</value>
-  </data>
-  <data name="&gt;&gt;ItemNumberOnWB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pbItemImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 445</value>
-  </data>
-  <data name="&gt;&gt;tbBarcode.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="tbPackagingAndDimensions.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;tbWarehouseAllQuantity.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tbBarcode.Name" xml:space="preserve">
-    <value>tbBarcode</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="lblHardboardBoxNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tbProductName.Name" xml:space="preserve">
-    <value>tbProductName</value>
-  </data>
-  <data name="tbItemNumberOnWB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 27</value>
-  </data>
-  <data name="&gt;&gt;pbItemImage.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;lblBarcode.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="tbItemNumber.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tbItemColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 97</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;lblImage.Name" xml:space="preserve">
-    <value>lblImage</value>
-  </data>
-  <data name="lblProductName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 20</value>
-  </data>
-  <data name="&gt;&gt;tbInternalCode.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="lblUnit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblItemColor.Name" xml:space="preserve">
-    <value>lblItemColor</value>
+  <data name="cbCategory.Items2" xml:space="preserve">
+    <value>Буквы</value>
   </data>
   <data name="&gt;&gt;cbCategory.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;tbWarehouseCategoryQuantity.Name" xml:space="preserve">
-    <value>tbWarehouseCategoryQuantity</value>
+  <data name="&gt;&gt;dgvItemsTable.Name" xml:space="preserve">
+    <value>dgvItemsTable</value>
   </data>
-  <data name="&gt;&gt;cboSubGroup.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tbSearchByBarcode.Parent" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="btnDeleteItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tbBarcode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="btnAddImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 56</value>
+  <data name="cboCategory.Items5" xml:space="preserve">
+    <value>Прочее</value>
   </data>
-  <data name="&gt;&gt;btnContextMenuStrip1.Name" xml:space="preserve">
-    <value>btnContextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;lblHardboardBoxNumber.Name" xml:space="preserve">
-    <value>lblHardboardBoxNumber</value>
-  </data>
-  <data name="&gt;&gt;cmsItemsDataGrid.Name" xml:space="preserve">
-    <value>cmsItemsDataGrid</value>
-  </data>
-  <data name="&gt;&gt;lblColor.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="tbWarehouseAllQuantity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 6</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;tbItemID.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tbItemID.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lblProductName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tbItemID.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tbHardboardBoxNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 27</value>
   </data>
-  <data name="tbGofferNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 377</value>
-  </data>
-  <data name="&gt;&gt;tbProductName.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;ItemImage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblItemNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 20</value>
-  </data>
-  <data name="cboCategory.Items3" xml:space="preserve">
-    <value>Буквы </value>
-  </data>
-  <data name="&gt;&gt;gbItem.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 12</value>
-  </data>
-  <data name="&gt;&gt;Color.Type" xml:space="preserve">
+  <data name="&gt;&gt;ItemColor.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tbColor.Name" xml:space="preserve">
-    <value>tbColor</value>
+  <data name="&gt;&gt;cbCategory.Name" xml:space="preserve">
+    <value>cbCategory</value>
   </data>
-  <data name="GofferNumber.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+  <data name="tbGofferNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="GofferNumber.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lblItemCode.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblImage.Parent" xml:space="preserve">
     <value>gbItem</value>
   </data>
-  <data name="&gt;&gt;tsmiUseValue.Name" xml:space="preserve">
-    <value>tsmiUseValue</value>
+  <data name="lblNote.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="ItemID.HeaderText" xml:space="preserve">
-    <value>ItemID</value>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="tbItemColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="lblID.Text" xml:space="preserve">
-    <value>Item ID :</value>
-  </data>
-  <data name="&gt;&gt;btnAddItem.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="PackagingAndDimensions.HeaderText" xml:space="preserve">
-    <value>УПАКОВКА, габариты</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteItem.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tbHardboardBoxNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="tbColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1139, 637</value>
-  </data>
-  <data name="lblCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmsItemsDataGrid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;lblBarcode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Category.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 684</value>
-  </data>
-  <data name="tbInternalCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 202</value>
-  </data>
-  <data name="lblItemCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 99</value>
-  </data>
-  <data name="tbWarehouseCategoryQuantity.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tbItemColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbItemNumberOnWB.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="HardboardBoxNumber.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;HardboardBoxNumber.Name" xml:space="preserve">
-    <value>HardboardBoxNumber</value>
-  </data>
-  <data name="tbHardboardBoxNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;lblHardboardBoxNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnAddImageFromWB.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;InternalCode.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+  <data name="lblInternalCode.Text" xml:space="preserve">
+    <value>Internal Code :</value>
+  </data>
+  <data name="&gt;&gt;btnContextMenuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="lblInternalCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 204</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="HardboardBoxNumber.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;ItemCodeWithColor.Name" xml:space="preserve">
-    <value>ItemCodeWithColor</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
-  <data name="&gt;&gt;tbInternalCode.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="tbWarehouseAllQuantity.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnAddImage.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tbItemID.Name" xml:space="preserve">
+    <value>tbItemID</value>
+  </data>
+  <data name="SubGroup.HeaderText" xml:space="preserve">
+    <value>Подгруппа</value>
+  </data>
+  <data name="&gt;&gt;lblColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="cboCategory.Items" xml:space="preserve">
+    <value>Сводная</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteItem.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="InternalCode.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="SubGroup.Width" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmItems</value>
+  </data>
+  <data name="&gt;&gt;tbGofferNumber.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tsmiEdit.Name" xml:space="preserve">
+    <value>tsmiEdit</value>
+  </data>
+  <data name="&gt;&gt;Category.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHardboardBoxNumber.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="ItemCodeWithColor.HeaderText" xml:space="preserve">
+    <value>Артикул цвета </value>
+  </data>
+  <data name="cbCategory.Items3" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblItemCode.Name" xml:space="preserve">
+    <value>lblItemCode</value>
+  </data>
+  <data name="btnUpdateItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 69</value>
+  </data>
+  <data name="&gt;&gt;tbItemCodeWithColor.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="lblNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="lblUnit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnClearBoxes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbItem.Text" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="cbCategory.Items4" xml:space="preserve">
+    <value>Нова</value>
+  </data>
+  <data name="&gt;&gt;tsmiEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmsItemsDataGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductName.Name" xml:space="preserve">
+    <value>ProductName</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddItem.Name" xml:space="preserve">
+    <value>btnAddItem</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbItemCode.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="tbItemCode.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ItemNumber.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblUnit.Text" xml:space="preserve">
+    <value>Unit :</value>
+  </data>
+  <data name="lblItemNumberOnWB.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseAllQuantity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateAllImages.Name" xml:space="preserve">
+    <value>btnUpdateAllImages</value>
+  </data>
+  <data name="&gt;&gt;btnAddImageFromWB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cboSubGroup.Name" xml:space="preserve">
+    <value>cboSubGroup</value>
+  </data>
+  <data name="&gt;&gt;Unit.Name" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="btnDeleteItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;lblPackagingAndDimensions.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;lblColor.Name" xml:space="preserve">
+    <value>lblColor</value>
+  </data>
+  <data name="&gt;&gt;tbItemID.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;cmsItemsDataGrid.Name" xml:space="preserve">
+    <value>cmsItemsDataGrid</value>
+  </data>
+  <data name="tbInternalCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 202</value>
+  </data>
+  <data name="tbColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 272</value>
+  </data>
+  <data name="&gt;&gt;tbItemNumberOnWB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnAddItem.Text" xml:space="preserve">
+    <value>Add </value>
+  </data>
+  <data name="&gt;&gt;tbColor.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="lblItemNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblID.Text" xml:space="preserve">
+    <value>Item ID :</value>
+  </data>
+  <data name="lblHardboardBoxNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblID.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="PackagingAndDimensions.Width" type="System.Int32, mscorlib">
+    <value>173</value>
   </data>
   <data name="btnAddImageFromWB.Text" xml:space="preserve">
     <value>Add Image from WB</value>
   </data>
-  <data name="&gt;&gt;lblBarcode.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;btnAddImageFromWB.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="tbItemNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;tbItemNumberOnWB.Name" xml:space="preserve">
-    <value>tbItemNumberOnWB</value>
-  </data>
-  <data name="tbItemNumberOnWB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="lblInternalCode.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblItemNumberOnWB.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblInternalCode.AutoSize" type="System.Boolean, mscorlib">
+  <data name="pbItemImage.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tbNote.Name" xml:space="preserve">
+    <value>tbNote</value>
+  </data>
+  <data name="&gt;&gt;btnAddItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.Name" xml:space="preserve">
+    <value>btnAddImage</value>
+  </data>
+  <data name="&gt;&gt;lblPackagingAndDimensions.Name" xml:space="preserve">
+    <value>lblPackagingAndDimensions</value>
+  </data>
+  <data name="&gt;&gt;lblColor.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;pbItemImage.Name" xml:space="preserve">
+    <value>pbItemImage</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;tbItemID.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="pbItemImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 445</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateAllImages.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Name" xml:space="preserve">
+    <value>editToolStripMenuItem</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseCategoryQuantity.Name" xml:space="preserve">
+    <value>lblWarehouseCategoryQuantity</value>
+  </data>
+  <data name="tbItemCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 97</value>
+  </data>
+  <data name="btnDeleteItem.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="lblItemCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 99</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseCategoryQuantity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProductName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tbColor.Name" xml:space="preserve">
+    <value>tbColor</value>
+  </data>
+  <data name="lblID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 34</value>
+  </data>
+  <data name="lblItemNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 64</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 26</value>
+  </data>
+  <data name="tbPackagingAndDimensions.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lblItemNumber.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ItemID.HeaderText" xml:space="preserve">
+    <value>ItemID</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseCategoryQuantity.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbUnit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnClearControlsValues.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 618</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseCategoryQuantity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInternalCode.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblColor.Text" xml:space="preserve">
+    <value>Color :</value>
+  </data>
+  <data name="lblItemNumber.Text" xml:space="preserve">
+    <value>Item Number :</value>
+  </data>
+  <data name="&gt;&gt;lblProductName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbInternalCode.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lblItemNumberOnWB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbItemColor.Name" xml:space="preserve">
+    <value>tbItemColor</value>
+  </data>
+  <data name="lblGofferNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="tbHardboardBoxNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 307</value>
+  </data>
+  <data name="tsmiEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 26</value>
+  </data>
+  <data name="pbItemImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="lblBarcode.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbSearchByBarcode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dgvItemsTable.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;cmItemTableViewMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblItemColor.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblUnit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblItemNumberOnWB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 169</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseCategoryQuantity.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;tbGofferNumber.Name" xml:space="preserve">
+    <value>tbGofferNumber</value>
+  </data>
+  <data name="&gt;&gt;cmItemTableViewMenu.Name" xml:space="preserve">
+    <value>cmItemTableViewMenu</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="ItemNumberOnWB.HeaderText" xml:space="preserve">
+    <value>ItemNumberOnWB</value>
+  </data>
+  <data name="&gt;&gt;tbItemColor.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="dgvItemsTable.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblGofferNumber.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblUnit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
+  <data name="lblBarcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
   </data>
-  <data name="tbUnit.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="tbGofferNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="lblHardboardBoxNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblNote.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbWarehouseAllQuantity.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tbUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>628, 8</value>
+  </data>
+  <data name="lblGofferNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 379</value>
+  </data>
+  <data name="&gt;&gt;lblCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ItemImage.HeaderText" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="&gt;&gt;lblGofferNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsmiUseValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GofferNumber.Name" xml:space="preserve">
+    <value>GofferNumber</value>
+  </data>
+  <data name="lblColor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnUpdateItem.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tbItemNumber.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;cboCategory.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="lblHardboardBoxNumber.Text" xml:space="preserve">
+    <value>Hardboard Box Number :</value>
+  </data>
+  <data name="&gt;&gt;gbItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ItemCode.HeaderText" xml:space="preserve">
+    <value>Артикул</value>
+  </data>
+  <data name="tbItemNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 62</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateItem.Name" xml:space="preserve">
+    <value>btnUpdateItem</value>
+  </data>
+  <data name="btnAddImageFromWB.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tbProductName.Name" xml:space="preserve">
+    <value>tbProductName</value>
+  </data>
+  <data name="&gt;&gt;btnUpdateAllImages.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 448</value>
+  </data>
+  <data name="tbColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Barcode.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Color.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="lblBarcode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbItemCodeWithColor.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="btnDeleteItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 637</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;GofferNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbInternalCode.Name" xml:space="preserve">
+    <value>tbInternalCode</value>
+  </data>
+  <data name="&gt;&gt;btnAddImageFromWB.Name" xml:space="preserve">
+    <value>btnAddImageFromWB</value>
+  </data>
+  <data name="GofferNumber.HeaderText" xml:space="preserve">
+    <value>GofferNumber</value>
+  </data>
+  <data name="&gt;&gt;lblItemCode.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="Unit.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="btnAddItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 69</value>
+  </data>
+  <data name="cbCategory.Items5" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="ItemNumberOnWB.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="btnAddImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 479</value>
+  </data>
+  <data name="btnAddImage.Text" xml:space="preserve">
+    <value>Add Image</value>
+  </data>
+  <data name="lblItemCodeWithColor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="tbProductName.AutoCompleteCustomSource" xml:space="preserve">
+    <value>basem</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;tbItemNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblItemNumber.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="tbInternalCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="&gt;&gt;lblItemNumberOnWB.Name" xml:space="preserve">
+    <value>lblItemNumberOnWB</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 684</value>
+  </data>
+  <data name="&gt;&gt;Category.Name" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="tbItemNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnUpdateItem.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;lblHardboardBoxNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblItemColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 20</value>
+  </data>
+  <data name="tbProductName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="tbItemNumberOnWB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHardboardBoxNumber.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="&gt;&gt;lblItemCode.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="InternalCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="tbItemID.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Unit.HeaderText" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="lblItemCode.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblImage.Name" xml:space="preserve">
+    <value>lblImage</value>
+  </data>
+  <data name="&gt;&gt;lblInternalCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnUpdateAllImages.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="tbInternalCode.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnClearBoxes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblItemColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GofferNumber.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ProductName.HeaderText" xml:space="preserve">
+    <value>ProductName</value>
+  </data>
+  <data name="&gt;&gt;tbInternalCode.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnAddImage.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;cboCategory.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblItemNumberOnWB.Text" xml:space="preserve">
+    <value>Item Number On WB :</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 69</value>
+  </data>
+  <data name="lblItemNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tbItemNumberOnWB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 167</value>
+  </data>
+  <data name="tbItemNumberOnWB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="lblProductName.Text" xml:space="preserve">
+    <value>Product Name :</value>
+  </data>
+  <data name="Note.HeaderText" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Note.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;lblBarcode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbBarcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 132</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;pbItemImage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbBarcode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblWarehouseCategoryQuantity.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1074, 9</value>
+  </data>
+  <data name="&gt;&gt;lblInternalCode.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;lblCategory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmItemTableViewMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 30</value>
+  </data>
+  <data name="&gt;&gt;pbItemImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cboCategory.Items1" xml:space="preserve">
+    <value>НГ23</value>
+  </data>
+  <data name="InternalCode.HeaderText" xml:space="preserve">
+    <value>InternalCode</value>
+  </data>
+  <data name="&gt;&gt;ItemImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ItemCode.Name" xml:space="preserve">
+    <value>ItemCode</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnClearControlsValues.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUnit.Name" xml:space="preserve">
+    <value>lblUnit</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;Unit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ItemNumberOnWB.Name" xml:space="preserve">
+    <value>ItemNumberOnWB</value>
+  </data>
+  <data name="&gt;&gt;lblItemNumberOnWB.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;lblProductName.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;tbItemNumberOnWB.Name" xml:space="preserve">
+    <value>tbItemNumberOnWB</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 6</value>
+  </data>
+  <data name="&gt;&gt;lblItemCodeWithColor.Name" xml:space="preserve">
+    <value>lblItemCodeWithColor</value>
+  </data>
+  <data name="tbGofferNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dgvItemsTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 23</value>
+  </data>
+  <data name="&gt;&gt;ItemImage.Name" xml:space="preserve">
+    <value>ItemImage</value>
+  </data>
+  <data name="&gt;&gt;tbItemCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblInternalCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="lblWarehouseCategoryQuantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 33</value>
+  </data>
+  <data name="tsmiUseValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 26</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 46</value>
+  </data>
+  <data name="cboSubGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cboCategory.Name" xml:space="preserve">
+    <value>cboCategory</value>
+  </data>
+  <data name="tbItemColor.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tbItemID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbItemImage.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;lblGofferNumber.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="lblProductName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 20</value>
+  </data>
+  <data name="tbNote.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbItemCodeWithColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="editToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnDeleteItem.Text" xml:space="preserve">
+    <value>Delete </value>
+  </data>
+  <data name="lblBarcode.Text" xml:space="preserve">
+    <value>Barcode :</value>
+  </data>
+  <data name="lblImage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="GofferNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="cbCategory.Items" xml:space="preserve">
+    <value>Сводная</value>
+  </data>
+  <data name="Color.HeaderText" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1139, 637</value>
+  </data>
+  <data name="&gt;&gt;Note.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblID.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblGofferNumber.Text" xml:space="preserve">
+    <value>Goffer Number :</value>
+  </data>
+  <data name="&gt;&gt;tbBarcode.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="btnAddImageFromWB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnAddImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tbItemColor.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;dgvItemsTable.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;dgvItemsTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbItemCode.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="lblHardboardBoxNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 309</value>
+  </data>
+  <data name="ItemColor.HeaderText" xml:space="preserve">
+    <value>ItemColor</value>
+  </data>
+  <data name="lblID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbProductName.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 24</value>
+  </data>
+  <data name="&gt;&gt;ItemCodeWithColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblInternalCode.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="ItemCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ProductNameCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="cmsItemsDataGrid.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  </data>
+  <data name="&gt;&gt;tbInternalCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 12</value>
+  </data>
+  <data name="tbBarcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
+  <data name="lblGofferNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbItemNumberOnWB.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="lblItemColor.Text" xml:space="preserve">
+    <value>Item Color :</value>
+  </data>
+  <data name="lblImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="&gt;&gt;gbItem.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblPackagingAndDimensions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblProductName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnDeleteItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 69</value>
+  </data>
+  <data name="btnUpdateItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="lblImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 446</value>
+  </data>
+  <data name="ItemNumber.HeaderText" xml:space="preserve">
+    <value>ItemNumber</value>
+  </data>
+  <data name="&gt;&gt;lblProductName.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
+  <data name="&gt;&gt;lblCategory.Name" xml:space="preserve">
+    <value>lblCategory</value>
+  </data>
+  <data name="&gt;&gt;HardboardBoxNumber.Name" xml:space="preserve">
+    <value>HardboardBoxNumber</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 813</value>
+  </data>
+  <data name="&gt;&gt;cboSubGroup.Parent" xml:space="preserve">
+    <value>gbItem</value>
+  </data>
   <metadata name="Category.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ProductName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Barcode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ItemColor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ItemCodeWithColor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ItemNumberOnWB.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="SubGroup.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ItemID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Color.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Note.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ItemImage.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ItemNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="ItemID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ItemNumberOnWB.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>ru</value>
   </metadata>
   <metadata name="cmItemTableViewMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="SubGroup.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="PackagingAndDimensions.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="HardboardBoxNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Unit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="btnContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="ItemImage.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ItemNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="InternalCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ItemCodeWithColor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="GofferNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>77</value>
+  </metadata>
+  <metadata name="Unit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Barcode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="HardboardBoxNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ItemColor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>ru</value>
+  </metadata>
+  <metadata name="cmsItemsDataGrid.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="Note.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ProductNameCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ProductName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ItemCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

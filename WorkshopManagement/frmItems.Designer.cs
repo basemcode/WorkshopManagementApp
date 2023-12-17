@@ -29,647 +29,624 @@ namespace WorkshopManagement
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmItems));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnAddItem = new System.Windows.Forms.Button();
-            this.lblItemNumber = new System.Windows.Forms.Label();
-            this.tbItemCode = new System.Windows.Forms.TextBox();
-            this.lblItemCodeWithColor = new System.Windows.Forms.Label();
-            this.tbItemCodeWithColor = new System.Windows.Forms.TextBox();
-            this.lblBarcode = new System.Windows.Forms.Label();
-            this.tbBarcode = new System.Windows.Forms.TextBox();
-            this.lblItemNumberOnWB = new System.Windows.Forms.Label();
-            this.tbItemNumberOnWB = new System.Windows.Forms.TextBox();
-            this.lblInternalCode = new System.Windows.Forms.Label();
-            this.tbInternalCode = new System.Windows.Forms.TextBox();
-            this.lblProductName = new System.Windows.Forms.Label();
-            this.tbProductName = new System.Windows.Forms.TextBox();
-            this.lblColor = new System.Windows.Forms.Label();
-            this.tbColor = new System.Windows.Forms.TextBox();
-            this.lblHardboardBoxNumber = new System.Windows.Forms.Label();
-            this.tbHardboardBoxNumber = new System.Windows.Forms.TextBox();
-            this.tbPackagingAndDimensions = new System.Windows.Forms.TextBox();
-            this.lblGofferNumber = new System.Windows.Forms.Label();
-            this.tbGofferNumber = new System.Windows.Forms.TextBox();
-            this.lblNote = new System.Windows.Forms.Label();
-            this.tbNote = new System.Windows.Forms.TextBox();
-            this.lblID = new System.Windows.Forms.Label();
-            this.gbItem = new System.Windows.Forms.GroupBox();
-            this.cboSubGroup = new System.Windows.Forms.ComboBox();
-            this.pbItemImage = new System.Windows.Forms.PictureBox();
-            this.btnClearControlsValues = new System.Windows.Forms.Button();
-            this.btnAddImageFromWB = new System.Windows.Forms.Button();
-            this.btnAddImage = new System.Windows.Forms.Button();
-            this.lblImage = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbItemID = new System.Windows.Forms.TextBox();
-            this.lblPackagingAndDimensions = new System.Windows.Forms.Label();
-            this.btnUpdateItem = new System.Windows.Forms.Button();
-            this.btnDeleteItem = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.dgvItemsTable = new System.Windows.Forms.DataGridView();
-            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCodeWithColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemImage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ItemNumberOnWB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InternalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HardboardBoxNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PackagingAndDimensions = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GofferNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmsItemsDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsmiEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiUseValue = new System.Windows.Forms.ToolStripMenuItem();
-            this.cboCategory = new System.Windows.Forms.ComboBox();
-            this.lblCategory = new System.Windows.Forms.Label();
-            this.lblWarehouseCategoryQuantity = new System.Windows.Forms.Label();
-            this.tbWarehouseCategoryQuantity = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.tbSearchByBarcode = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbWarehouseAllQuantity = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnUpdateAllImages = new System.Windows.Forms.Button();
-            this.gbItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItemsTable)).BeginInit();
-            this.cmsItemsDataGrid.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            btnAddItem = new Button();
+            lblItemNumber = new Label();
+            tbItemCode = new TextBox();
+            lblItemCodeWithColor = new Label();
+            tbItemCodeWithColor = new TextBox();
+            lblBarcode = new Label();
+            tbBarcode = new TextBox();
+            lblItemNumberOnWB = new Label();
+            tbItemNumberOnWB = new TextBox();
+            lblInternalCode = new Label();
+            tbInternalCode = new TextBox();
+            lblProductName = new Label();
+            tbProductName = new TextBox();
+            lblColor = new Label();
+            tbColor = new TextBox();
+            lblHardboardBoxNumber = new Label();
+            tbHardboardBoxNumber = new TextBox();
+            tbPackagingAndDimensions = new TextBox();
+            lblGofferNumber = new Label();
+            tbGofferNumber = new TextBox();
+            lblNote = new Label();
+            tbNote = new TextBox();
+            lblID = new Label();
+            gbItem = new GroupBox();
+            cboSubGroup = new ComboBox();
+            pbItemImage = new PictureBox();
+            btnClearControlsValues = new Button();
+            btnAddImageFromWB = new Button();
+            btnAddImage = new Button();
+            lblImage = new Label();
+            label2 = new Label();
+            tbItemID = new TextBox();
+            lblPackagingAndDimensions = new Label();
+            btnUpdateItem = new Button();
+            btnDeleteItem = new Button();
+            btnClose = new Button();
+            dgvItemsTable = new DataGridView();
+            ItemID = new DataGridViewTextBoxColumn();
+            ItemCode = new DataGridViewTextBoxColumn();
+            ItemCodeWithColor = new DataGridViewTextBoxColumn();
+            Barcode = new DataGridViewTextBoxColumn();
+            ItemImage = new DataGridViewImageColumn();
+            ItemNumberOnWB = new DataGridViewTextBoxColumn();
+            InternalCode = new DataGridViewTextBoxColumn();
+            ProductNameCol = new DataGridViewTextBoxColumn();
+            SubGroup = new DataGridViewTextBoxColumn();
+            Color = new DataGridViewTextBoxColumn();
+            HardboardBoxNumber = new DataGridViewTextBoxColumn();
+            PackagingAndDimensions = new DataGridViewTextBoxColumn();
+            GofferNumber = new DataGridViewTextBoxColumn();
+            Category = new DataGridViewTextBoxColumn();
+            Note = new DataGridViewTextBoxColumn();
+            cmsItemsDataGrid = new ContextMenuStrip(components);
+            tsmiEdit = new ToolStripMenuItem();
+            tsmiUseValue = new ToolStripMenuItem();
+            cboCategory = new ComboBox();
+            lblCategory = new Label();
+            lblWarehouseCategoryQuantity = new Label();
+            tbWarehouseCategoryQuantity = new TextBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel4 = new Panel();
+            panel3 = new Panel();
+            tbSearchByBarcode = new TextBox();
+            label3 = new Label();
+            label1 = new Label();
+            tbWarehouseAllQuantity = new TextBox();
+            panel5 = new Panel();
+            btnUpdateAllImages = new Button();
+            gbItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbItemImage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvItemsTable).BeginInit();
+            cmsItemsDataGrid.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel4.SuspendLayout();
+            panel3.SuspendLayout();
+            panel5.SuspendLayout();
+            SuspendLayout();
             // 
             // btnAddItem
             // 
-            resources.ApplyResources(this.btnAddItem, "btnAddItem");
-            this.btnAddItem.Image = global::WorkshopManagement.Properties.Resources.icons8_add_48;
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.UseVisualStyleBackColor = true;
-            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
+            resources.ApplyResources(btnAddItem, "btnAddItem");
+            btnAddItem.Image = Properties.Resources.icons8_add_48;
+            btnAddItem.Name = "btnAddItem";
+            btnAddItem.UseVisualStyleBackColor = true;
+            btnAddItem.Click += btnAddItem_Click;
             // 
             // lblItemNumber
             // 
-            resources.ApplyResources(this.lblItemNumber, "lblItemNumber");
-            this.lblItemNumber.Name = "lblItemNumber";
+            resources.ApplyResources(lblItemNumber, "lblItemNumber");
+            lblItemNumber.Name = "lblItemNumber";
             // 
             // tbItemCode
             // 
-            resources.ApplyResources(this.tbItemCode, "tbItemCode");
-            this.tbItemCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbItemCode.Name = "tbItemCode";
+            resources.ApplyResources(tbItemCode, "tbItemCode");
+            tbItemCode.BorderStyle = BorderStyle.FixedSingle;
+            tbItemCode.Name = "tbItemCode";
             // 
             // lblItemCodeWithColor
             // 
-            resources.ApplyResources(this.lblItemCodeWithColor, "lblItemCodeWithColor");
-            this.lblItemCodeWithColor.Name = "lblItemCodeWithColor";
+            resources.ApplyResources(lblItemCodeWithColor, "lblItemCodeWithColor");
+            lblItemCodeWithColor.Name = "lblItemCodeWithColor";
             // 
             // tbItemCodeWithColor
             // 
-            resources.ApplyResources(this.tbItemCodeWithColor, "tbItemCodeWithColor");
-            this.tbItemCodeWithColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbItemCodeWithColor.Name = "tbItemCodeWithColor";
+            resources.ApplyResources(tbItemCodeWithColor, "tbItemCodeWithColor");
+            tbItemCodeWithColor.BorderStyle = BorderStyle.FixedSingle;
+            tbItemCodeWithColor.Name = "tbItemCodeWithColor";
             // 
             // lblBarcode
             // 
-            resources.ApplyResources(this.lblBarcode, "lblBarcode");
-            this.lblBarcode.Name = "lblBarcode";
+            resources.ApplyResources(lblBarcode, "lblBarcode");
+            lblBarcode.Name = "lblBarcode";
             // 
             // tbBarcode
             // 
-            resources.ApplyResources(this.tbBarcode, "tbBarcode");
-            this.tbBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbBarcode.Name = "tbBarcode";
-            this.tbBarcode.TextChanged += new System.EventHandler(this.tbBarcode_TextChanged);
+            resources.ApplyResources(tbBarcode, "tbBarcode");
+            tbBarcode.BorderStyle = BorderStyle.FixedSingle;
+            tbBarcode.Name = "tbBarcode";
+            tbBarcode.TextChanged += tbBarcode_TextChanged;
             // 
             // lblItemNumberOnWB
             // 
-            resources.ApplyResources(this.lblItemNumberOnWB, "lblItemNumberOnWB");
-            this.lblItemNumberOnWB.Name = "lblItemNumberOnWB";
+            resources.ApplyResources(lblItemNumberOnWB, "lblItemNumberOnWB");
+            lblItemNumberOnWB.Name = "lblItemNumberOnWB";
             // 
             // tbItemNumberOnWB
             // 
-            resources.ApplyResources(this.tbItemNumberOnWB, "tbItemNumberOnWB");
-            this.tbItemNumberOnWB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbItemNumberOnWB.Name = "tbItemNumberOnWB";
+            resources.ApplyResources(tbItemNumberOnWB, "tbItemNumberOnWB");
+            tbItemNumberOnWB.BorderStyle = BorderStyle.FixedSingle;
+            tbItemNumberOnWB.Name = "tbItemNumberOnWB";
             // 
             // lblInternalCode
             // 
-            resources.ApplyResources(this.lblInternalCode, "lblInternalCode");
-            this.lblInternalCode.Name = "lblInternalCode";
+            resources.ApplyResources(lblInternalCode, "lblInternalCode");
+            lblInternalCode.Name = "lblInternalCode";
             // 
             // tbInternalCode
             // 
-            resources.ApplyResources(this.tbInternalCode, "tbInternalCode");
-            this.tbInternalCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbInternalCode.Name = "tbInternalCode";
+            resources.ApplyResources(tbInternalCode, "tbInternalCode");
+            tbInternalCode.BorderStyle = BorderStyle.FixedSingle;
+            tbInternalCode.Name = "tbInternalCode";
             // 
             // lblProductName
             // 
-            resources.ApplyResources(this.lblProductName, "lblProductName");
-            this.lblProductName.Name = "lblProductName";
+            resources.ApplyResources(lblProductName, "lblProductName");
+            lblProductName.Name = "lblProductName";
             // 
             // tbProductName
             // 
-            resources.ApplyResources(this.tbProductName, "tbProductName");
-            this.tbProductName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.tbProductName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.tbProductName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbProductName.Name = "tbProductName";
+            resources.ApplyResources(tbProductName, "tbProductName");
+            tbProductName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            tbProductName.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            tbProductName.BorderStyle = BorderStyle.FixedSingle;
+            tbProductName.Name = "tbProductName";
             // 
             // lblColor
             // 
-            resources.ApplyResources(this.lblColor, "lblColor");
-            this.lblColor.Name = "lblColor";
+            resources.ApplyResources(lblColor, "lblColor");
+            lblColor.Name = "lblColor";
             // 
             // tbColor
             // 
-            resources.ApplyResources(this.tbColor, "tbColor");
-            this.tbColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbColor.Name = "tbColor";
+            resources.ApplyResources(tbColor, "tbColor");
+            tbColor.BorderStyle = BorderStyle.FixedSingle;
+            tbColor.Name = "tbColor";
             // 
             // lblHardboardBoxNumber
             // 
-            resources.ApplyResources(this.lblHardboardBoxNumber, "lblHardboardBoxNumber");
-            this.lblHardboardBoxNumber.Name = "lblHardboardBoxNumber";
+            resources.ApplyResources(lblHardboardBoxNumber, "lblHardboardBoxNumber");
+            lblHardboardBoxNumber.Name = "lblHardboardBoxNumber";
             // 
             // tbHardboardBoxNumber
             // 
-            resources.ApplyResources(this.tbHardboardBoxNumber, "tbHardboardBoxNumber");
-            this.tbHardboardBoxNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbHardboardBoxNumber.Name = "tbHardboardBoxNumber";
+            resources.ApplyResources(tbHardboardBoxNumber, "tbHardboardBoxNumber");
+            tbHardboardBoxNumber.BorderStyle = BorderStyle.FixedSingle;
+            tbHardboardBoxNumber.Name = "tbHardboardBoxNumber";
             // 
             // tbPackagingAndDimensions
             // 
-            resources.ApplyResources(this.tbPackagingAndDimensions, "tbPackagingAndDimensions");
-            this.tbPackagingAndDimensions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbPackagingAndDimensions.Name = "tbPackagingAndDimensions";
+            resources.ApplyResources(tbPackagingAndDimensions, "tbPackagingAndDimensions");
+            tbPackagingAndDimensions.BorderStyle = BorderStyle.FixedSingle;
+            tbPackagingAndDimensions.Name = "tbPackagingAndDimensions";
             // 
             // lblGofferNumber
             // 
-            resources.ApplyResources(this.lblGofferNumber, "lblGofferNumber");
-            this.lblGofferNumber.Name = "lblGofferNumber";
+            resources.ApplyResources(lblGofferNumber, "lblGofferNumber");
+            lblGofferNumber.Name = "lblGofferNumber";
             // 
             // tbGofferNumber
             // 
-            resources.ApplyResources(this.tbGofferNumber, "tbGofferNumber");
-            this.tbGofferNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbGofferNumber.Name = "tbGofferNumber";
+            resources.ApplyResources(tbGofferNumber, "tbGofferNumber");
+            tbGofferNumber.BorderStyle = BorderStyle.FixedSingle;
+            tbGofferNumber.Name = "tbGofferNumber";
             // 
             // lblNote
             // 
-            resources.ApplyResources(this.lblNote, "lblNote");
-            this.lblNote.Name = "lblNote";
+            resources.ApplyResources(lblNote, "lblNote");
+            lblNote.Name = "lblNote";
             // 
             // tbNote
             // 
-            resources.ApplyResources(this.tbNote, "tbNote");
-            this.tbNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbNote.Name = "tbNote";
+            resources.ApplyResources(tbNote, "tbNote");
+            tbNote.BorderStyle = BorderStyle.FixedSingle;
+            tbNote.Name = "tbNote";
             // 
             // lblID
             // 
-            resources.ApplyResources(this.lblID, "lblID");
-            this.lblID.Name = "lblID";
+            resources.ApplyResources(lblID, "lblID");
+            lblID.Name = "lblID";
             // 
             // gbItem
             // 
-            resources.ApplyResources(this.gbItem, "gbItem");
-            this.gbItem.Controls.Add(this.cboSubGroup);
-            this.gbItem.Controls.Add(this.pbItemImage);
-            this.gbItem.Controls.Add(this.lblID);
-            this.gbItem.Controls.Add(this.tbNote);
-            this.gbItem.Controls.Add(this.lblItemNumber);
-            this.gbItem.Controls.Add(this.btnClearControlsValues);
-            this.gbItem.Controls.Add(this.tbGofferNumber);
-            this.gbItem.Controls.Add(this.btnAddImageFromWB);
-            this.gbItem.Controls.Add(this.btnAddImage);
-            this.gbItem.Controls.Add(this.tbPackagingAndDimensions);
-            this.gbItem.Controls.Add(this.lblItemCodeWithColor);
-            this.gbItem.Controls.Add(this.tbHardboardBoxNumber);
-            this.gbItem.Controls.Add(this.lblBarcode);
-            this.gbItem.Controls.Add(this.tbColor);
-            this.gbItem.Controls.Add(this.lblItemNumberOnWB);
-            this.gbItem.Controls.Add(this.tbProductName);
-            this.gbItem.Controls.Add(this.lblInternalCode);
-            this.gbItem.Controls.Add(this.tbInternalCode);
-            this.gbItem.Controls.Add(this.lblProductName);
-            this.gbItem.Controls.Add(this.tbItemNumberOnWB);
-            this.gbItem.Controls.Add(this.lblColor);
-            this.gbItem.Controls.Add(this.tbBarcode);
-            this.gbItem.Controls.Add(this.lblHardboardBoxNumber);
-            this.gbItem.Controls.Add(this.lblImage);
-            this.gbItem.Controls.Add(this.label2);
-            this.gbItem.Controls.Add(this.lblNote);
-            this.gbItem.Controls.Add(this.tbItemID);
-            this.gbItem.Controls.Add(this.tbItemCode);
-            this.gbItem.Controls.Add(this.tbItemCodeWithColor);
-            this.gbItem.Controls.Add(this.lblPackagingAndDimensions);
-            this.gbItem.Controls.Add(this.lblGofferNumber);
-            this.gbItem.Name = "gbItem";
-            this.gbItem.TabStop = false;
+            resources.ApplyResources(gbItem, "gbItem");
+            gbItem.Controls.Add(cboSubGroup);
+            gbItem.Controls.Add(pbItemImage);
+            gbItem.Controls.Add(lblID);
+            gbItem.Controls.Add(tbNote);
+            gbItem.Controls.Add(lblItemNumber);
+            gbItem.Controls.Add(btnClearControlsValues);
+            gbItem.Controls.Add(tbGofferNumber);
+            gbItem.Controls.Add(btnAddImageFromWB);
+            gbItem.Controls.Add(btnAddImage);
+            gbItem.Controls.Add(tbPackagingAndDimensions);
+            gbItem.Controls.Add(lblItemCodeWithColor);
+            gbItem.Controls.Add(tbHardboardBoxNumber);
+            gbItem.Controls.Add(lblBarcode);
+            gbItem.Controls.Add(tbColor);
+            gbItem.Controls.Add(lblItemNumberOnWB);
+            gbItem.Controls.Add(tbProductName);
+            gbItem.Controls.Add(lblInternalCode);
+            gbItem.Controls.Add(tbInternalCode);
+            gbItem.Controls.Add(lblProductName);
+            gbItem.Controls.Add(tbItemNumberOnWB);
+            gbItem.Controls.Add(lblColor);
+            gbItem.Controls.Add(tbBarcode);
+            gbItem.Controls.Add(lblHardboardBoxNumber);
+            gbItem.Controls.Add(lblImage);
+            gbItem.Controls.Add(label2);
+            gbItem.Controls.Add(lblNote);
+            gbItem.Controls.Add(tbItemID);
+            gbItem.Controls.Add(tbItemCode);
+            gbItem.Controls.Add(tbItemCodeWithColor);
+            gbItem.Controls.Add(lblPackagingAndDimensions);
+            gbItem.Controls.Add(lblGofferNumber);
+            gbItem.Name = "gbItem";
+            gbItem.TabStop = false;
             // 
             // cboSubGroup
             // 
-            resources.ApplyResources(this.cboSubGroup, "cboSubGroup");
-            this.cboSubGroup.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboSubGroup.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboSubGroup.FormattingEnabled = true;
-            this.cboSubGroup.Name = "cboSubGroup";
+            resources.ApplyResources(cboSubGroup, "cboSubGroup");
+            cboSubGroup.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboSubGroup.AutoCompleteSource = AutoCompleteSource.ListItems;
+            cboSubGroup.FormattingEnabled = true;
+            cboSubGroup.Name = "cboSubGroup";
             // 
             // pbItemImage
             // 
-            resources.ApplyResources(this.pbItemImage, "pbItemImage");
-            this.pbItemImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbItemImage.Name = "pbItemImage";
-            this.pbItemImage.TabStop = false;
+            resources.ApplyResources(pbItemImage, "pbItemImage");
+            pbItemImage.BorderStyle = BorderStyle.FixedSingle;
+            pbItemImage.Name = "pbItemImage";
+            pbItemImage.TabStop = false;
             // 
             // btnClearControlsValues
             // 
-            resources.ApplyResources(this.btnClearControlsValues, "btnClearControlsValues");
-            this.btnClearControlsValues.Image = global::WorkshopManagement.Properties.Resources.icons8_broom_32;
-            this.btnClearControlsValues.Name = "btnClearControlsValues";
-            this.btnClearControlsValues.UseVisualStyleBackColor = true;
-            this.btnClearControlsValues.Click += new System.EventHandler(this.btnClearControlsValues_Click);
+            resources.ApplyResources(btnClearControlsValues, "btnClearControlsValues");
+            btnClearControlsValues.Image = Properties.Resources.icons8_broom_32;
+            btnClearControlsValues.Name = "btnClearControlsValues";
+            btnClearControlsValues.UseVisualStyleBackColor = true;
+            btnClearControlsValues.Click += btnClearControlsValues_Click;
             // 
             // btnAddImageFromWB
             // 
-            resources.ApplyResources(this.btnAddImageFromWB, "btnAddImageFromWB");
-            this.btnAddImageFromWB.Image = global::WorkshopManagement.Properties.Resources.icons8_download_from_cloud_32;
-            this.btnAddImageFromWB.Name = "btnAddImageFromWB";
-            this.btnAddImageFromWB.UseVisualStyleBackColor = true;
-            this.btnAddImageFromWB.Click += new System.EventHandler(this.btnAddImageFromWB_Click);
+            resources.ApplyResources(btnAddImageFromWB, "btnAddImageFromWB");
+            btnAddImageFromWB.Image = Properties.Resources.icons8_download_from_cloud_32;
+            btnAddImageFromWB.Name = "btnAddImageFromWB";
+            btnAddImageFromWB.UseVisualStyleBackColor = true;
+            btnAddImageFromWB.Click += btnAddImageFromWB_Click;
             // 
             // btnAddImage
             // 
-            resources.ApplyResources(this.btnAddImage, "btnAddImage");
-            this.btnAddImage.Image = global::WorkshopManagement.Properties.Resources.icons8_image_file_add_32;
-            this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.UseVisualStyleBackColor = true;
-            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            resources.ApplyResources(btnAddImage, "btnAddImage");
+            btnAddImage.Image = Properties.Resources.icons8_image_file_add_32;
+            btnAddImage.Name = "btnAddImage";
+            btnAddImage.UseVisualStyleBackColor = true;
+            btnAddImage.Click += btnAddImage_Click;
             // 
             // lblImage
             // 
-            resources.ApplyResources(this.lblImage, "lblImage");
-            this.lblImage.Name = "lblImage";
+            resources.ApplyResources(lblImage, "lblImage");
+            lblImage.Name = "lblImage";
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
             // 
             // tbItemID
             // 
-            resources.ApplyResources(this.tbItemID, "tbItemID");
-            this.tbItemID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbItemID.Name = "tbItemID";
+            resources.ApplyResources(tbItemID, "tbItemID");
+            tbItemID.BorderStyle = BorderStyle.FixedSingle;
+            tbItemID.Name = "tbItemID";
             // 
             // lblPackagingAndDimensions
             // 
-            resources.ApplyResources(this.lblPackagingAndDimensions, "lblPackagingAndDimensions");
-            this.lblPackagingAndDimensions.Name = "lblPackagingAndDimensions";
+            resources.ApplyResources(lblPackagingAndDimensions, "lblPackagingAndDimensions");
+            lblPackagingAndDimensions.Name = "lblPackagingAndDimensions";
             // 
             // btnUpdateItem
             // 
-            resources.ApplyResources(this.btnUpdateItem, "btnUpdateItem");
-            this.btnUpdateItem.Image = global::WorkshopManagement.Properties.Resources.icons8_update_48;
-            this.btnUpdateItem.Name = "btnUpdateItem";
-            this.btnUpdateItem.UseVisualStyleBackColor = true;
-            this.btnUpdateItem.Click += new System.EventHandler(this.btnUpdateItem_Click);
+            resources.ApplyResources(btnUpdateItem, "btnUpdateItem");
+            btnUpdateItem.Image = Properties.Resources.icons8_update_48;
+            btnUpdateItem.Name = "btnUpdateItem";
+            btnUpdateItem.UseVisualStyleBackColor = true;
+            btnUpdateItem.Click += btnUpdateItem_Click;
             // 
             // btnDeleteItem
             // 
-            resources.ApplyResources(this.btnDeleteItem, "btnDeleteItem");
-            this.btnDeleteItem.Image = global::WorkshopManagement.Properties.Resources.icons8_cancel_48;
-            this.btnDeleteItem.Name = "btnDeleteItem";
-            this.btnDeleteItem.UseVisualStyleBackColor = true;
-            this.btnDeleteItem.Click += new System.EventHandler(this.btnDeleteItem_Click);
+            resources.ApplyResources(btnDeleteItem, "btnDeleteItem");
+            btnDeleteItem.Image = Properties.Resources.icons8_cancel_48;
+            btnDeleteItem.Name = "btnDeleteItem";
+            btnDeleteItem.UseVisualStyleBackColor = true;
+            btnDeleteItem.Click += btnDeleteItem_Click;
             // 
             // btnClose
             // 
-            resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.Image = global::WorkshopManagement.Properties.Resources.icons8_door_closed_48;
-            this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            resources.ApplyResources(btnClose, "btnClose");
+            btnClose.Image = Properties.Resources.icons8_door_closed_48;
+            btnClose.Name = "btnClose";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // dgvItemsTable
             // 
-            resources.ApplyResources(this.dgvItemsTable, "dgvItemsTable");
-            this.dgvItemsTable.AllowUserToAddRows = false;
-            this.dgvItemsTable.AllowUserToDeleteRows = false;
-            this.dgvItemsTable.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvItemsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvItemsTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvItemsTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvItemsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvItemsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ItemID,
-            this.ItemCode,
-            this.ItemCodeWithColor,
-            this.Barcode,
-            this.ItemImage,
-            this.ItemNumberOnWB,
-            this.InternalCode,
-            this.ProductNameCol,
-            this.SubGroup,
-            this.Color,
-            this.HardboardBoxNumber,
-            this.PackagingAndDimensions,
-            this.GofferNumber,
-            this.Category,
-            this.Note});
-            this.dgvItemsTable.ContextMenuStrip = this.cmsItemsDataGrid;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvItemsTable.MultiSelect = false;
-            this.dgvItemsTable.Name = "dgvItemsTable";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvItemsTable.RowTemplate.Height = 150;
-            this.dgvItemsTable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvItemsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItemsTable.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemsTable_CellMouseEnter);
-            this.dgvItemsTable.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvItemsTable_DataError);
+            resources.ApplyResources(dgvItemsTable, "dgvItemsTable");
+            dgvItemsTable.AllowUserToAddRows = false;
+            dgvItemsTable.AllowUserToDeleteRows = false;
+            dgvItemsTable.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dgvItemsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvItemsTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dgvItemsTable.BorderStyle = BorderStyle.Fixed3D;
+            dgvItemsTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvItemsTable.Columns.AddRange(new DataGridViewColumn[] { ItemID, ItemCode, ItemCodeWithColor, Barcode, ItemImage, ItemNumberOnWB, InternalCode, ProductNameCol, SubGroup, Color, HardboardBoxNumber, PackagingAndDimensions, GofferNumber, Category, Note });
+            dgvItemsTable.ContextMenuStrip = cmsItemsDataGrid;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvItemsTable.DefaultCellStyle = dataGridViewCellStyle2;
+            dgvItemsTable.MultiSelect = false;
+            dgvItemsTable.Name = "dgvItemsTable";
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvItemsTable.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dgvItemsTable.RowTemplate.Height = 150;
+            dgvItemsTable.RowTemplate.Resizable = DataGridViewTriState.True;
+            dgvItemsTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvItemsTable.CellMouseEnter += dgvItemsTable_CellMouseEnter;
+            dgvItemsTable.DataError += dgvItemsTable_DataError;
             // 
             // ItemID
             // 
-            this.ItemID.DataPropertyName = "ItemID";
-            this.ItemID.FillWeight = 2F;
-            resources.ApplyResources(this.ItemID, "ItemID");
-            this.ItemID.Name = "ItemID";
-            this.ItemID.ReadOnly = true;
+            ItemID.DataPropertyName = "ItemID";
+            ItemID.FillWeight = 2F;
+            resources.ApplyResources(ItemID, "ItemID");
+            ItemID.Name = "ItemID";
+            ItemID.ReadOnly = true;
             // 
             // ItemCode
             // 
-            this.ItemCode.DataPropertyName = "ItemCode";
-            this.ItemCode.FillWeight = 7F;
-            resources.ApplyResources(this.ItemCode, "ItemCode");
-            this.ItemCode.Name = "ItemCode";
+            ItemCode.DataPropertyName = "ItemCode";
+            ItemCode.FillWeight = 7F;
+            resources.ApplyResources(ItemCode, "ItemCode");
+            ItemCode.Name = "ItemCode";
             // 
             // ItemCodeWithColor
             // 
-            this.ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
-            this.ItemCodeWithColor.FillWeight = 7F;
-            resources.ApplyResources(this.ItemCodeWithColor, "ItemCodeWithColor");
-            this.ItemCodeWithColor.Name = "ItemCodeWithColor";
+            ItemCodeWithColor.DataPropertyName = "ItemCodeWithColor";
+            ItemCodeWithColor.FillWeight = 7F;
+            resources.ApplyResources(ItemCodeWithColor, "ItemCodeWithColor");
+            ItemCodeWithColor.Name = "ItemCodeWithColor";
             // 
             // Barcode
             // 
-            this.Barcode.DataPropertyName = "Barcode";
-            this.Barcode.FillWeight = 7F;
-            resources.ApplyResources(this.Barcode, "Barcode");
-            this.Barcode.Name = "Barcode";
+            Barcode.DataPropertyName = "Barcode";
+            Barcode.FillWeight = 7F;
+            resources.ApplyResources(Barcode, "Barcode");
+            Barcode.Name = "Barcode";
             // 
             // ItemImage
             // 
-            this.ItemImage.DataPropertyName = "Image";
-            this.ItemImage.FillWeight = 7F;
-            resources.ApplyResources(this.ItemImage, "ItemImage");
-            this.ItemImage.Image = global::WorkshopManagement.Properties.Resources.download;
-            this.ItemImage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ItemImage.Name = "ItemImage";
+            ItemImage.DataPropertyName = "Image";
+            ItemImage.FillWeight = 7F;
+            resources.ApplyResources(ItemImage, "ItemImage");
+            ItemImage.Image = Properties.Resources.download;
+            ItemImage.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            ItemImage.Name = "ItemImage";
             // 
             // ItemNumberOnWB
             // 
-            this.ItemNumberOnWB.DataPropertyName = "ItemNumberOnWB";
-            this.ItemNumberOnWB.FillWeight = 7F;
-            resources.ApplyResources(this.ItemNumberOnWB, "ItemNumberOnWB");
-            this.ItemNumberOnWB.Name = "ItemNumberOnWB";
+            ItemNumberOnWB.DataPropertyName = "ItemNumberOnWB";
+            ItemNumberOnWB.FillWeight = 7F;
+            resources.ApplyResources(ItemNumberOnWB, "ItemNumberOnWB");
+            ItemNumberOnWB.Name = "ItemNumberOnWB";
             // 
             // InternalCode
             // 
-            this.InternalCode.DataPropertyName = "InternalCode";
-            this.InternalCode.FillWeight = 7F;
-            resources.ApplyResources(this.InternalCode, "InternalCode");
-            this.InternalCode.Name = "InternalCode";
+            InternalCode.DataPropertyName = "InternalCode";
+            InternalCode.FillWeight = 7F;
+            resources.ApplyResources(InternalCode, "InternalCode");
+            InternalCode.Name = "InternalCode";
             // 
             // ProductNameCol
             // 
-            this.ProductNameCol.DataPropertyName = "ProductName";
-            this.ProductNameCol.FillWeight = 7F;
-            resources.ApplyResources(this.ProductNameCol, "ProductNameCol");
-            this.ProductNameCol.Name = "ProductNameCol";
+            ProductNameCol.DataPropertyName = "ProductName";
+            ProductNameCol.FillWeight = 7F;
+            resources.ApplyResources(ProductNameCol, "ProductNameCol");
+            ProductNameCol.Name = "ProductNameCol";
             // 
             // SubGroup
             // 
-            this.SubGroup.DataPropertyName = "SubGroup";
-            resources.ApplyResources(this.SubGroup, "SubGroup");
-            this.SubGroup.Name = "SubGroup";
+            SubGroup.DataPropertyName = "SubGroup";
+            resources.ApplyResources(SubGroup, "SubGroup");
+            SubGroup.Name = "SubGroup";
             // 
             // Color
             // 
-            this.Color.DataPropertyName = "Color";
-            this.Color.FillWeight = 7F;
-            resources.ApplyResources(this.Color, "Color");
-            this.Color.Name = "Color";
+            Color.DataPropertyName = "Color";
+            Color.FillWeight = 7F;
+            resources.ApplyResources(Color, "Color");
+            Color.Name = "Color";
             // 
             // HardboardBoxNumber
             // 
-            this.HardboardBoxNumber.DataPropertyName = "HardboardBoxNumber";
-            this.HardboardBoxNumber.FillWeight = 7F;
-            resources.ApplyResources(this.HardboardBoxNumber, "HardboardBoxNumber");
-            this.HardboardBoxNumber.Name = "HardboardBoxNumber";
+            HardboardBoxNumber.DataPropertyName = "HardboardBoxNumber";
+            HardboardBoxNumber.FillWeight = 7F;
+            resources.ApplyResources(HardboardBoxNumber, "HardboardBoxNumber");
+            HardboardBoxNumber.Name = "HardboardBoxNumber";
             // 
             // PackagingAndDimensions
             // 
-            this.PackagingAndDimensions.DataPropertyName = "PackagingAndDimensions";
-            this.PackagingAndDimensions.FillWeight = 7F;
-            resources.ApplyResources(this.PackagingAndDimensions, "PackagingAndDimensions");
-            this.PackagingAndDimensions.Name = "PackagingAndDimensions";
+            PackagingAndDimensions.DataPropertyName = "PackagingAndDimensions";
+            PackagingAndDimensions.FillWeight = 7F;
+            resources.ApplyResources(PackagingAndDimensions, "PackagingAndDimensions");
+            PackagingAndDimensions.Name = "PackagingAndDimensions";
             // 
             // GofferNumber
             // 
-            this.GofferNumber.DataPropertyName = "GofferNumber";
-            this.GofferNumber.FillWeight = 7F;
-            resources.ApplyResources(this.GofferNumber, "GofferNumber");
-            this.GofferNumber.Name = "GofferNumber";
+            GofferNumber.DataPropertyName = "GofferNumber";
+            GofferNumber.FillWeight = 7F;
+            resources.ApplyResources(GofferNumber, "GofferNumber");
+            GofferNumber.Name = "GofferNumber";
             // 
             // Category
             // 
-            this.Category.DataPropertyName = "Category";
-            this.Category.FillWeight = 7F;
-            resources.ApplyResources(this.Category, "Category");
-            this.Category.Name = "Category";
+            Category.DataPropertyName = "Category";
+            Category.FillWeight = 7F;
+            resources.ApplyResources(Category, "Category");
+            Category.Name = "Category";
             // 
             // Note
             // 
-            this.Note.DataPropertyName = "Note";
-            this.Note.FillWeight = 7F;
-            resources.ApplyResources(this.Note, "Note");
-            this.Note.Name = "Note";
+            Note.DataPropertyName = "Note";
+            Note.FillWeight = 7F;
+            resources.ApplyResources(Note, "Note");
+            Note.Name = "Note";
             // 
             // cmsItemsDataGrid
             // 
-            resources.ApplyResources(this.cmsItemsDataGrid, "cmsItemsDataGrid");
-            this.cmsItemsDataGrid.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.cmsItemsDataGrid.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiEdit,
-            this.tsmiUseValue});
-            this.cmsItemsDataGrid.Name = "btnContextMenuStrip1";
+            resources.ApplyResources(cmsItemsDataGrid, "cmsItemsDataGrid");
+            cmsItemsDataGrid.ImageScalingSize = new Size(20, 20);
+            cmsItemsDataGrid.Items.AddRange(new ToolStripItem[] { tsmiEdit, tsmiUseValue });
+            cmsItemsDataGrid.Name = "btnContextMenuStrip1";
             // 
             // tsmiEdit
             // 
-            resources.ApplyResources(this.tsmiEdit, "tsmiEdit");
-            this.tsmiEdit.Image = global::WorkshopManagement.Properties.Resources.icons8_update_48;
-            this.tsmiEdit.Name = "tsmiEdit";
-            this.tsmiEdit.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            resources.ApplyResources(tsmiEdit, "tsmiEdit");
+            tsmiEdit.Image = Properties.Resources.icons8_update_48;
+            tsmiEdit.Name = "tsmiEdit";
+            tsmiEdit.Click += toolStripMenuItem1_Click;
             // 
             // tsmiUseValue
             // 
-            resources.ApplyResources(this.tsmiUseValue, "tsmiUseValue");
-            this.tsmiUseValue.Image = global::WorkshopManagement.Properties.Resources.icons8_left_32;
-            this.tsmiUseValue.Name = "tsmiUseValue";
-            this.tsmiUseValue.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            resources.ApplyResources(tsmiUseValue, "tsmiUseValue");
+            tsmiUseValue.Image = Properties.Resources.icons8_left_32;
+            tsmiUseValue.Name = "tsmiUseValue";
+            tsmiUseValue.Click += toolStripMenuItem2_Click;
             // 
             // cboCategory
             // 
-            resources.ApplyResources(this.cboCategory, "cboCategory");
-            this.cboCategory.FormattingEnabled = true;
-            this.cboCategory.Items.AddRange(new object[] {
-            resources.GetString("cboCategory.Items"),
-            resources.GetString("cboCategory.Items1"),
-            resources.GetString("cboCategory.Items2"),
-            resources.GetString("cboCategory.Items3"),
-            resources.GetString("cboCategory.Items4"),
-            resources.GetString("cboCategory.Items5")});
-            this.cboCategory.Name = "cboCategory";
-            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
+            resources.ApplyResources(cboCategory, "cboCategory");
+            cboCategory.FormattingEnabled = true;
+            cboCategory.Items.AddRange(new object[] { resources.GetString("cboCategory.Items"), resources.GetString("cboCategory.Items1"), resources.GetString("cboCategory.Items2"), resources.GetString("cboCategory.Items3"), resources.GetString("cboCategory.Items4"), resources.GetString("cboCategory.Items5") });
+            cboCategory.Name = "cboCategory";
+            cboCategory.SelectedIndexChanged += cbCategory_SelectedIndexChanged;
             // 
             // lblCategory
             // 
-            resources.ApplyResources(this.lblCategory, "lblCategory");
-            this.lblCategory.Name = "lblCategory";
+            resources.ApplyResources(lblCategory, "lblCategory");
+            lblCategory.Name = "lblCategory";
             // 
             // lblWarehouseCategoryQuantity
             // 
-            resources.ApplyResources(this.lblWarehouseCategoryQuantity, "lblWarehouseCategoryQuantity");
-            this.lblWarehouseCategoryQuantity.Name = "lblWarehouseCategoryQuantity";
+            resources.ApplyResources(lblWarehouseCategoryQuantity, "lblWarehouseCategoryQuantity");
+            lblWarehouseCategoryQuantity.Name = "lblWarehouseCategoryQuantity";
             // 
             // tbWarehouseCategoryQuantity
             // 
-            resources.ApplyResources(this.tbWarehouseCategoryQuantity, "tbWarehouseCategoryQuantity");
-            this.tbWarehouseCategoryQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbWarehouseCategoryQuantity.Name = "tbWarehouseCategoryQuantity";
+            resources.ApplyResources(tbWarehouseCategoryQuantity, "tbWarehouseCategoryQuantity");
+            tbWarehouseCategoryQuantity.BorderStyle = BorderStyle.FixedSingle;
+            tbWarehouseCategoryQuantity.Name = "tbWarehouseCategoryQuantity";
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.gbItem);
-            this.panel1.Controls.Add(this.btnAddItem);
-            this.panel1.Controls.Add(this.btnUpdateItem);
-            this.panel1.Controls.Add(this.btnDeleteItem);
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Controls.Add(gbItem);
+            panel1.Controls.Add(btnAddItem);
+            panel1.Controls.Add(btnUpdateItem);
+            panel1.Controls.Add(btnDeleteItem);
+            panel1.Name = "panel1";
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Name = "panel2";
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Controls.Add(panel4);
+            panel2.Controls.Add(panel3);
+            panel2.Controls.Add(panel5);
+            panel2.Name = "panel2";
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Controls.Add(this.dgvItemsTable);
-            this.panel4.Name = "panel4";
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Controls.Add(dgvItemsTable);
+            panel4.Name = "panel4";
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Controls.Add(this.tbSearchByBarcode);
-            this.panel3.Controls.Add(this.lblCategory);
-            this.panel3.Controls.Add(this.cboCategory);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.lblWarehouseCategoryQuantity);
-            this.panel3.Controls.Add(this.tbWarehouseAllQuantity);
-            this.panel3.Controls.Add(this.tbWarehouseCategoryQuantity);
-            this.panel3.Name = "panel3";
+            resources.ApplyResources(panel3, "panel3");
+            panel3.Controls.Add(tbSearchByBarcode);
+            panel3.Controls.Add(lblCategory);
+            panel3.Controls.Add(cboCategory);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(lblWarehouseCategoryQuantity);
+            panel3.Controls.Add(tbWarehouseAllQuantity);
+            panel3.Controls.Add(tbWarehouseCategoryQuantity);
+            panel3.Name = "panel3";
             // 
             // tbSearchByBarcode
             // 
-            resources.ApplyResources(this.tbSearchByBarcode, "tbSearchByBarcode");
-            this.tbSearchByBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSearchByBarcode.Name = "tbSearchByBarcode";
-            this.tbSearchByBarcode.TextChanged += new System.EventHandler(this.tbSearchByBarcode_TextChanged);
-            this.tbSearchByBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSearchByBarcode_KeyDown);
+            resources.ApplyResources(tbSearchByBarcode, "tbSearchByBarcode");
+            tbSearchByBarcode.BorderStyle = BorderStyle.FixedSingle;
+            tbSearchByBarcode.Name = "tbSearchByBarcode";
+            tbSearchByBarcode.TextChanged += tbSearchByBarcode_TextChanged;
+            tbSearchByBarcode.KeyDown += tbSearchByBarcode_KeyDown;
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // tbWarehouseAllQuantity
             // 
-            resources.ApplyResources(this.tbWarehouseAllQuantity, "tbWarehouseAllQuantity");
-            this.tbWarehouseAllQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbWarehouseAllQuantity.Name = "tbWarehouseAllQuantity";
+            resources.ApplyResources(tbWarehouseAllQuantity, "tbWarehouseAllQuantity");
+            tbWarehouseAllQuantity.BorderStyle = BorderStyle.FixedSingle;
+            tbWarehouseAllQuantity.Name = "tbWarehouseAllQuantity";
             // 
             // panel5
             // 
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Controls.Add(this.btnClose);
-            this.panel5.Controls.Add(this.btnUpdateAllImages);
-            this.panel5.Name = "panel5";
+            resources.ApplyResources(panel5, "panel5");
+            panel5.Controls.Add(btnClose);
+            panel5.Controls.Add(btnUpdateAllImages);
+            panel5.Name = "panel5";
             // 
             // btnUpdateAllImages
             // 
-            resources.ApplyResources(this.btnUpdateAllImages, "btnUpdateAllImages");
-            this.btnUpdateAllImages.Name = "btnUpdateAllImages";
-            this.btnUpdateAllImages.UseVisualStyleBackColor = true;
-            this.btnUpdateAllImages.Click += new System.EventHandler(this.btnUpdateAllImages_Click);
+            resources.ApplyResources(btnUpdateAllImages, "btnUpdateAllImages");
+            btnUpdateAllImages.Name = "btnUpdateAllImages";
+            btnUpdateAllImages.UseVisualStyleBackColor = true;
+            btnUpdateAllImages.Click += btnUpdateAllImages_Click;
             // 
             // frmItems
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Name = "frmItems";
-            this.Load += new System.EventHandler(this.frmItems_Load);
-            this.gbItem.ResumeLayout(false);
-            this.gbItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbItemImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItemsTable)).EndInit();
-            this.cmsItemsDataGrid.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.White;
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Name = "frmItems";
+            Load += frmItems_Load;
+            Shown += frmItems_Shown;
+            gbItem.ResumeLayout(false);
+            gbItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbItemImage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvItemsTable).EndInit();
+            cmsItemsDataGrid.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel5.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -691,7 +668,7 @@ namespace WorkshopManagement
         private System.Windows.Forms.TextBox tbColor;
         private System.Windows.Forms.Label lblHardboardBoxNumber;
         private System.Windows.Forms.TextBox tbHardboardBoxNumber;
-        
+
         private System.Windows.Forms.TextBox tbPackagingAndDimensions;
         private System.Windows.Forms.Label lblGofferNumber;
         private System.Windows.Forms.TextBox tbGofferNumber;

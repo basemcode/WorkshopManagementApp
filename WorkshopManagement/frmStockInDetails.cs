@@ -20,7 +20,7 @@ public partial class frmStockInDetails : Form
     public int StockInID;
     int NewStockInID = 1;
     //List<StockInDetailModel> ToAddStockInDetailsList = new List<StockInDetailModel>();
-    DataTable ToAddStockInDetailsTable= new DataTable();
+    DataTable ToAddStockInDetailsTable = new DataTable();
     DataTable ToEditStockInDetailsTable = new DataTable();
     IEnumerable<string> BarcodesDataTable;
 
@@ -42,8 +42,8 @@ public partial class frmStockInDetails : Form
         txtBarcode.AutoCompleteCustomSource = autoCompleteStringCollection;
         cboBarcode.DataSource = autoCompleteStringCollection;
         cboBarcode.Text = string.Empty;
-         
-        ToAddStockInDetailsTable.Columns.AddRange(new DataColumn[] 
+
+        ToAddStockInDetailsTable.Columns.AddRange(new DataColumn[]
         {   new DataColumn { ColumnName = "StockInID",DataType =typeof(Int32)},
             new DataColumn { ColumnName = "ItemID" ,DataType =typeof(Int32)},
             new DataColumn { ColumnName = "ItemCodeWithColor",DataType =typeof(string) },
@@ -53,11 +53,11 @@ public partial class frmStockInDetails : Form
             new DataColumn { ColumnName = "BoxesQuantity" ,DataType =typeof(Int32)},
             new DataColumn { ColumnName = "Category" ,DataType =typeof(string)}
         });
-        
+
         //show user name
         txtLoggedUser.Text = $"{SessionHelper.loggedUser?.FirstName} {SessionHelper.loggedUser?.MiddleName}";
         txtSearchItemName.Text = string.Empty;
-        picSearchItemPhoto.Image= null;
+        picSearchItemPhoto.Image = null;
         if (editMode)
         {
             ToEditStockInDetailsTable = DataHelper.ToDataTable<StockInDetailModel>(
@@ -72,11 +72,11 @@ public partial class frmStockInDetails : Form
         if (e.KeyValue == 13)
         {
             AddItemToDataGridView(txtBarcode.Text);
-            System.Media.SystemSounds.Beep.Play();              
-        } 
+            System.Media.SystemSounds.Beep.Play();
+        }
         else
         {
-           
+
         }
     }
 
@@ -89,7 +89,7 @@ public partial class frmStockInDetails : Form
             int rowIndex = -1;
             txtItemID.Text = itemToAdd.ItemID.ToString();
             txtItemName.Text = itemToAdd.ProductName;
-            picItemPhoto.Image= displayImage((byte[])itemToAdd.Image);
+            picItemPhoto.Image = displayImage((byte[])itemToAdd.Image);
             foreach (DataGridViewRow item in dgvStockInDetails.Rows)
             {
                 if (Convert.ToInt32(item.Cells["ItemID"].Value) == itemToAdd.ItemID)
@@ -99,13 +99,13 @@ public partial class frmStockInDetails : Form
                 }
             }
             if (founded)
-            { 
-                if (int.TryParse(txtQuantity.Text,out int quantity))
+            {
+                if (int.TryParse(txtQuantity.Text, out int quantity))
                 {
-                    if (quantity>=0)
+                    if (quantity >= 0)
                     {
                         dgvStockInDetails.Rows[rowIndex].Cells["Quantity"].Value = quantity;
-                       
+
                     }
                     txtQuantity.Text = String.Empty;
                 }
@@ -116,13 +116,13 @@ public partial class frmStockInDetails : Form
 
                 if (int.TryParse(txtBoxesQuantity.Text, out int result))
                 {
-                    if (result>=0)
+                    if (result >= 0)
                     {
                         dgvStockInDetails.Rows[rowIndex].Cells["BoxesQuantity"].Value = result;
                     }
-                   
+
                 }
-                
+
             }
             else
             {
@@ -135,7 +135,7 @@ public partial class frmStockInDetails : Form
                 newRow["Barcode"] = itemToAdd.Barcode;
                 newRow["Category"] = itemToAdd.Category;
                 newRow["Quantity"] = 1;
-                
+
                 if (int.TryParse(txtQuantity.Text, out int quantity))
                 {
                     if (quantity >= 0)
@@ -150,18 +150,18 @@ public partial class frmStockInDetails : Form
                 }
                 if (int.TryParse(txtBoxesQuantity.Text, out int result))
                 {
-                    if (result>=0)
+                    if (result >= 0)
                     {
                         newRow["BoxesQuantity"] = result;
                     }
-                    
+
                 }
                 else
                 {
                     newRow["BoxesQuantity"] = 0;
-                }  
-                ToAddStockInDetailsTable.Rows.InsertAt(newRow,0);
-                
+                }
+                ToAddStockInDetailsTable.Rows.InsertAt(newRow, 0);
+
             }
             CheckBoxesQuantityInDGV();
         }
@@ -188,16 +188,16 @@ public partial class frmStockInDetails : Form
     {
         if (e.KeyValue == 13)
         {
-            
-                IEnumerable<string> NewDataTable = new List<string>();
-                NewDataTable = BarcodesDataTable.Where((item) => item.Contains(cboBarcode.Text)).ToList<string>();
-                AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
-                for (int i = 0; i < NewDataTable.Count(); i++)
-                {
-                    autoCompleteStringCollection.Add(NewDataTable.ToList<string>()[i]);
-                }
-                cboBarcode.DataSource = autoCompleteStringCollection;
-            
+
+            IEnumerable<string> NewDataTable = new List<string>();
+            NewDataTable = BarcodesDataTable.Where((item) => item.Contains(cboBarcode.Text)).ToList<string>();
+            AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
+            for (int i = 0; i < NewDataTable.Count(); i++)
+            {
+                autoCompleteStringCollection.Add(NewDataTable.ToList<string>()[i]);
+            }
+            cboBarcode.DataSource = autoCompleteStringCollection;
+
             if (cboBarcode.Items.Count == 1)
             {
                 AddItemToDataGridView(cboBarcode.Text);
@@ -205,7 +205,7 @@ public partial class frmStockInDetails : Form
                 txtBarcode.Focus();
             }
 
-            if (cboBarcode.Items.Count>1)
+            if (cboBarcode.Items.Count > 1)
             {
                 cboBarcode.BackColor = Color.Yellow;
             }
@@ -216,7 +216,7 @@ public partial class frmStockInDetails : Form
         }
     }
 
-   
+
     private void btnShowItem_Click(object sender, EventArgs e)
     {
         AddItemToDataGridView(cboBarcode.Text);
@@ -247,40 +247,54 @@ public partial class frmStockInDetails : Form
                 foreach (DataRow item in ToEditStockInDetailsTable.Rows)
                 {
                     int StockInDetailIDToDelete = Convert.ToInt32(item["StockInDetailID"]);
-                    StockInDetailData.DeleteStockInDetail(StockInDetailIDToDelete); 
+                    StockInDetailData.DeleteStockInDetail(StockInDetailIDToDelete);
                 }
                 foreach (DataGridViewRow row in dgvStockInDetails.Rows)
                 {
-                    StockInDetailData.InsertStockInDetail(new() {
+                    StockInDetailData.InsertStockInDetail(new()
+                    {
                         ItemID = (int)row.Cells["ItemID"].Value
-                       ,StockInID = StockInID
-                       ,Quantity = (int)row.Cells["Quantity"].Value
-                       ,BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value });
+                       ,
+                        StockInID = StockInID
+                       ,
+                        Quantity = (int)row.Cells["Quantity"].Value
+                       ,
+                        BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value
+                    });
                 }
             }
             //if the edit mode not active we create a new stockIn operation and we add all from the dgv
             else
             {
-                int newStockInID = StockInData.InsertStockIn(new() {
+                int newStockInID = StockInData.InsertStockIn(new()
+                {
                     Date = DateTime.Now
-                   ,UserID = SessionHelper.loggedUser.UserID
-                   ,Note = txtNote.Text });
+                   ,
+                    UserID = SessionHelper.loggedUser.UserID
+                   ,
+                    Note = txtNote.Text
+                });
                 foreach (DataGridViewRow row in dgvStockInDetails.Rows)
                 {
-                    StockInDetailData.InsertStockInDetail(new() {
+                    StockInDetailData.InsertStockInDetail(new()
+                    {
                         ItemID = (int)row.Cells["ItemID"].Value
-                        , StockInID = newStockInID
-                        , Quantity = (int)row.Cells["Quantity"].Value
-                        , BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value });
+                        ,
+                        StockInID = newStockInID
+                        ,
+                        Quantity = (int)row.Cells["Quantity"].Value
+                        ,
+                        BoxesQuantity = (int)row.Cells["BoxesQuantity"].Value
+                    });
                 }
-            }   
+            }
             MessageBox.Show("Успешно!");
-            this.Close();   
+            this.Close();
         }
         catch (Exception addingStockinDetailsError)
         {
             MessageBox.Show($"Ошибка {addingStockinDetailsError.Message}");
-        }   
+        }
     }
 
     private void btnCancel_Click(object sender, EventArgs e)
@@ -335,5 +349,6 @@ public partial class frmStockInDetails : Form
         ItemModel itemToAdd = ItemData.GetItemByBarcode(cboBarcode.Text);
         txtSearchItemName.Text = itemToAdd.ProductName;
         picSearchItemPhoto.Image = displayImage((byte[])itemToAdd.Image);
+        txtAmountInWarehouse.Text = itemToAdd.QuantityInStock.ToString();
     }
 }
