@@ -1,6 +1,7 @@
 using DataAccess.Data;
 using System.Threading;
 using WorkshopManagement.Forms;
+using WorkshopManagement.Forms.Testing;
 
 namespace WorkshopManagement;
 
@@ -24,7 +25,7 @@ internal static class Program
         }
         ApplicationConfiguration.Initialize();
         Application.Run(new frmLogin());
-        
+        //Application.Run(new test());
     }
 }
 

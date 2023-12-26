@@ -45,8 +45,6 @@ namespace WorkshopManagement
                 object a = ItemsTable.Rows[i]["Image"];
                 if (ItemsTable.Rows[i]["Image"] == DBNull.Value)
                 {
-
-
                     ItemsTable.Rows[i]["Image"] = Utilities.newBytes;
                 }
             }
